@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+html,
+body {
+  height: 100%;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container-row {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  background-color: blue;
+  /* justify-content: space-around; */ /* change items based on the horizonal axis*/
+  /* align-items: end; */ /* this will change the items based on the vertical axis */
+  /* flex-wrap: wrap; */
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.contain {
+  /* height: 100%;
+  display: flex;
+  flex-direction: column; */
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.item-box {
+  background-color: green;
+  display: flex;
+  flex: 1;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo-box {
+  background-color: #ae9142;
+  height: 10vh;
+  width: 100%;
+}
+.route-box {
+  display: flex;
+  flex-direction: column;
+  background-color: #0c2340;
+  width: 100%;
+  flex: 1;
+  gap: 1rem;
+}
+.route {
+  /* background-color: white; */
+  padding-top: 1em;
+  height: 5vh;
+  width: 100%;
+  color: #ffffff;
+  font-family: "Lato", sans-serif;
+}
+.box1 {
+  display: flex;
+  flex-direction: column;
+  background-color: #0c2340;
+  height: 100vh;
+  width: 20vh;
+}
+.box2 {
+  background-color: lightgreen;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  flex: 1;
+}
+.search-bar {
+  background-color: red;
+  height: 10vh;
+  width: 100%;
+}
+.item1 {
+  background-color: purple;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  width: 100%;
+  flex: 1;
+}
+.footer {
+  background-color: green;
+  height: 5vh;
+  width: 100%;
 }
