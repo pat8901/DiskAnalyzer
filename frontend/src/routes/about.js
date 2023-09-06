@@ -1,9 +1,46 @@
 import React from 'react'
+import { TextField } from '@mui/material'
+import { Link } from 'react-router-dom'
+import Logo from '../logos/Notre_Dame_Fighting_Irish_logo.png'
 
 function About () {
   return (
-    <div>
-      <h1>This is the about page</h1>
+    <div className='contain'>
+      <div className='item-box'>
+        <div className='box1'>
+          <div className='logo-box'>
+            <img className='logo' src={Logo} alt='' />
+          </div>
+          <div className='route-box'>
+            <div className='route'>
+              <Link className='route' to='/'>
+                Home
+              </Link>
+            </div>
+            <div className='route'>
+              <Link className='route' to='/test'>
+                Test
+              </Link>
+            </div>
+            <div className='route'>route 3</div>
+          </div>
+        </div>
+        <div className='box2'>
+          <div className='search-bar'>
+            {/* <TextField
+              id='outlined-basic'
+              variant='standard'
+              label='Enter Netid'
+              fullWidth
+              size='small'
+            /> */}
+            About Page
+          </div>
+          <div className='item1'>
+            <div className='footer'></div>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
