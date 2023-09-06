@@ -24,14 +24,20 @@ body {
   flex-direction: column;
 }
 .item-box {
-  background-color: green;
+  /* background-color: green; */
   display: flex;
   flex: 1;
 }
 .logo-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #ae9142;
   height: 10vh;
   width: 100%;
+}
+.logo {
+  height: 9vh;
 }
 .route-box {
   display: flex;
@@ -44,6 +50,8 @@ body {
 .route {
   /* background-color: white; */
   padding-top: 1em;
+  display: flex;
+  justify-content: center;
   height: 5vh;
   width: 100%;
   color: #ffffff;
@@ -57,27 +65,54 @@ body {
   width: 20vh;
 }
 .box2 {
-  background-color: lightgreen;
+  /* background-color: lightgreen; */
   display: flex;
   flex-direction: column;
   height: 100vh;
   flex: 1;
 }
 .search-bar {
-  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
   height: 10vh;
   width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .item1 {
-  background-color: purple;
+  /* background-color: purple; */
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
   width: 100%;
   flex: 1;
 }
 .footer {
   background-color: green;
   height: 5vh;
+  width: 100%;
+}
+.matplot {
+  background-color: red;
+  height: 55%;
+  width: 45%;
+}
+.matplot-image {
+  height: 100%;
+  width: 100%;
+}
+.data-table {
+  background-color: blue;
+  height: 55%;
+  width: 45%;
+}
+.data-box {
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
   width: 100%;
 }
