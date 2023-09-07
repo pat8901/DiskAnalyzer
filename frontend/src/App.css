@@ -78,11 +78,9 @@ body {
   /* background-color: red; */
   height: 10vh;
   width: 100%;
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 .item1 {
-  /* background-color: purple; */
+  background-color: purple;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -90,7 +88,7 @@ body {
   flex: 1;
 }
 .footer {
-  background-color: green;
+  /* background-color: green; */
   height: 5vh;
   width: 100%;
 }
@@ -115,4 +113,27 @@ body {
   align-items: center;
   height: 100%;
   width: 100%;
+}
+
+a:link, a:visited {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  border-radius:10%;
+}
+
+a:hover, a:active {
+  background-color: rgb(238, 238, 238);
+  color: black;
+}
+
+.list{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 60%;
+  align-items: flex-start;
 }
