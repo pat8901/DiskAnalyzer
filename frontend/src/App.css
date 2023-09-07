@@ -103,12 +103,13 @@ body {
 }
 .data-table {
   background-color: blue;
-  height: 55%;
+  height: 55%; 
   width: 45%;
 }
 .data-box {
   /* background-color: yellow; */
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   height: 100%;
