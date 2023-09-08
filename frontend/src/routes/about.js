@@ -13,10 +13,12 @@ function About() {
             <img style={{ width: "18vh" }} className='logo' src={Logo2} alt='' />
           </div>
           <div className='route-box'>
-            <ul className='list'>
-              <a href='/'>Home</a>
-              <a href='/test'>User Search</a>
-            </ul>
+            <div className='route'>
+              <Link className='route' to='/'>Home</Link>
+            </div>
+            <div className='route'>
+              <Link className='route' to='/test'>User Search</Link>
+            </div>
           </div>
         </div>
         <div className='box2'>

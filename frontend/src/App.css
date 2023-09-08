@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 html,
 body {
@@ -55,7 +55,7 @@ body {
   height: 5vh;
   width: 100%;
   color: #ffffff;
-  font-family: "Lato", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 .box1 {
   display: flex;
@@ -103,7 +103,7 @@ body {
 }
 .data-table {
   background-color: blue;
-  height: 55%; 
+  height: 55%;
   width: 45%;
 }
 .data-box {
@@ -116,25 +116,35 @@ body {
   width: 100%;
 }
 
-a:link, a:visited {
-  background-color: white;
-  color: black;
-  padding: 10px 20px;
+a:link,
+a:visited {
+  background-color: #0c2340;
+  color: white;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-right: 100%;
+  padding-left: 100%;
   text-align: center;
   text-decoration: none;
   display: flex;
-  border-radius:10%;
+  border-radius: 10%;
 }
 
-a:hover, a:active {
-  background-color: rgb(238, 238, 238);
-  color: black;
+a:hover,
+a:active {
+  background-color: #1d3e66;
+  color: white;
 }
 
-.list{
+.list {
   display: flex;
   flex-direction: column;
   height: 100%;
   width: 60%;
   align-items: flex-start;
+  font-family: 'Roboto', sans-serif;
+}
+
+.text {
+  font-family: 'Roboto', sans-serif;
 }

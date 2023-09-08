@@ -2,14 +2,17 @@ import React from 'react'
 import { TextField } from '@mui/material'
 import { Link } from 'react-router-dom'
 import Logo from '../logos/Notre_Dame_Fighting_Irish_logo.png'
+import Logo2 from '../logos/logo512.png'
+import ReactSearchBox from "react-search-box";
 
-function Test () {
+
+function Test() {
   return (
     <div className='contain'>
       <div className='item-box'>
         <div className='box1'>
-          <div className='logo-box'>
-            <img className='logo' src={Logo} alt='' />
+          <div style={{ backgroundColor: "white" }} className='logo-box'>
+            <img style={{ width: "18vh" }} className='logo' src={Logo2} alt='' />
           </div>
           <div className='route-box'>
             <div className='route'>
@@ -27,12 +30,9 @@ function Test () {
         </div>
         <div className='box2'>
           <div className='search-bar'>
-            <TextField
-              id='outlined-basic'
-              variant='standard'
-              label='Enter Netid'
-              fullWidth
-              size='small'
+            <ReactSearchBox
+              placeholder='PLaceholder'
+              value='doe'
             />
           </div>
           <div className='item1'>
