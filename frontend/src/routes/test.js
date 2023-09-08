@@ -1,41 +1,43 @@
 import React from 'react'
-import { TextField } from '@mui/material'
 import { Link } from 'react-router-dom'
-import Logo from '../logos/Notre_Dame_Fighting_Irish_logo.png'
 import Logo2 from '../logos/logo512.png'
-import ReactSearchBox from "react-search-box";
+import { FaHouseChimney } from 'react-icons/fa6'
+import { FaCircleInfo } from 'react-icons/fa6'
+import { SearchBar } from '../components/SearchBar'
 
-
-function Test() {
+function Test () {
   return (
     <div className='contain'>
       <div className='item-box'>
         <div className='box1'>
-          <div style={{ backgroundColor: "white" }} className='logo-box'>
-            <img style={{ width: "18vh" }} className='logo' src={Logo2} alt='' />
+          <div style={{ backgroundColor: 'white' }} className='logo-box'>
+            <img
+              style={{ width: '20vh' }}
+              className='logo'
+              src={Logo2}
+              alt=''
+            />
           </div>
           <div className='route-box'>
             <div className='route'>
-              <Link className='route' to='/'>
+              <Link className='route' style={{ gap: '15px' }} to='/'>
+                <FaHouseChimney></FaHouseChimney>
                 Home
               </Link>
             </div>
             <div className='route'>
-              <Link className='route' to='/about'>
+              <Link className='route' style={{ gap: '15px' }} to='/about'>
+                <FaCircleInfo></FaCircleInfo>
                 About
               </Link>
             </div>
-            <div className='route'>route 3</div>
           </div>
         </div>
         <div className='box2'>
           <div className='search-bar'>
-            <ReactSearchBox
-              placeholder='PLaceholder'
-              value='doe'
-            />
+            <SearchBar />
           </div>
-          <div className='item1'>
+          <div className='data-container'>
             <div className='data-box'>
               <div className='matplot'>
                 <img
