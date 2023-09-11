@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import Logo2 from '../logos/logo512.png'
 import { FaHouseChimney } from 'react-icons/fa6'
 import { FaUser } from 'react-icons/fa6'
+import { SearchBarTest } from '../components/SearchBarTest'
+import { FaSistrix } from 'react-icons/fa6'
 
 function About () {
   const [windowSize, setWindowSize] = useState([
@@ -20,13 +22,15 @@ function About () {
     }
   }, [])
 
+  // const [results, setResults] = useState([])
+
   return (
     <div className='contain' style={{ height: windowSize[1] }}>
       <div className='item-box'>
         <div className='box1'>
           <div style={{ backgroundColor: 'white' }} className='logo-box'>
             <img
-              style={{ width: '18vh' }}
+              style={{ width: '20vh' }}
               className='logo'
               src={Logo2}
               alt=''
@@ -39,23 +43,12 @@ function About () {
                 Home
               </Link>
             </div>
-            <div className='route'>
-              <Link className='route' style={{ gap: '15px' }} to='/test'>
-                <FaUser></FaUser>
-                User Search
-              </Link>
-            </div>
           </div>
         </div>
         <div className='box2'>
           <div className='search-bar'>
             <h1>About Page</h1>
-            <h3>
-              Height: {windowSize[1]}
-              Width: {windowSize[0]}
-            </h3>
           </div>
-
           <div className='data-container'>
             <div className='data-box'>
               <p style={{ textAlign: 'center' }}>
@@ -67,6 +60,11 @@ function About () {
                 For any questions or assistance please contact us:
                 crcsupport@nd.edu
               </p>
+              <h3>
+                Height: {windowSize[1]}
+                <br />
+                Width: {windowSize[0]}
+              </h3>
             </div>
             <div className='footer'></div>
           </div>

@@ -1,13 +1,20 @@
 # Import flask and datetime module for showing date and time
-from flask import Flask, send_file
+from flask import Flask, send_file, jsonify
 import datetime
 import os
+import csv
+import json
+import converter
+from datetime import timedelta
+from functools import update_wrapper
+from flask_cors import CORS
 
 
 x = datetime.datetime.now()
 
 # Initializing flask app
 app = Flask(__name__)
+CORS(app)
 
 
 # Route for seeing a data
@@ -29,6 +36,12 @@ def sendImage():
 def myapp():
     image = sendImage()
     return send_file(image, mimetype="image/png")
+
+
+@app.route("/users", methods=["GET", "POST"])
+def user():
+    file = converter.toJSON2()
+    return jsonify(file)
 
 
 # Running app

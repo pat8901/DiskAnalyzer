@@ -1,0 +1,4511 @@
+{
+    "1": {
+        "Id": "1",
+        "Full Name": "Patrick Joseph Flynn",
+        "DepCode": "CSE",
+        "AFS Groups": "154246196295",
+        "Users AFS": "18783536436",
+        "Users Panas.": "43559500120",
+        "Tot.Used Space": "216589232851"
+    },
+    "2": {
+        "Id": "2",
+        "Full Name": "Steven A Corcelli",
+        "DepCode": "CHEM",
+        "AFS Groups": "109582934193",
+        "Users AFS": "8842452101",
+        "Users Panas.": "11298590080",
+        "Tot.Used Space": "129723976374"
+    },
+    "3": {
+        "Id": "3",
+        "Full Name": "Paola Crippa",
+        "DepCode": "CEEES",
+        "AFS Groups": "149941544",
+        "Users AFS": "13069562",
+        "Users Panas.": "73440000000",
+        "Tot.Used Space": "73603011106"
+    },
+    "4": {
+        "Id": "4",
+        "Full Name": "Brian M Baker",
+        "DepCode": "CHEM",
+        "AFS Groups": "55723996308",
+        "Users AFS": "529009433",
+        "Users Panas.": "1027190000",
+        "Tot.Used Space": "57280195741"
+    },
+    "5": {
+        "Id": "5",
+        "Full Name": "Michael Pfrender",
+        "DepCode": "BIO",
+        "AFS Groups": "51867454370",
+        "Users AFS": "1342560062",
+        "Users Panas.": "1496660312",
+        "Tot.Used Space": "54706674744"
+    },
+    "6": {
+        "Id": "6",
+        "Full Name": "Walter J Scheirer",
+        "DepCode": "CSE",
+        "AFS Groups": "29133578406",
+        "Users AFS": "10994826119",
+        "Users Panas.": "1597592136",
+        "Tot.Used Space": "41725996661"
+    },
+    "7": {
+        "Id": "7",
+        "Full Name": "Jeffrey Feder",
+        "DepCode": "BIO",
+        "AFS Groups": "27145603159",
+        "Users AFS": "4207653243",
+        "Users Panas.": "1980000164",
+        "Tot.Used Space": "33333256566"
+    },
+    "8": {
+        "Id": "8",
+        "Full Name": "Jonathan Whitmer",
+        "DepCode": "CBE",
+        "AFS Groups": "29757157412",
+        "Users AFS": "1878400955",
+        "Users Panas.": "1472990048",
+        "Tot.Used Space": "33108548415"
+    },
+    "9": {
+        "Id": "9",
+        "Full Name": "Paul Raymond Brenner",
+        "DepCode": "CRC",
+        "AFS Groups": "8671072657",
+        "Users AFS": "5329489740",
+        "Users Panas.": "17902906620",
+        "Tot.Used Space": "31903469017"
+    },
+    "10": {
+        "Id": "10",
+        "Full Name": "Christopher Fruehwirth",
+        "DepCode": "COBA",
+        "AFS Groups": "31288140048",
+        "Users AFS": "183063224",
+        "Users Panas.": "0",
+        "Tot.Used Space": "31471203272"
+    },
+    "11": {
+        "Id": "11",
+        "Full Name": "Edward Maginn",
+        "DepCode": "CBE",
+        "AFS Groups": "2800991511",
+        "Users AFS": "6202314948",
+        "Users Panas.": "21394750096",
+        "Tot.Used Space": "30398056555"
+    },
+    "12": {
+        "Id": "12",
+        "Full Name": "Jonathan MacArt",
+        "DepCode": "AME",
+        "AFS Groups": "6628670",
+        "Users AFS": "429112650",
+        "Users Panas.": "27487660032",
+        "Tot.Used Space": "27923401352"
+    },
+    "13": {
+        "Id": "13",
+        "Full Name": "Ashley Parkinson Thrall",
+        "DepCode": "CEEES",
+        "AFS Groups": "25796720307",
+        "Users AFS": "67359462",
+        "Users Panas.": "0",
+        "Tot.Used Space": "25864079769"
+    },
+    "14": {
+        "Id": "14",
+        "Full Name": "Nora J Besansky",
+        "DepCode": "BIO",
+        "AFS Groups": "16110597961",
+        "Users AFS": "187027856",
+        "Users Panas.": "4600000048",
+        "Tot.Used Space": "20897625865"
+    },
+    "15": {
+        "Id": "15",
+        "Full Name": "Center for ShockWave Processing",
+        "DepCode": "AME",
+        "AFS Groups": "0",
+        "Users AFS": "96103968",
+        "Users Panas.": "18090000000",
+        "Tot.Used Space": "18186103968"
+    },
+    "16": {
+        "Id": "16",
+        "Full Name": "Adam Maciej Czajka",
+        "DepCode": "CSE",
+        "AFS Groups": "7724285145",
+        "Users AFS": "5335966184",
+        "Users Panas.": "4161447024",
+        "Tot.Used Space": "17221698353"
+    },
+    "17": {
+        "Id": "17",
+        "Full Name": "Paul H Schultz",
+        "DepCode": "FIN",
+        "AFS Groups": "12921690238",
+        "Users AFS": "1987276936",
+        "Users Panas.": "1160000000",
+        "Tot.Used Space": "16068967174"
+    },
+    "18": {
+        "Id": "18",
+        "Full Name": "Jonathan D Hauenstein",
+        "DepCode": "ACMS",
+        "AFS Groups": "14937988348",
+        "Users AFS": "934166771",
+        "Users Panas.": "48",
+        "Tot.Used Space": "15872155167"
+    },
+    "19": {
+        "Id": "19",
+        "Full Name": "David Chiang",
+        "DepCode": "CSE",
+        "AFS Groups": "14198631125",
+        "Users AFS": "807235993",
+        "Users Panas.": "298410024",
+        "Tot.Used Space": "15304277142"
+    },
+    "20": {
+        "Id": "20",
+        "Full Name": "Yuhsin Tsai",
+        "DepCode": "PHYS",
+        "AFS Groups": "0",
+        "Users AFS": "191380822",
+        "Users Panas.": "13750000000",
+        "Tot.Used Space": "13941380822"
+    },
+    "21": {
+        "Id": "21",
+        "Full Name": "Kevin W Bowyer",
+        "DepCode": "CSE",
+        "AFS Groups": "5759731917",
+        "Users AFS": "5953444437",
+        "Users Panas.": "1632410024",
+        "Tot.Used Space": "13345586378"
+    },
+    "22": {
+        "Id": "22",
+        "Full Name": "Michael Wiescher",
+        "DepCode": "PHYS",
+        "AFS Groups": "12295627798",
+        "Users AFS": "708123898",
+        "Users Panas.": "0",
+        "Tot.Used Space": "13003751696"
+    },
+    "23": {
+        "Id": "23",
+        "Full Name": "Kirk Bennett Doran",
+        "DepCode": "ECON",
+        "AFS Groups": "10598525176",
+        "Users AFS": "1993991147",
+        "Users Panas.": "48",
+        "Tot.Used Space": "12592516371"
+    },
+    "24": {
+        "Id": "24",
+        "Full Name": "Olaf Wiest",
+        "DepCode": "CHEM",
+        "AFS Groups": "1747185837",
+        "Users AFS": "4502410687",
+        "Users Panas.": "6021650184",
+        "Tot.Used Space": "12271246708"
+    },
+    "25": {
+        "Id": "25",
+        "Full Name": "Grant Mathews",
+        "DepCode": "PHYS",
+        "AFS Groups": "3211450630",
+        "Users AFS": "2661208391",
+        "Users Panas.": "5999900072",
+        "Tot.Used Space": "11872559093"
+    },
+    "26": {
+        "Id": "26",
+        "Full Name": "William Frederich Schneider",
+        "DepCode": "CBE",
+        "AFS Groups": "5485708775",
+        "Users AFS": "6111657183",
+        "Users Panas.": "92785156",
+        "Tot.Used Space": "11690151114"
+    },
+    "27": {
+        "Id": "27",
+        "Full Name": "Danny Chen",
+        "DepCode": "CSE",
+        "AFS Groups": "1857694864",
+        "Users AFS": "8331108369",
+        "Users Panas.": "1300090000",
+        "Tot.Used Space": "11488893233"
+    },
+    "28": {
+        "Id": "28",
+        "Full Name": "Diogo Bolster",
+        "DepCode": "CEEES",
+        "AFS Groups": "3515543081",
+        "Users AFS": "2699423830",
+        "Users Panas.": "5272630024",
+        "Tot.Used Space": "11487596935"
+    },
+    "29": {
+        "Id": "29",
+        "Full Name": "Elizabeth A Archie",
+        "DepCode": "BIO",
+        "AFS Groups": "9458586859",
+        "Users AFS": "300390789",
+        "Users Panas.": "1561600056",
+        "Tot.Used Space": "11320577704"
+    },
+    "30": {
+        "Id": "30",
+        "Full Name": "Manoel Jacques Couder",
+        "DepCode": "PHYS",
+        "AFS Groups": "9991443458",
+        "Users AFS": "884290000",
+        "Users Panas.": "0",
+        "Tot.Used Space": "10875733458"
+    },
+    "31": {
+        "Id": "31",
+        "Full Name": "Meng Jiang",
+        "DepCode": "CSE",
+        "AFS Groups": "7366304285",
+        "Users AFS": "3128083609",
+        "Users Panas.": "280200100",
+        "Tot.Used Space": "10774587994"
+    },
+    "32": {
+        "Id": "32",
+        "Full Name": "Jeremiah Zartman",
+        "DepCode": "CBE",
+        "AFS Groups": "9438838128",
+        "Users AFS": "47934879",
+        "Users Panas.": "0",
+        "Tot.Used Space": "9486773007"
+    },
+    "33": {
+        "Id": "33",
+        "Full Name": "Nathan Swenson",
+        "DepCode": "BIO",
+        "AFS Groups": "0",
+        "Users AFS": "284097570",
+        "Users Panas.": "9120000000",
+        "Tot.Used Space": "9404097570"
+    },
+    "34": {
+        "Id": "34",
+        "Full Name": "Joannes Westerink",
+        "DepCode": "CEEES",
+        "AFS Groups": "568047616",
+        "Users AFS": "1210783369",
+        "Users Panas.": "6830778176",
+        "Tot.Used Space": "8609609161"
+    },
+    "35": {
+        "Id": "35",
+        "Full Name": "Jun Li",
+        "DepCode": "ACMS",
+        "AFS Groups": "7556246966",
+        "Users AFS": "841369224",
+        "Users Panas.": "107930024",
+        "Tot.Used Space": "8505546214"
+    },
+    "36": {
+        "Id": "36",
+        "Full Name": "Michael Niemier",
+        "DepCode": "CSE",
+        "AFS Groups": "6835031454",
+        "Users AFS": "1326535171",
+        "Users Panas.": "0",
+        "Tot.Used Space": "8161566625"
+    },
+    "37": {
+        "Id": "37",
+        "Full Name": "Yamil Javier Colon",
+        "DepCode": "CBE",
+        "AFS Groups": "0",
+        "Users AFS": "945571634",
+        "Users Panas.": "7175167056",
+        "Tot.Used Space": "8120738690"
+    },
+    "38": {
+        "Id": "38",
+        "Full Name": "David Hyde",
+        "DepCode": "BIO",
+        "AFS Groups": "7444632696",
+        "Users AFS": "296610631",
+        "Users Panas.": "0",
+        "Tot.Used Space": "7741243327"
+    },
+    "39": {
+        "Id": "39",
+        "Full Name": "Anna Maria Simon",
+        "DepCode": "PHYS",
+        "AFS Groups": "7105376546",
+        "Users AFS": "387416411",
+        "Users Panas.": "16990000",
+        "Tot.Used Space": "7509782957"
+    },
+    "40": {
+        "Id": "40",
+        "Full Name": "Ian Carmichael",
+        "DepCode": "RAD",
+        "AFS Groups": "5792862998",
+        "Users AFS": "1320358704",
+        "Users Panas.": "246180072",
+        "Tot.Used Space": "7359401774"
+    },
+    "41": {
+        "Id": "41",
+        "Full Name": "Rebecca Surman",
+        "DepCode": "PHYS",
+        "AFS Groups": "6592333088",
+        "Users AFS": "627973447",
+        "Users Panas.": "24",
+        "Tot.Used Space": "7220306559"
+    },
+    "42": {
+        "Id": "42",
+        "Full Name": "Timothy C Beers",
+        "DepCode": "PHYS",
+        "AFS Groups": "6779476365",
+        "Users AFS": "166257653",
+        "Users Panas.": "42810024",
+        "Tot.Used Space": "6988544042"
+    },
+    "43": {
+        "Id": "43",
+        "Full Name": "Nitesh Vijay Chawla",
+        "DepCode": "CSE",
+        "AFS Groups": "4206464328",
+        "Users AFS": "2763583029",
+        "Users Panas.": "72",
+        "Tot.Used Space": "6970047429"
+    },
+    "44": {
+        "Id": "44",
+        "Full Name": "Aleksandar Jemcov",
+        "DepCode": "AME",
+        "AFS Groups": "0",
+        "Users AFS": "3147441898",
+        "Users Panas.": "3508730072",
+        "Tot.Used Space": "6656171970"
+    },
+    "45": {
+        "Id": "45",
+        "Full Name": "Harindra J Fernando",
+        "DepCode": "CEEES",
+        "AFS Groups": "0",
+        "Users AFS": "2885815745",
+        "Users Panas.": "3450000080",
+        "Tot.Used Space": "6335815825"
+    },
+    "46": {
+        "Id": "46",
+        "Full Name": "Nicholas Zabaras",
+        "DepCode": "AME",
+        "AFS Groups": "0",
+        "Users AFS": "1437235057",
+        "Users Panas.": "4743510024",
+        "Tot.Used Space": "6180745081"
+    },
+    "47": {
+        "Id": "47",
+        "Full Name": "Ani Aprahamian",
+        "DepCode": "PHYS",
+        "AFS Groups": "5131814340",
+        "Users AFS": "682742711",
+        "Users Panas.": "72",
+        "Tot.Used Space": "5814557123"
+    },
+    "48": {
+        "Id": "48",
+        "Full Name": "Matthew Maurice Champion",
+        "DepCode": "CHEM",
+        "AFS Groups": "4922327917",
+        "Users AFS": "157551188",
+        "Users Panas.": "596250000",
+        "Tot.Used Space": "5676129105"
+    },
+    "49": {
+        "Id": "49",
+        "Full Name": "Jeffrey W Peng",
+        "DepCode": "CHEM",
+        "AFS Groups": "64645336",
+        "Users AFS": "4192345119",
+        "Users Panas.": "1200000024",
+        "Tot.Used Space": "5456990479"
+    },
+    "50": {
+        "Id": "50",
+        "Full Name": "Tan Ahn",
+        "DepCode": "PHYS",
+        "AFS Groups": "5305376466",
+        "Users AFS": "109128579",
+        "Users Panas.": "0",
+        "Tot.Used Space": "5414505045"
+    },
+    "51": {
+        "Id": "51",
+        "Full Name": "Siddharth Joshi",
+        "DepCode": "CSE",
+        "AFS Groups": "1486204815",
+        "Users AFS": "3681218668",
+        "Users Panas.": "24",
+        "Tot.Used Space": "5167423507"
+    },
+    "52": {
+        "Id": "52",
+        "Full Name": "Kasturi Haldar",
+        "DepCode": "BIO",
+        "AFS Groups": "4299673233",
+        "Users AFS": "794529621",
+        "Users Panas.": "24",
+        "Tot.Used Space": "5094202878"
+    },
+    "53": {
+        "Id": "53",
+        "Full Name": "J Daniel Gezelter",
+        "DepCode": "CHEM",
+        "AFS Groups": "2682245778",
+        "Users AFS": "1431185872",
+        "Users Panas.": "941570096",
+        "Tot.Used Space": "5055001746"
+    },
+    "54": {
+        "Id": "54",
+        "Full Name": "Sharon Hu",
+        "DepCode": "CSE",
+        "AFS Groups": "0",
+        "Users AFS": "4571599854",
+        "Users Panas.": "56",
+        "Tot.Used Space": "4571599910"
+    },
+    "55": {
+        "Id": "55",
+        "Full Name": "Chaoli Wang",
+        "DepCode": "CSE",
+        "AFS Groups": "2357105762",
+        "Users AFS": "2135384335",
+        "Users Panas.": "10835024",
+        "Tot.Used Space": "4503325121"
+    },
+    "56": {
+        "Id": "56",
+        "Full Name": "Mary Ann McDowell",
+        "DepCode": "BIO",
+        "AFS Groups": "4176076121",
+        "Users AFS": "98945265",
+        "Users Panas.": "24",
+        "Tot.Used Space": "4275021410"
+    },
+    "57": {
+        "Id": "57",
+        "Full Name": "Alan Huebner",
+        "DepCode": "ACMS",
+        "AFS Groups": "0",
+        "Users AFS": "1003351557",
+        "Users Panas.": "3190000000",
+        "Tot.Used Space": "4193351557"
+    },
+    "58": {
+        "Id": "58",
+        "Full Name": "Jane Huang",
+        "DepCode": "CSE",
+        "AFS Groups": "39964049",
+        "Users AFS": "1172412688",
+        "Users Panas.": "2824462000",
+        "Tot.Used Space": "4036838737"
+    },
+    "59": {
+        "Id": "59",
+        "Full Name": "Troy Alexander Perkins",
+        "DepCode": "ACMS",
+        "AFS Groups": "132834345",
+        "Users AFS": "3271889724",
+        "Users Panas.": "485683032",
+        "Tot.Used Space": "3890407101"
+    },
+    "60": {
+        "Id": "60",
+        "Full Name": "Xinxue Qu",
+        "DepCode": "ITM",
+        "AFS Groups": "3612259532",
+        "Users AFS": "120712937",
+        "Users Panas.": "0",
+        "Tot.Used Space": "3732972469"
+    },
+    "61": {
+        "Id": "61",
+        "Full Name": "Yiyu Shi",
+        "DepCode": "CSE",
+        "AFS Groups": "2",
+        "Users AFS": "3617014359",
+        "Users Panas.": "19640024",
+        "Tot.Used Space": "3636654385"
+    },
+    "62": {
+        "Id": "62",
+        "Full Name": "David Richter",
+        "DepCode": "CEEES",
+        "AFS Groups": "12927807",
+        "Users AFS": "831500017",
+        "Users Panas.": "2766438104",
+        "Tot.Used Space": "3610865928"
+    },
+    "63": {
+        "Id": "63",
+        "Full Name": "Lara Arielle Phillips",
+        "DepCode": "PHYS",
+        "AFS Groups": "3561070830",
+        "Users AFS": "12561610",
+        "Users Panas.": "32",
+        "Tot.Used Space": "3573632472"
+    },
+    "64": {
+        "Id": "64",
+        "Full Name": "Laurie Littlepage",
+        "DepCode": "CHEM",
+        "AFS Groups": "3472494726",
+        "Users AFS": "2532411",
+        "Users Panas.": "0",
+        "Tot.Used Space": "3475027137"
+    },
+    "65": {
+        "Id": "65",
+        "Full Name": "Guangjian Zhang",
+        "DepCode": "PSYC",
+        "AFS Groups": "3392858938",
+        "Users AFS": "80489199",
+        "Users Panas.": "0",
+        "Tot.Used Space": "3473348137"
+    },
+    "66": {
+        "Id": "66",
+        "Full Name": "Ahsan Kareem",
+        "DepCode": "CEEES",
+        "AFS Groups": "0",
+        "Users AFS": "3421444188",
+        "Users Panas.": "24",
+        "Tot.Used Space": "3421444212"
+    },
+    "67": {
+        "Id": "67",
+        "Full Name": "Adam Martin",
+        "DepCode": "PHYS",
+        "AFS Groups": "0",
+        "Users AFS": "1762563634",
+        "Users Panas.": "1630050024",
+        "Tot.Used Space": "3392613658"
+    },
+    "68": {
+        "Id": "68",
+        "Full Name": "Tengfei Luo",
+        "DepCode": "AME",
+        "AFS Groups": "0",
+        "Users AFS": "2489115675",
+        "Users Panas.": "866849152",
+        "Tot.Used Space": "3355964827"
+    },
+    "69": {
+        "Id": "69",
+        "Full Name": "Kyle James Bibby",
+        "DepCode": "CEEES",
+        "AFS Groups": "3103962049",
+        "Users AFS": "129795130",
+        "Users Panas.": "24",
+        "Tot.Used Space": "3233757203"
+    },
+    "70": {
+        "Id": "70",
+        "Full Name": "James Xavier Sullivan",
+        "DepCode": "ECON",
+        "AFS Groups": "2577664186",
+        "Users AFS": "404057428",
+        "Users Panas.": "0",
+        "Tot.Used Space": "2981721614"
+    },
+    "71": {
+        "Id": "71",
+        "Full Name": "Timothy Weninger",
+        "DepCode": "CSE",
+        "AFS Groups": "719492023",
+        "Users AFS": "2164902815",
+        "Users Panas.": "96770104",
+        "Tot.Used Space": "2981164942"
+    },
+    "72": {
+        "Id": "72",
+        "Full Name": "Ryan K Roeder",
+        "DepCode": "AME",
+        "AFS Groups": "2506936790",
+        "Users AFS": "361103860",
+        "Users Panas.": "0",
+        "Tot.Used Space": "2868040650"
+    },
+    "73": {
+        "Id": "73",
+        "Full Name": "Pengjie Gao",
+        "DepCode": "FIN",
+        "AFS Groups": "1765936988",
+        "Users AFS": "1088095775",
+        "Users Panas.": "24",
+        "Tot.Used Space": "2854032787"
+    },
+    "74": {
+        "Id": "74",
+        "Full Name": "Daniel W Bardayan",
+        "DepCode": "PHYS",
+        "AFS Groups": "2255525490",
+        "Users AFS": "519623135",
+        "Users Panas.": "0",
+        "Tot.Used Space": "2775148625"
+    },
+    "75": {
+        "Id": "75",
+        "Full Name": "John Shim",
+        "DepCode": "FIN",
+        "AFS Groups": "954579791",
+        "Users AFS": "1788534884",
+        "Users Panas.": "24",
+        "Tot.Used Space": "2743114699"
+    },
+    "76": {
+        "Id": "76",
+        "Full Name": "Scott Christopher Morris",
+        "DepCode": "AME",
+        "AFS Groups": "0",
+        "Users AFS": "1289551120",
+        "Users Panas.": "1422430024",
+        "Tot.Used Space": "2711981144"
+    },
+    "77": {
+        "Id": "77",
+        "Full Name": "Dinshaw S Balsara",
+        "DepCode": "PHYS",
+        "AFS Groups": "0",
+        "Users AFS": "704086379",
+        "Users Panas.": "1970131024",
+        "Tot.Used Space": "2674217403"
+    },
+    "78": {
+        "Id": "78",
+        "Full Name": "Nathan Scott Rose",
+        "DepCode": "PSYC",
+        "AFS Groups": "2351409378",
+        "Users AFS": "195472066",
+        "Users Panas.": "0",
+        "Tot.Used Space": "2546881444"
+    },
+    "79": {
+        "Id": "79",
+        "Full Name": "Daniel J Robertson",
+        "DepCode": "PHYS",
+        "AFS Groups": "2421051373",
+        "Users AFS": "96626415",
+        "Users Panas.": "0",
+        "Tot.Used Space": "2517677788"
+    },
+    "80": {
+        "Id": "80",
+        "Full Name": "Douglas L Thain",
+        "DepCode": "CSE",
+        "AFS Groups": "1408811824",
+        "Users AFS": "795866308",
+        "Users Panas.": "262172096",
+        "Tot.Used Space": "2466850228"
+    },
+    "81": {
+        "Id": "81",
+        "Full Name": "Kevin Lannon",
+        "DepCode": "PHYS",
+        "AFS Groups": "0",
+        "Users AFS": "1107387744",
+        "Users Panas.": "1318169424",
+        "Tot.Used Space": "2425557168"
+    },
+    "82": {
+        "Id": "82",
+        "Full Name": "Robert Mark Rennie",
+        "DepCode": "AME",
+        "AFS Groups": "874939137",
+        "Users AFS": "1533138551",
+        "Users Panas.": "48",
+        "Tot.Used Space": "2408077736"
+    },
+    "83": {
+        "Id": "83",
+        "Full Name": "Meng Wang",
+        "DepCode": "AME",
+        "AFS Groups": "23621809",
+        "Users AFS": "1865749416",
+        "Users Panas.": "517630024",
+        "Tot.Used Space": "2407001249"
+    },
+    "84": {
+        "Id": "84",
+        "Full Name": "Mark Plecnik",
+        "DepCode": "AME",
+        "AFS Groups": "2082459041",
+        "Users AFS": "167905336",
+        "Users Panas.": "26320024",
+        "Tot.Used Space": "2276684401"
+    },
+    "85": {
+        "Id": "85",
+        "Full Name": "Tijana Milenkovic",
+        "DepCode": "CSE",
+        "AFS Groups": "1265841311",
+        "Users AFS": "387910112",
+        "Users Panas.": "618410024",
+        "Tot.Used Space": "2272161447"
+    },
+    "86": {
+        "Id": "86",
+        "Full Name": "Cristian Koepfli",
+        "DepCode": "BIO",
+        "AFS Groups": "2107838804",
+        "Users AFS": "111586383",
+        "Users Panas.": "420",
+        "Tot.Used Space": "2219425607"
+    },
+    "87": {
+        "Id": "87",
+        "Full Name": "Sharon Stack",
+        "DepCode": "CHEM",
+        "AFS Groups": "2034926602",
+        "Users AFS": "61010771",
+        "Users Panas.": "106750000",
+        "Tot.Used Space": "2202687373"
+    },
+    "88": {
+        "Id": "88",
+        "Full Name": "Christopher Richard Sweet",
+        "DepCode": "CRC",
+        "AFS Groups": "0",
+        "Users AFS": "1857174897",
+        "Users Panas.": "283890024",
+        "Tot.Used Space": "2141064921"
+    },
+    "89": {
+        "Id": "89",
+        "Full Name": "Paul Huber",
+        "DepCode": "CHEM",
+        "AFS Groups": "2095996322",
+        "Users AFS": "346",
+        "Users Panas.": "0",
+        "Tot.Used Space": "2095996668"
+    },
+    "90": {
+        "Id": "90",
+        "Full Name": "Dong Wang",
+        "DepCode": "CSE",
+        "AFS Groups": "0",
+        "Users AFS": "1693342712",
+        "Users Panas.": "353620000",
+        "Tot.Used Space": "2046962712"
+    },
+    "91": {
+        "Id": "91",
+        "Full Name": "Stuart Jones",
+        "DepCode": "BIO",
+        "AFS Groups": "2006416769",
+        "Users AFS": "31240485",
+        "Users Panas.": "24",
+        "Tot.Used Space": "2037657278"
+    },
+    "92": {
+        "Id": "92",
+        "Full Name": "Michael T Ferdig",
+        "DepCode": "BIO",
+        "AFS Groups": "125617925",
+        "Users AFS": "1894487513",
+        "Users Panas.": "0",
+        "Tot.Used Space": "2020105438"
+    },
+    "93": {
+        "Id": "93",
+        "Full Name": "Maria A Holland",
+        "DepCode": "AME",
+        "AFS Groups": "1724196050",
+        "Users AFS": "290586179",
+        "Users Panas.": "24",
+        "Tot.Used Space": "2014782253"
+    },
+    "94": {
+        "Id": "94",
+        "Full Name": "Ross Colin Jacobucci",
+        "DepCode": "PSYC",
+        "AFS Groups": "0",
+        "Users AFS": "1165048490",
+        "Users Panas.": "795520000",
+        "Tot.Used Space": "1960568490"
+    },
+    "95": {
+        "Id": "95",
+        "Full Name": "Junhui Cai",
+        "DepCode": "ITM",
+        "AFS Groups": "1791692951",
+        "Users AFS": "104536669",
+        "Users Panas.": "0",
+        "Tot.Used Space": "1896229620"
+    },
+    "96": {
+        "Id": "96",
+        "Full Name": "Michael Mcnally",
+        "DepCode": "CSE",
+        "AFS Groups": "455919660",
+        "Users AFS": "1415266397",
+        "Users Panas.": "0",
+        "Tot.Used Space": "1871186057"
+    },
+    "97": {
+        "Id": "97",
+        "Full Name": "Colin P Jessop",
+        "DepCode": "PHYS",
+        "AFS Groups": "0",
+        "Users AFS": "707480621",
+        "Users Panas.": "1151020112",
+        "Tot.Used Space": "1858500733"
+    },
+    "98": {
+        "Id": "98",
+        "Full Name": "Bertrand M Hochwald",
+        "DepCode": "EE",
+        "AFS Groups": "0",
+        "Users AFS": "423233128",
+        "Users Panas.": "1340072000",
+        "Tot.Used Space": "1763305128"
+    },
+    "99": {
+        "Id": "99",
+        "Full Name": "Andrew Brian Kennedy",
+        "DepCode": "CEEES",
+        "AFS Groups": "0",
+        "Users AFS": "1605060995",
+        "Users Panas.": "143490024",
+        "Tot.Used Space": "1748551019"
+    },
+    "100": {
+        "Id": "100",
+        "Full Name": "Aaron Striegel",
+        "DepCode": "CSE",
+        "AFS Groups": "1263865392",
+        "Users AFS": "448387569",
+        "Users Panas.": "0",
+        "Tot.Used Space": "1712252961"
+    },
+    "101": {
+        "Id": "101",
+        "Full Name": "Vamsi Krishna Kanuri",
+        "DepCode": "MKTG",
+        "AFS Groups": "1665687397",
+        "Users AFS": "22986603",
+        "Users Panas.": "0",
+        "Tot.Used Space": "1688674000"
+    },
+    "102": {
+        "Id": "102",
+        "Full Name": "Alexander W Dowling PhD",
+        "DepCode": "CBE",
+        "AFS Groups": "0",
+        "Users AFS": "1626800102",
+        "Users Panas.": "36890000",
+        "Tot.Used Space": "1663690102"
+    },
+    "103": {
+        "Id": "103",
+        "Full Name": "Neil Lobo",
+        "DepCode": "BIO",
+        "AFS Groups": "0",
+        "Users AFS": "1631746469",
+        "Users Panas.": "0",
+        "Tot.Used Space": "1631746469"
+    },
+    "104": {
+        "Id": "104",
+        "Full Name": "Umesh Garg",
+        "DepCode": "PHYS",
+        "AFS Groups": "1536060390",
+        "Users AFS": "93436968",
+        "Users Panas.": "24",
+        "Tot.Used Space": "1629497382"
+    },
+    "105": {
+        "Id": "105",
+        "Full Name": "Hope Hollocher",
+        "DepCode": "BIO",
+        "AFS Groups": "1321299301",
+        "Users AFS": "306875387",
+        "Users Panas.": "24",
+        "Tot.Used Space": "1628174712"
+    },
+    "106": {
+        "Id": "106",
+        "Full Name": "Xin Lu",
+        "DepCode": "BIO",
+        "AFS Groups": "274972870",
+        "Users AFS": "1336622305",
+        "Users Panas.": "0",
+        "Tot.Used Space": "1611595175"
+    },
+    "107": {
+        "Id": "107",
+        "Full Name": "Ahmed Abbasi",
+        "DepCode": "COBA",
+        "AFS Groups": "1238687276",
+        "Users AFS": "364789962",
+        "Users Panas.": "24",
+        "Tot.Used Space": "1603477262"
+    },
+    "108": {
+        "Id": "108",
+        "Full Name": "Angana Mukherjee",
+        "DepCode": "CRC",
+        "AFS Groups": "2",
+        "Users AFS": "226411415",
+        "Users Panas.": "1360000000",
+        "Tot.Used Space": "1586411417"
+    },
+    "109": {
+        "Id": "109",
+        "Full Name": "Chen Wang",
+        "DepCode": "FIN",
+        "AFS Groups": "0",
+        "Users AFS": "1562349401",
+        "Users Panas.": "0",
+        "Tot.Used Space": "1562349401"
+    },
+    "110": {
+        "Id": "110",
+        "Full Name": "Sophie Anne Shive",
+        "DepCode": "FIN",
+        "AFS Groups": "2",
+        "Users AFS": "1550211636",
+        "Users Panas.": "24",
+        "Tot.Used Space": "1550211662"
+    },
+    "111": {
+        "Id": "111",
+        "Full Name": "Taryn Dinkelman",
+        "DepCode": "ECON",
+        "AFS Groups": "0",
+        "Users AFS": "1452482485",
+        "Users Panas.": "64450000",
+        "Tot.Used Space": "1516932485"
+    },
+    "112": {
+        "Id": "112",
+        "Full Name": "Siyuan Zhang",
+        "DepCode": "BIO",
+        "AFS Groups": "1338431062",
+        "Users AFS": "121753007",
+        "Users Panas.": "0",
+        "Tot.Used Space": "1460184069"
+    },
+    "113": {
+        "Id": "113",
+        "Full Name": "Patrick John Fay",
+        "DepCode": "EE",
+        "AFS Groups": "0",
+        "Users AFS": "1459136455",
+        "Users Panas.": "0",
+        "Tot.Used Space": "1459136455"
+    },
+    "114": {
+        "Id": "114",
+        "Full Name": "Justin Crepp",
+        "DepCode": "PHYS",
+        "AFS Groups": "1305013958",
+        "Users AFS": "131843827",
+        "Users Panas.": "56",
+        "Tot.Used Space": "1436857841"
+    },
+    "115": {
+        "Id": "115",
+        "Full Name": "Steven Buechler",
+        "DepCode": "ACMS",
+        "AFS Groups": "1316655330",
+        "Users AFS": "89280643",
+        "Users Panas.": "32",
+        "Tot.Used Space": "1405936005"
+    },
+    "116": {
+        "Id": "116",
+        "Full Name": "David Phillips",
+        "DepCode": "ECON",
+        "AFS Groups": "44175896",
+        "Users AFS": "1345799557",
+        "Users Panas.": "24",
+        "Tot.Used Space": "1389975477"
+    },
+    "117": {
+        "Id": "117",
+        "Full Name": "David Michael Medvigy",
+        "DepCode": "BIO",
+        "AFS Groups": "296484155",
+        "Users AFS": "837323721",
+        "Users Panas.": "245630048",
+        "Tot.Used Space": "1379437924"
+    },
+    "118": {
+        "Id": "118",
+        "Full Name": "Vijay Gupta",
+        "DepCode": "EE",
+        "AFS Groups": "316011612",
+        "Users AFS": "1023279696",
+        "Users Panas.": "24010072",
+        "Tot.Used Space": "1363301380"
+    },
+    "119": {
+        "Id": "119",
+        "Full Name": "Julian Torres Dowdall",
+        "DepCode": "BIO",
+        "AFS Groups": "0",
+        "Users AFS": "486617681",
+        "Users Panas.": "864920000",
+        "Tot.Used Space": "1351537681"
+    },
+    "120": {
+        "Id": "120",
+        "Full Name": "Katharine White",
+        "DepCode": "CHEM",
+        "AFS Groups": "1313598591",
+        "Users AFS": "21",
+        "Users Panas.": "0",
+        "Tot.Used Space": "1313598612"
+    },
+    "121": {
+        "Id": "121",
+        "Full Name": "Jason Stifler McLachlan",
+        "DepCode": "BIO",
+        "AFS Groups": "378425800",
+        "Users AFS": "931771452",
+        "Users Panas.": "0",
+        "Tot.Used Space": "1310197252"
+    },
+    "122": {
+        "Id": "122",
+        "Full Name": "Satya Venkata Ravi Sriram Soman",
+        "DepCode": "ITM",
+        "AFS Groups": "478033478",
+        "Users AFS": "801342706",
+        "Users Panas.": "0",
+        "Tot.Used Space": "1279376184"
+    },
+    "123": {
+        "Id": "123",
+        "Full Name": "John Lalor",
+        "DepCode": "ITM",
+        "AFS Groups": "27484566",
+        "Users AFS": "1210808233",
+        "Users Panas.": "0",
+        "Tot.Used Space": "1238292799"
+    },
+    "124": {
+        "Id": "124",
+        "Full Name": "Taeho Jung",
+        "DepCode": "CSE",
+        "AFS Groups": "1098872163",
+        "Users AFS": "128402225",
+        "Users Panas.": "96",
+        "Tot.Used Space": "1227274484"
+    },
+    "125": {
+        "Id": "125",
+        "Full Name": "Eric L Morgan",
+        "DepCode": "LIB",
+        "AFS Groups": "169990617",
+        "Users AFS": "1036295939",
+        "Users Panas.": "24",
+        "Tot.Used Space": "1206286580"
+    },
+    "126": {
+        "Id": "126",
+        "Full Name": "Ethan Lieber",
+        "DepCode": "ECON",
+        "AFS Groups": "0",
+        "Users AFS": "1204858522",
+        "Users Panas.": "0",
+        "Tot.Used Space": "1204858522"
+    },
+    "127": {
+        "Id": "127",
+        "Full Name": "Wolfgang Porod",
+        "DepCode": "EE",
+        "AFS Groups": "0",
+        "Users AFS": "1173336332",
+        "Users Panas.": "48",
+        "Tot.Used Space": "1173336380"
+    },
+    "128": {
+        "Id": "128",
+        "Full Name": "Yang Yang",
+        "DepCode": "ITM",
+        "AFS Groups": "0",
+        "Users AFS": "1160173632",
+        "Users Panas.": "0",
+        "Tot.Used Space": "1160173632"
+    },
+    "129": {
+        "Id": "129",
+        "Full Name": "Kasey S Buckles",
+        "DepCode": "ECON",
+        "AFS Groups": "0",
+        "Users AFS": "1122361977",
+        "Users Panas.": "0",
+        "Tot.Used Space": "1122361977"
+    },
+    "130": {
+        "Id": "130",
+        "Full Name": "Morten R Eskildsen",
+        "DepCode": "PHYS",
+        "AFS Groups": "0",
+        "Users AFS": "661730825",
+        "Users Panas.": "450600000",
+        "Tot.Used Space": "1112330825"
+    },
+    "131": {
+        "Id": "131",
+        "Full Name": "Yongtao Zhang",
+        "DepCode": "ACMS",
+        "AFS Groups": "0",
+        "Users AFS": "1106007329",
+        "Users Panas.": "24",
+        "Tot.Used Space": "1106007353"
+    },
+    "132": {
+        "Id": "132",
+        "Full Name": "Boldizsar Janko",
+        "DepCode": "PHYS",
+        "AFS Groups": "238369674",
+        "Users AFS": "862826269",
+        "Users Panas.": "24",
+        "Tot.Used Space": "1101195967"
+    },
+    "133": {
+        "Id": "133",
+        "Full Name": "Lijuan Wang",
+        "DepCode": "PSYC",
+        "AFS Groups": "0",
+        "Users AFS": "1077537302",
+        "Users Panas.": "0",
+        "Tot.Used Space": "1077537302"
+    },
+    "134": {
+        "Id": "134",
+        "Full Name": "Jaroslaw Nabrzyski",
+        "DepCode": "CRC",
+        "AFS Groups": "0",
+        "Users AFS": "1025064747",
+        "Users Panas.": "24",
+        "Tot.Used Space": "1025064771"
+    },
+    "135": {
+        "Id": "135",
+        "Full Name": "Daniele Schiavazzi",
+        "DepCode": "ACMS",
+        "AFS Groups": "4199034",
+        "Users AFS": "1000411664",
+        "Users Panas.": "1530024",
+        "Tot.Used Space": "1006140722"
+    },
+    "136": {
+        "Id": "136",
+        "Full Name": "David Batten Go",
+        "DepCode": "AME",
+        "AFS Groups": "892419337",
+        "Users AFS": "71243627",
+        "Users Panas.": "0",
+        "Tot.Used Space": "963662964"
+    },
+    "137": {
+        "Id": "137",
+        "Full Name": "Karel Matous",
+        "DepCode": "AME",
+        "AFS Groups": "309283017",
+        "Users AFS": "654071214",
+        "Users Panas.": "72",
+        "Tot.Used Space": "963354303"
+    },
+    "138": {
+        "Id": "138",
+        "Full Name": "Jeffrey S Schorey",
+        "DepCode": "BIO",
+        "AFS Groups": "704234598",
+        "Users AFS": "257399289",
+        "Users Panas.": "0",
+        "Tot.Used Space": "961633887"
+    },
+    "139": {
+        "Id": "139",
+        "Full Name": "David Burghoff",
+        "DepCode": "EE",
+        "AFS Groups": "362482920",
+        "Users AFS": "531435781",
+        "Users Panas.": "0",
+        "Tot.Used Space": "893918701"
+    },
+    "140": {
+        "Id": "140",
+        "Full Name": "Dan Kelly",
+        "DepCode": "IRE",
+        "AFS Groups": "0",
+        "Users AFS": "893161274",
+        "Users Panas.": "88",
+        "Tot.Used Space": "893161362"
+    },
+    "141": {
+        "Id": "141",
+        "Full Name": "Stefano Pegoraro",
+        "DepCode": "ITM",
+        "AFS Groups": "67214986",
+        "Users AFS": "821382297",
+        "Users Panas.": "24",
+        "Tot.Used Space": "888597307"
+    },
+    "142": {
+        "Id": "142",
+        "Full Name": "Krupali Arun Uplekar",
+        "DepCode": "ARCH",
+        "AFS Groups": "854991491",
+        "Users AFS": "21",
+        "Users Panas.": "0",
+        "Tot.Used Space": "854991512"
+    },
+    "143": {
+        "Id": "143",
+        "Full Name": "Thomas C Corke",
+        "DepCode": "AME",
+        "AFS Groups": "256995830",
+        "Users AFS": "583559419",
+        "Users Panas.": "0",
+        "Tot.Used Space": "840555249"
+    },
+    "144": {
+        "Id": "144",
+        "Full Name": "Zhiyong Zhang",
+        "DepCode": "PSYC",
+        "AFS Groups": "0",
+        "Users AFS": "835500297",
+        "Users Panas.": "48",
+        "Tot.Used Space": "835500345"
+    },
+    "145": {
+        "Id": "145",
+        "Full Name": "Jeffrey Chilcote",
+        "DepCode": "PHYS",
+        "AFS Groups": "694118891",
+        "Users AFS": "24716670",
+        "Users Panas.": "98380000",
+        "Tot.Used Space": "817215561"
+    },
+    "146": {
+        "Id": "146",
+        "Full Name": "Yi-Ting Hsu",
+        "DepCode": "PHYS",
+        "AFS Groups": "0",
+        "Users AFS": "809682758",
+        "Users Panas.": "0",
+        "Tot.Used Space": "809682758"
+    },
+    "147": {
+        "Id": "147",
+        "Full Name": "Jessica Ann Brown",
+        "DepCode": "CHEM",
+        "AFS Groups": "651781991",
+        "Users AFS": "142861183",
+        "Users Panas.": "32",
+        "Tot.Used Space": "794643206"
+    },
+    "148": {
+        "Id": "148",
+        "Full Name": "Meenal Datta",
+        "DepCode": "AME",
+        "AFS Groups": "639164645",
+        "Users AFS": "146868995",
+        "Users Panas.": "0",
+        "Tot.Used Space": "786033640"
+    },
+    "149": {
+        "Id": "149",
+        "Full Name": "Christopher Patzke",
+        "DepCode": "BIO",
+        "AFS Groups": "736611850",
+        "Users AFS": "28",
+        "Users Panas.": "0",
+        "Tot.Used Space": "736611878"
+    },
+    "150": {
+        "Id": "150",
+        "Full Name": "Athanasia Demetra Panopoulos",
+        "DepCode": "BIO",
+        "AFS Groups": "720841846",
+        "Users AFS": "21",
+        "Users Panas.": "0",
+        "Tot.Used Space": "720841867"
+    },
+    "151": {
+        "Id": "151",
+        "Full Name": "Daniel Michael Hungerman",
+        "DepCode": "ECON",
+        "AFS Groups": "0",
+        "Users AFS": "720136378",
+        "Users Panas.": "0",
+        "Tot.Used Space": "720136378"
+    },
+    "152": {
+        "Id": "152",
+        "Full Name": "Michael Anthony Villano",
+        "DepCode": "SOC",
+        "AFS Groups": "694873700",
+        "Users AFS": "18346321",
+        "Users Panas.": "0",
+        "Tot.Used Space": "713220021"
+    },
+    "153": {
+        "Id": "153",
+        "Full Name": "Maxime Brodeur",
+        "DepCode": "PHYS",
+        "AFS Groups": "458571946",
+        "Users AFS": "236724654",
+        "Users Panas.": "0",
+        "Tot.Used Space": "695296600"
+    },
+    "154": {
+        "Id": "154",
+        "Full Name": "Shahriar Mobashery",
+        "DepCode": "CHEM",
+        "AFS Groups": "38603547",
+        "Users AFS": "631736804",
+        "Users Panas.": "1440000",
+        "Tot.Used Space": "671780351"
+    },
+    "155": {
+        "Id": "155",
+        "Full Name": "holly v goodson",
+        "DepCode": "CHEM",
+        "AFS Groups": "635262404",
+        "Users AFS": "31096899",
+        "Users Panas.": "0",
+        "Tot.Used Space": "666359303"
+    },
+    "156": {
+        "Id": "156",
+        "Full Name": "Richard Williams",
+        "DepCode": "SOC",
+        "AFS Groups": "0",
+        "Users AFS": "661876893",
+        "Users Panas.": "0",
+        "Tot.Used Space": "661876893"
+    },
+    "157": {
+        "Id": "157",
+        "Full Name": "Kapil Khandelwal",
+        "DepCode": "CEEES",
+        "AFS Groups": "10",
+        "Users AFS": "603837900",
+        "Users Panas.": "41390000",
+        "Tot.Used Space": "645227910"
+    },
+    "158": {
+        "Id": "158",
+        "Full Name": "Christiane Baumeister",
+        "DepCode": "ECON",
+        "AFS Groups": "0",
+        "Users AFS": "610516385",
+        "Users Panas.": "0",
+        "Tot.Used Space": "610516385"
+    },
+    "159": {
+        "Id": "159",
+        "Full Name": "Kevin Thomas Vaughan",
+        "DepCode": "BIO",
+        "AFS Groups": "0",
+        "Users AFS": "584250190",
+        "Users Panas.": "0",
+        "Tot.Used Space": "584250190"
+    },
+    "160": {
+        "Id": "160",
+        "Full Name": "Nicolas Lehner",
+        "DepCode": "PHYS",
+        "AFS Groups": "343969727",
+        "Users AFS": "199964986",
+        "Users Panas.": "2510036",
+        "Tot.Used Space": "546444749"
+    },
+    "161": {
+        "Id": "161",
+        "Full Name": "Christopher J Cronin",
+        "DepCode": "ECON",
+        "AFS Groups": "0",
+        "Users AFS": "544818131",
+        "Users Panas.": "0",
+        "Tot.Used Space": "544818131"
+    },
+    "162": {
+        "Id": "162",
+        "Full Name": "Margot Fassler",
+        "DepCode": "THEO",
+        "AFS Groups": "528395740",
+        "Users AFS": "12357227",
+        "Users Panas.": "0",
+        "Tot.Used Space": "540752967"
+    },
+    "163": {
+        "Id": "163",
+        "Full Name": "Forrest Rule Spence",
+        "DepCode": "ECON",
+        "AFS Groups": "2770233",
+        "Users AFS": "533683191",
+        "Users Panas.": "24",
+        "Tot.Used Space": "536453448"
+    },
+    "164": {
+        "Id": "164",
+        "Full Name": "Cesar Sosa Padilla Araujo",
+        "DepCode": "ECON",
+        "AFS Groups": "0",
+        "Users AFS": "529930958",
+        "Users Panas.": "0",
+        "Tot.Used Space": "529930958"
+    },
+    "165": {
+        "Id": "165",
+        "Full Name": "Mark Caprio",
+        "DepCode": "PHYS",
+        "AFS Groups": "327862605",
+        "Users AFS": "174867801",
+        "Users Panas.": "48",
+        "Tot.Used Space": "502730454"
+    },
+    "166": {
+        "Id": "166",
+        "Full Name": "Alan Hamlet",
+        "DepCode": "CEEES",
+        "AFS Groups": "0",
+        "Users AFS": "236516750",
+        "Users Panas.": "265720344",
+        "Tot.Used Space": "502237094"
+    },
+    "167": {
+        "Id": "167",
+        "Full Name": "Xiangliang Zhang",
+        "DepCode": "CSE",
+        "AFS Groups": "0",
+        "Users AFS": "147415326",
+        "Users Panas.": "350350032",
+        "Tot.Used Space": "497765358"
+    },
+    "168": {
+        "Id": "168",
+        "Full Name": "Scott Sheridan Howard",
+        "DepCode": "EE",
+        "AFS Groups": "0",
+        "Users AFS": "489933744",
+        "Users Panas.": "0",
+        "Tot.Used Space": "489933744"
+    },
+    "169": {
+        "Id": "169",
+        "Full Name": "Glen Niebur",
+        "DepCode": "AME",
+        "AFS Groups": "167614970",
+        "Users AFS": "303687008",
+        "Users Panas.": "72",
+        "Tot.Used Space": "471302050"
+    },
+    "170": {
+        "Id": "170",
+        "Full Name": "Michael Douglas Hildreth",
+        "DepCode": "PHYS",
+        "AFS Groups": "0",
+        "Users AFS": "430162314",
+        "Users Panas.": "32678080",
+        "Tot.Used Space": "462840394"
+    },
+    "171": {
+        "Id": "171",
+        "Full Name": "Lakshmi Iyer",
+        "DepCode": "KIIS",
+        "AFS Groups": "0",
+        "Users AFS": "458141255",
+        "Users Panas.": "0",
+        "Tot.Used Space": "458141255"
+    },
+    "172": {
+        "Id": "172",
+        "Full Name": "Gary Bernstein",
+        "DepCode": "EE",
+        "AFS Groups": "0",
+        "Users AFS": "456671272",
+        "Users Panas.": "0",
+        "Tot.Used Space": "456671272"
+    },
+    "173": {
+        "Id": "173",
+        "Full Name": "Ningyuan Cao",
+        "DepCode": "EE",
+        "AFS Groups": "199280752",
+        "Users AFS": "246219707",
+        "Users Panas.": "0",
+        "Tot.Used Space": "445500459"
+    },
+    "174": {
+        "Id": "174",
+        "Full Name": "Philippe A Collon",
+        "DepCode": "PHYS",
+        "AFS Groups": "296591978",
+        "Users AFS": "136058934",
+        "Users Panas.": "0",
+        "Tot.Used Space": "432650912"
+    },
+    "175": {
+        "Id": "175",
+        "Full Name": "Johnathan Loudis",
+        "DepCode": "COBA",
+        "AFS Groups": "0",
+        "Users AFS": "430966198",
+        "Users Panas.": "0",
+        "Tot.Used Space": "430966198"
+    },
+    "176": {
+        "Id": "176",
+        "Full Name": "Patrick Michael Wensing",
+        "DepCode": "AME",
+        "AFS Groups": "0",
+        "Users AFS": "421831992",
+        "Users Panas.": "0",
+        "Tot.Used Space": "421831992"
+    },
+    "177": {
+        "Id": "177",
+        "Full Name": "Joanna Cecilia da Silva Santos",
+        "DepCode": "CSE",
+        "AFS Groups": "0",
+        "Users AFS": "416588443",
+        "Users Panas.": "24",
+        "Tot.Used Space": "416588467"
+    },
+    "178": {
+        "Id": "178",
+        "Full Name": "Fang Liu",
+        "DepCode": "ACMS",
+        "AFS Groups": "0",
+        "Users AFS": "411453350",
+        "Users Panas.": "891000",
+        "Tot.Used Space": "412344350"
+    },
+    "179": {
+        "Id": "179",
+        "Full Name": "Patrizio Piraino",
+        "DepCode": "KIIS",
+        "AFS Groups": "0",
+        "Users AFS": "410021560",
+        "Users Panas.": "0",
+        "Tot.Used Space": "410021560"
+    },
+    "180": {
+        "Id": "180",
+        "Full Name": "Robert Collinson",
+        "DepCode": "ECON",
+        "AFS Groups": "0",
+        "Users AFS": "377288647",
+        "Users Panas.": "0",
+        "Tot.Used Space": "377288647"
+    },
+    "181": {
+        "Id": "181",
+        "Full Name": "David Bruce Watson",
+        "DepCode": "PSYC",
+        "AFS Groups": "0",
+        "Users AFS": "371534560",
+        "Users Panas.": "0",
+        "Tot.Used Space": "371534560"
+    },
+    "182": {
+        "Id": "182",
+        "Full Name": "Abby Cordova",
+        "DepCode": "KSGA",
+        "AFS Groups": "368583546",
+        "Users AFS": "257629",
+        "Users Panas.": "0",
+        "Tot.Used Space": "368841175"
+    },
+    "183": {
+        "Id": "183",
+        "Full Name": "Cody Jean Smith",
+        "DepCode": "BIO",
+        "AFS Groups": "270114231",
+        "Users AFS": "94085206",
+        "Users Panas.": "32",
+        "Tot.Used Space": "364199469"
+    },
+    "184": {
+        "Id": "184",
+        "Full Name": "Ryan Gerard McClarren",
+        "DepCode": "AME",
+        "AFS Groups": "0",
+        "Users AFS": "334045655",
+        "Users Panas.": "0",
+        "Tot.Used Space": "334045655"
+    },
+    "185": {
+        "Id": "185",
+        "Full Name": "Martina Bukac",
+        "DepCode": "ACMS",
+        "AFS Groups": "0",
+        "Users AFS": "332481375",
+        "Users Panas.": "0",
+        "Tot.Used Space": "332481375"
+    },
+    "186": {
+        "Id": "186",
+        "Full Name": "Jason C Hicks",
+        "DepCode": "CBE",
+        "AFS Groups": "0",
+        "Users AFS": "300000189",
+        "Users Panas.": "0",
+        "Tot.Used Space": "300000189"
+    },
+    "187": {
+        "Id": "187",
+        "Full Name": "Yong Lee",
+        "DepCode": "KSGA",
+        "AFS Groups": "0",
+        "Users AFS": "299571717",
+        "Users Panas.": "0",
+        "Tot.Used Space": "299571717"
+    },
+    "188": {
+        "Id": "188",
+        "Full Name": "Yahya Kurama",
+        "DepCode": "CEEES",
+        "AFS Groups": "0",
+        "Users AFS": "286329932",
+        "Users Panas.": "29000",
+        "Tot.Used Space": "286358932"
+    },
+    "189": {
+        "Id": "189",
+        "Full Name": "Tracy Kijewski",
+        "DepCode": "CEEES",
+        "AFS Groups": "0",
+        "Users AFS": "284295467",
+        "Users Panas.": "0",
+        "Tot.Used Space": "284295467"
+    },
+    "190": {
+        "Id": "190",
+        "Full Name": "Eric Jumper",
+        "DepCode": "AME",
+        "AFS Groups": "0",
+        "Users AFS": "270085090",
+        "Users Panas.": "24",
+        "Tot.Used Space": "270085114"
+    },
+    "191": {
+        "Id": "191",
+        "Full Name": "Marinho Angelo Bertanha",
+        "DepCode": "ECON",
+        "AFS Groups": "0",
+        "Users AFS": "262843789",
+        "Users Panas.": "0",
+        "Tot.Used Space": "262843789"
+    },
+    "192": {
+        "Id": "192",
+        "Full Name": "Zhi Da",
+        "DepCode": "FIN",
+        "AFS Groups": "0",
+        "Users AFS": "260169607",
+        "Users Panas.": "0",
+        "Tot.Used Space": "260169607"
+    },
+    "193": {
+        "Id": "193",
+        "Full Name": "Stefano Castruccio",
+        "DepCode": "ACMS",
+        "AFS Groups": "0",
+        "Users AFS": "259233901",
+        "Users Panas.": "48",
+        "Tot.Used Space": "259233949"
+    },
+    "194": {
+        "Id": "194",
+        "Full Name": "James Ng",
+        "DepCode": "LIB",
+        "AFS Groups": "0",
+        "Users AFS": "96792305",
+        "Users Panas.": "160340000",
+        "Tot.Used Space": "257132305"
+    },
+    "195": {
+        "Id": "195",
+        "Full Name": "Diego Gomez-Zara",
+        "DepCode": "CSE",
+        "AFS Groups": "129692953",
+        "Users AFS": "124982905",
+        "Users Panas.": "0",
+        "Tot.Used Space": "254675858"
+    },
+    "196": {
+        "Id": "196",
+        "Full Name": "Eva Dziadula",
+        "DepCode": "KIIS",
+        "AFS Groups": "0",
+        "Users AFS": "252024385",
+        "Users Panas.": "0",
+        "Tot.Used Space": "252024385"
+    },
+    "197": {
+        "Id": "197",
+        "Full Name": "Ying Cheng",
+        "DepCode": "PSYC",
+        "AFS Groups": "0",
+        "Users AFS": "238237784",
+        "Users Panas.": "10420024",
+        "Tot.Used Space": "248657808"
+    },
+    "198": {
+        "Id": "198",
+        "Full Name": "Zhiliang Xu",
+        "DepCode": "ACMS",
+        "AFS Groups": "0",
+        "Users AFS": "223713820",
+        "Users Panas.": "23760000",
+        "Tot.Used Space": "247473820"
+    },
+    "199": {
+        "Id": "199",
+        "Full Name": "Ragnar Stroberg",
+        "DepCode": "PHYS",
+        "AFS Groups": "97783819",
+        "Users AFS": "146698842",
+        "Users Panas.": "0",
+        "Tot.Used Space": "244482661"
+    },
+    "200": {
+        "Id": "200",
+        "Full Name": "Alexandros A Taflanidis",
+        "DepCode": "CEEES",
+        "AFS Groups": "0",
+        "Users AFS": "241850525",
+        "Users Panas.": "72",
+        "Tot.Used Space": "241850597"
+    },
+    "201": {
+        "Id": "201",
+        "Full Name": "Peter M Garnavich",
+        "DepCode": "PHYS",
+        "AFS Groups": "0",
+        "Users AFS": "238107057",
+        "Users Panas.": "0",
+        "Tot.Used Space": "238107057"
+    },
+    "202": {
+        "Id": "202",
+        "Full Name": "KeHai Yuan",
+        "DepCode": "PSYC",
+        "AFS Groups": "0",
+        "Users AFS": "236824680",
+        "Users Panas.": "0",
+        "Tot.Used Space": "236824680"
+    },
+    "203": {
+        "Id": "203",
+        "Full Name": "Richard Taylor",
+        "DepCode": "CHEM",
+        "AFS Groups": "196742268",
+        "Users AFS": "1800859",
+        "Users Panas.": "0",
+        "Tot.Used Space": "198543127"
+    },
+    "204": {
+        "Id": "204",
+        "Full Name": "Eric Russell Sims",
+        "DepCode": "ECON",
+        "AFS Groups": "0",
+        "Users AFS": "196305493",
+        "Users Panas.": "0",
+        "Tot.Used Space": "196305493"
+    },
+    "205": {
+        "Id": "205",
+        "Full Name": "Matthew Joseph Zahr",
+        "DepCode": "AME",
+        "AFS Groups": "0",
+        "Users AFS": "188360884",
+        "Users Panas.": "0",
+        "Tot.Used Space": "188360884"
+    },
+    "206": {
+        "Id": "206",
+        "Full Name": "William Evans",
+        "DepCode": "ECON",
+        "AFS Groups": "0",
+        "Users AFS": "185135967",
+        "Users Panas.": "0",
+        "Tot.Used Space": "185135967"
+    },
+    "207": {
+        "Id": "207",
+        "Full Name": "Richard J deBoer",
+        "DepCode": "PHYS",
+        "AFS Groups": "0",
+        "Users AFS": "184615377",
+        "Users Panas.": "24",
+        "Tot.Used Space": "184615401"
+    },
+    "208": {
+        "Id": "208",
+        "Full Name": "Lauren Weiss",
+        "DepCode": "PHYS",
+        "AFS Groups": "71532268",
+        "Users AFS": "109208616",
+        "Users Panas.": "0",
+        "Tot.Used Space": "180740884"
+    },
+    "209": {
+        "Id": "209",
+        "Full Name": "Jianxun Wang",
+        "DepCode": "AME",
+        "AFS Groups": "0",
+        "Users AFS": "173788407",
+        "Users Panas.": "32",
+        "Tot.Used Space": "173788439"
+    },
+    "210": {
+        "Id": "210",
+        "Full Name": "Rebecca Whelan",
+        "DepCode": "CHEM",
+        "AFS Groups": "37916262",
+        "Users AFS": "134579026",
+        "Users Panas.": "0",
+        "Tot.Used Space": "172495288"
+    },
+    "211": {
+        "Id": "211",
+        "Full Name": "Anthony Serianni",
+        "DepCode": "CHEM",
+        "AFS Groups": "0",
+        "Users AFS": "156069476",
+        "Users Panas.": "0",
+        "Tot.Used Space": "156069476"
+    },
+    "212": {
+        "Id": "212",
+        "Full Name": "Joonhyuk Yang",
+        "DepCode": "ITM",
+        "AFS Groups": "0",
+        "Users AFS": "152100791",
+        "Users Panas.": "0",
+        "Tot.Used Space": "152100791"
+    },
+    "213": {
+        "Id": "213",
+        "Full Name": "John Ott",
+        "DepCode": "AME",
+        "AFS Groups": "0",
+        "Users AFS": "148775616",
+        "Users Panas.": "0",
+        "Tot.Used Space": "148775616"
+    },
+    "214": {
+        "Id": "214",
+        "Full Name": "Zachary Stangebye",
+        "DepCode": "ECON",
+        "AFS Groups": "0",
+        "Users AFS": "140536868",
+        "Users Panas.": "0",
+        "Tot.Used Space": "140536868"
+    },
+    "215": {
+        "Id": "215",
+        "Full Name": "Evan Kirby",
+        "DepCode": "PHYS",
+        "AFS Groups": "0",
+        "Users AFS": "137839606",
+        "Users Panas.": "0",
+        "Tot.Used Space": "137839606"
+    },
+    "216": {
+        "Id": "216",
+        "Full Name": "Dervis Can Vural",
+        "DepCode": "PHYS",
+        "AFS Groups": "0",
+        "Users AFS": "136681113",
+        "Users Panas.": "0",
+        "Tot.Used Space": "136681113"
+    },
+    "217": {
+        "Id": "217",
+        "Full Name": "Gregory Snider",
+        "DepCode": "EE",
+        "AFS Groups": "0",
+        "Users AFS": "136094848",
+        "Users Panas.": "0",
+        "Tot.Used Space": "136094848"
+    },
+    "218": {
+        "Id": "218",
+        "Full Name": "Mark Berends",
+        "DepCode": "SOC",
+        "AFS Groups": "0",
+        "Users AFS": "134238642",
+        "Users Panas.": "0",
+        "Tot.Used Space": "134238642"
+    },
+    "219": {
+        "Id": "219",
+        "Full Name": "Martin Barron",
+        "DepCode": "ITM",
+        "AFS Groups": "0",
+        "Users AFS": "132967112",
+        "Users Panas.": "0",
+        "Tot.Used Space": "132967112"
+    },
+    "220": {
+        "Id": "220",
+        "Full Name": "S Alex Kandel",
+        "DepCode": "CHEM",
+        "AFS Groups": "0",
+        "Users AFS": "130045954",
+        "Users Panas.": "0",
+        "Tot.Used Space": "130045954"
+    },
+    "221": {
+        "Id": "221",
+        "Full Name": "Guosheng Fu",
+        "DepCode": "ACMS",
+        "AFS Groups": "0",
+        "Users AFS": "126423832",
+        "Users Panas.": "991024",
+        "Tot.Used Space": "127414856"
+    },
+    "222": {
+        "Id": "222",
+        "Full Name": "Wanpeng Tan",
+        "DepCode": "PHYS",
+        "AFS Groups": "0",
+        "Users AFS": "94832956",
+        "Users Panas.": "28130000",
+        "Tot.Used Space": "122962956"
+    },
+    "223": {
+        "Id": "223",
+        "Full Name": "James Robert Brockmole",
+        "DepCode": "PSYC",
+        "AFS Groups": "113608621",
+        "Users AFS": "21",
+        "Users Panas.": "0",
+        "Tot.Used Space": "113608642"
+    },
+    "224": {
+        "Id": "224",
+        "Full Name": "Suman Datta",
+        "DepCode": "EE",
+        "AFS Groups": "0",
+        "Users AFS": "108416901",
+        "Users Panas.": "0",
+        "Tot.Used Space": "108416901"
+    },
+    "225": {
+        "Id": "225",
+        "Full Name": "Seth N Brown",
+        "DepCode": "CHEM",
+        "AFS Groups": "0",
+        "Users AFS": "105697046",
+        "Users Panas.": "0",
+        "Tot.Used Space": "105697046"
+    },
+    "226": {
+        "Id": "226",
+        "Full Name": "Zoltan Toroczkai",
+        "DepCode": "PHYS",
+        "AFS Groups": "0",
+        "Users AFS": "103085321",
+        "Users Panas.": "48",
+        "Tot.Used Space": "103085369"
+    },
+    "227": {
+        "Id": "227",
+        "Full Name": "A Nilesh Fernando",
+        "DepCode": "ECON",
+        "AFS Groups": "0",
+        "Users AFS": "101399694",
+        "Users Panas.": "0",
+        "Tot.Used Space": "101399694"
+    },
+    "228": {
+        "Id": "228",
+        "Full Name": "Francis BilsonDarku",
+        "DepCode": "ITM",
+        "AFS Groups": "4767810",
+        "Users AFS": "95487899",
+        "Users Panas.": "0",
+        "Tot.Used Space": "100255709"
+    },
+    "229": {
+        "Id": "229",
+        "Full Name": "Daren Wang",
+        "DepCode": "ACMS",
+        "AFS Groups": "0",
+        "Users AFS": "99966453",
+        "Users Panas.": "0",
+        "Tot.Used Space": "99966453"
+    },
+    "230": {
+        "Id": "230",
+        "Full Name": "Ruediger Bachmann",
+        "DepCode": "ECON",
+        "AFS Groups": "0",
+        "Users AFS": "98540097",
+        "Users Panas.": "0",
+        "Tot.Used Space": "98540097"
+    },
+    "231": {
+        "Id": "231",
+        "Full Name": "Mark Suhovecky",
+        "DepCode": "LIB",
+        "AFS Groups": "0",
+        "Users AFS": "97345938",
+        "Users Panas.": "0",
+        "Tot.Used Space": "97345938"
+    },
+    "232": {
+        "Id": "232",
+        "Full Name": "Peter Wiest Kelly",
+        "DepCode": "FIN",
+        "AFS Groups": "0",
+        "Users AFS": "96026943",
+        "Users Panas.": "24",
+        "Tot.Used Space": "96026967"
+    },
+    "233": {
+        "Id": "233",
+        "Full Name": "Seth A Berry",
+        "DepCode": "COBA",
+        "AFS Groups": "0",
+        "Users AFS": "95982009",
+        "Users Panas.": "0",
+        "Tot.Used Space": "95982009"
+    },
+    "234": {
+        "Id": "234",
+        "Full Name": "Emily Yuan Tsui",
+        "DepCode": "CHEM",
+        "AFS Groups": "0",
+        "Users AFS": "95940606",
+        "Users Panas.": "32",
+        "Tot.Used Space": "95940638"
+    },
+    "235": {
+        "Id": "235",
+        "Full Name": "Mathew A Chrystal",
+        "DepCode": "ESC",
+        "AFS Groups": "0",
+        "Users AFS": "94204599",
+        "Users Panas.": "0",
+        "Tot.Used Space": "94204599"
+    },
+    "236": {
+        "Id": "236",
+        "Full Name": "Benjamin Pugsley",
+        "DepCode": "ECON",
+        "AFS Groups": "0",
+        "Users AFS": "93698967",
+        "Users Panas.": "0",
+        "Tot.Used Space": "93698967"
+    },
+    "237": {
+        "Id": "237",
+        "Full Name": "Chloe Gibbs",
+        "DepCode": "ECON",
+        "AFS Groups": "0",
+        "Users AFS": "93397348",
+        "Users Panas.": "0",
+        "Tot.Used Space": "93397348"
+    },
+    "238": {
+        "Id": "238",
+        "Full Name": "Donna Glowacki",
+        "DepCode": "ANTHRO",
+        "AFS Groups": "0",
+        "Users AFS": "92919866",
+        "Users Panas.": "0",
+        "Tot.Used Space": "92919866"
+    },
+    "239": {
+        "Id": "239",
+        "Full Name": "Vlad Mihai Iluc",
+        "DepCode": "CHEM",
+        "AFS Groups": "0",
+        "Users AFS": "92696323",
+        "Users Panas.": "0",
+        "Tot.Used Space": "92696323"
+    },
+    "240": {
+        "Id": "240",
+        "Full Name": "Hirotaka Sakaue",
+        "DepCode": "AME",
+        "AFS Groups": "0",
+        "Users AFS": "89219167",
+        "Users Panas.": "0",
+        "Tot.Used Space": "89219167"
+    },
+    "241": {
+        "Id": "241",
+        "Full Name": "Michael Rupley JR",
+        "DepCode": "ESC",
+        "AFS Groups": "0",
+        "Users AFS": "89085600",
+        "Users Panas.": "0",
+        "Tot.Used Space": "89085600"
+    },
+    "242": {
+        "Id": "242",
+        "Full Name": "Joseph Paul Kaboski",
+        "DepCode": "ECON",
+        "AFS Groups": "88763842",
+        "Users AFS": "11991",
+        "Users Panas.": "0",
+        "Tot.Used Space": "88775833"
+    },
+    "243": {
+        "Id": "243",
+        "Full Name": "Jonathan Chisum",
+        "DepCode": "EE",
+        "AFS Groups": "0",
+        "Users AFS": "88712435",
+        "Users Panas.": "24",
+        "Tot.Used Space": "88712459"
+    },
+    "244": {
+        "Id": "244",
+        "Full Name": "William Carbonaro",
+        "DepCode": "SOC",
+        "AFS Groups": "1520",
+        "Users AFS": "88268171",
+        "Users Panas.": "0",
+        "Tot.Used Space": "88269691"
+    },
+    "245": {
+        "Id": "245",
+        "Full Name": "Blake Leyerle",
+        "DepCode": "THEO",
+        "AFS Groups": "0",
+        "Users AFS": "61826475",
+        "Users Panas.": "26310000",
+        "Tot.Used Space": "88136475"
+    },
+    "246": {
+        "Id": "246",
+        "Full Name": "Mitchell Wayne",
+        "DepCode": "PHYS",
+        "AFS Groups": "0",
+        "Users AFS": "88106311",
+        "Users Panas.": "24",
+        "Tot.Used Space": "88106335"
+    },
+    "247": {
+        "Id": "247",
+        "Full Name": "Joseph Otousa",
+        "DepCode": "BIO",
+        "AFS Groups": "87955302",
+        "Users AFS": "30",
+        "Users Panas.": "0",
+        "Tot.Used Space": "87955332"
+    },
+    "248": {
+        "Id": "248",
+        "Full Name": "Bei Hu",
+        "DepCode": "ACMS",
+        "AFS Groups": "0",
+        "Users AFS": "86587461",
+        "Users Panas.": "0",
+        "Tot.Used Space": "86587461"
+    },
+    "249": {
+        "Id": "249",
+        "Full Name": "Edward Kinzel",
+        "DepCode": "AME",
+        "AFS Groups": "0",
+        "Users AFS": "84840152",
+        "Users Panas.": "36",
+        "Tot.Used Space": "84840188"
+    },
+    "250": {
+        "Id": "250",
+        "Full Name": "Peter Easton",
+        "DepCode": "ACT",
+        "AFS Groups": "0",
+        "Users AFS": "84276094",
+        "Users Panas.": "0",
+        "Tot.Used Space": "84276094"
+    },
+    "251": {
+        "Id": "251",
+        "Full Name": "Frank Castellino",
+        "DepCode": "CTR",
+        "AFS Groups": "0",
+        "Users AFS": "83758020",
+        "Users Panas.": "36",
+        "Tot.Used Space": "83758056"
+    },
+    "252": {
+        "Id": "252",
+        "Full Name": "Hai Lin",
+        "DepCode": "EE",
+        "AFS Groups": "0",
+        "Users AFS": "80603313",
+        "Users Panas.": "24",
+        "Tot.Used Space": "80603337"
+    },
+    "253": {
+        "Id": "253",
+        "Full Name": "Yasemin Ozkan Aydin",
+        "DepCode": "EE",
+        "AFS Groups": "0",
+        "Users AFS": "77531689",
+        "Users Panas.": "0",
+        "Tot.Used Space": "77531689"
+    },
+    "254": {
+        "Id": "254",
+        "Full Name": "Joshua D Cameron",
+        "DepCode": "AME",
+        "AFS Groups": "0",
+        "Users AFS": "76508103",
+        "Users Panas.": "24",
+        "Tot.Used Space": "76508127"
+    },
+    "255": {
+        "Id": "255",
+        "Full Name": "Maria Macia",
+        "DepCode": "LS",
+        "AFS Groups": "0",
+        "Users AFS": "75726727",
+        "Users Panas.": "0",
+        "Tot.Used Space": "75726727"
+    },
+    "256": {
+        "Id": "256",
+        "Full Name": "Jiajun Li",
+        "DepCode": "CSE",
+        "AFS Groups": "0",
+        "Users AFS": "74642060",
+        "Users Panas.": "0",
+        "Tot.Used Space": "74642060"
+    },
+    "257": {
+        "Id": "257",
+        "Full Name": "Thomas Gregory Pratt",
+        "DepCode": "EE",
+        "AFS Groups": "0",
+        "Users AFS": "73203571",
+        "Users Panas.": "32",
+        "Tot.Used Space": "73203603"
+    },
+    "258": {
+        "Id": "258",
+        "Full Name": "Michael John Coppedge",
+        "DepCode": "POLSCI",
+        "AFS Groups": "0",
+        "Users AFS": "72980770",
+        "Users Panas.": "0",
+        "Tot.Used Space": "72980770"
+    },
+    "259": {
+        "Id": "259",
+        "Full Name": "Sarah Anne Mustillo",
+        "DepCode": "SOC",
+        "AFS Groups": "11041957",
+        "Users AFS": "61083039",
+        "Users Panas.": "0",
+        "Tot.Used Space": "72124996"
+    },
+    "260": {
+        "Id": "260",
+        "Full Name": "Gary Goertz",
+        "DepCode": "POLSCI",
+        "AFS Groups": "0",
+        "Users AFS": "69481647",
+        "Users Panas.": "0",
+        "Tot.Used Space": "69481647"
+    },
+    "261": {
+        "Id": "261",
+        "Full Name": "Jeanne RomeroSeverson",
+        "DepCode": "BIO",
+        "AFS Groups": "67913683",
+        "Users AFS": "16255",
+        "Users Panas.": "0",
+        "Tot.Used Space": "67929938"
+    },
+    "262": {
+        "Id": "262",
+        "Full Name": "Ramzi Bualuan",
+        "DepCode": "CSE",
+        "AFS Groups": "0",
+        "Users AFS": "64669959",
+        "Users Panas.": "0",
+        "Tot.Used Space": "64669959"
+    },
+    "263": {
+        "Id": "263",
+        "Full Name": "Hsing-ta Chen",
+        "DepCode": "CHEM",
+        "AFS Groups": "0",
+        "Users AFS": "63209915",
+        "Users Panas.": "0",
+        "Tot.Used Space": "63209915"
+    },
+    "264": {
+        "Id": "264",
+        "Full Name": "Katherine Walden",
+        "DepCode": "AS",
+        "AFS Groups": "0",
+        "Users AFS": "59836986",
+        "Users Panas.": "0",
+        "Tot.Used Space": "59836986"
+    },
+    "265": {
+        "Id": "265",
+        "Full Name": "John William Goodwine Jr",
+        "DepCode": "AME",
+        "AFS Groups": "0",
+        "Users AFS": "58985797",
+        "Users Panas.": "0",
+        "Tot.Used Space": "58985797"
+    },
+    "266": {
+        "Id": "266",
+        "Full Name": "Ronald Metoyer",
+        "DepCode": "CSE",
+        "AFS Groups": "0",
+        "Users AFS": "56211586",
+        "Users Panas.": "0",
+        "Tot.Used Space": "56211586"
+    },
+    "267": {
+        "Id": "267",
+        "Full Name": "Dong Quan Ngoc Nguyen",
+        "DepCode": "ACMS",
+        "AFS Groups": "0",
+        "Users AFS": "56028702",
+        "Users Panas.": "0",
+        "Tot.Used Space": "56028702"
+    },
+    "268": {
+        "Id": "268",
+        "Full Name": "Matthias Hoelzlein",
+        "DepCode": "ECON",
+        "AFS Groups": "0",
+        "Users AFS": "50010767",
+        "Users Panas.": "0",
+        "Tot.Used Space": "50010767"
+    },
+    "269": {
+        "Id": "269",
+        "Full Name": "Nelson Mark",
+        "DepCode": "ECON",
+        "AFS Groups": "0",
+        "Users AFS": "49641898",
+        "Users Panas.": "0",
+        "Tot.Used Space": "49641898"
+    },
+    "270": {
+        "Id": "270",
+        "Full Name": "Justin Mark Luningham",
+        "DepCode": "PSYC",
+        "AFS Groups": "0",
+        "Users AFS": "48605709",
+        "Users Panas.": "0",
+        "Tot.Used Space": "48605709"
+    },
+    "271": {
+        "Id": "271",
+        "Full Name": "Christian Hughes",
+        "DepCode": "MKTG",
+        "AFS Groups": "0",
+        "Users AFS": "48277333",
+        "Users Panas.": "0",
+        "Tot.Used Space": "48277333"
+    },
+    "272": {
+        "Id": "272",
+        "Full Name": "Robert Jason Rosenbaum",
+        "DepCode": "ACMS",
+        "AFS Groups": "0",
+        "Users AFS": "48104846",
+        "Users Panas.": "0",
+        "Tot.Used Space": "48104846"
+    },
+    "273": {
+        "Id": "273",
+        "Full Name": "Xiufan Yu",
+        "DepCode": "ACMS",
+        "AFS Groups": "0",
+        "Users AFS": "46553436",
+        "Users Panas.": "0",
+        "Tot.Used Space": "46553436"
+    },
+    "274": {
+        "Id": "274",
+        "Full Name": "Brian S J Blagg",
+        "DepCode": "CHEM",
+        "AFS Groups": "0",
+        "Users AFS": "46435152",
+        "Users Panas.": "0",
+        "Tot.Used Space": "46435152"
+    },
+    "275": {
+        "Id": "275",
+        "Full Name": "Zifeng Zhao",
+        "DepCode": "COBA",
+        "AFS Groups": "0",
+        "Users AFS": "45505645",
+        "Users Panas.": "0",
+        "Tot.Used Space": "45505645"
+    },
+    "276": {
+        "Id": "276",
+        "Full Name": "Ann Tenbrunsel",
+        "DepCode": "MGMT",
+        "AFS Groups": "0",
+        "Users AFS": "43352441",
+        "Users Panas.": "0",
+        "Tot.Used Space": "43352441"
+    },
+    "277": {
+        "Id": "277",
+        "Full Name": "Robert Easley",
+        "DepCode": "MGMT",
+        "AFS Groups": "0",
+        "Users AFS": "42378920",
+        "Users Panas.": "0",
+        "Tot.Used Space": "42378920"
+    },
+    "278": {
+        "Id": "278",
+        "Full Name": "Anthony James Hoffman",
+        "DepCode": "EE",
+        "AFS Groups": "0",
+        "Users AFS": "41994544",
+        "Users Panas.": "0",
+        "Tot.Used Space": "41994544"
+    },
+    "279": {
+        "Id": "279",
+        "Full Name": "MaryGeraldine Navoa Svarovsky",
+        "DepCode": "ACE",
+        "AFS Groups": "0",
+        "Users AFS": "39698544",
+        "Users Panas.": "0",
+        "Tot.Used Space": "39698544"
+    },
+    "280": {
+        "Id": "280",
+        "Full Name": "Antonio Delgado",
+        "DepCode": "PHYS",
+        "AFS Groups": "0",
+        "Users AFS": "1079819",
+        "Users Panas.": "36430000",
+        "Tot.Used Space": "37509819"
+    },
+    "281": {
+        "Id": "281",
+        "Full Name": "Hsuehchia Chang",
+        "DepCode": "CBE",
+        "AFS Groups": "0",
+        "Users AFS": "36937375",
+        "Users Panas.": "24",
+        "Tot.Used Space": "36937399"
+    },
+    "282": {
+        "Id": "282",
+        "Full Name": "Gregory Timp",
+        "DepCode": "EE",
+        "AFS Groups": "2",
+        "Users AFS": "36286513",
+        "Users Panas.": "0",
+        "Tot.Used Space": "36286515"
+    },
+    "283": {
+        "Id": "283",
+        "Full Name": "JNicholas Laneman",
+        "DepCode": "EE",
+        "AFS Groups": "0",
+        "Users AFS": "36202275",
+        "Users Panas.": "0",
+        "Tot.Used Space": "36202275"
+    },
+    "284": {
+        "Id": "284",
+        "Full Name": "Marc Osherson",
+        "DepCode": "PHYS",
+        "AFS Groups": "0",
+        "Users AFS": "34779359",
+        "Users Panas.": "32",
+        "Tot.Used Space": "34779391"
+    },
+    "285": {
+        "Id": "285",
+        "Full Name": "Jay Christopher Howk PhD",
+        "DepCode": "PHYS",
+        "AFS Groups": "0",
+        "Users AFS": "33845916",
+        "Users Panas.": "0",
+        "Tot.Used Space": "33845916"
+    },
+    "286": {
+        "Id": "286",
+        "Full Name": "Stephen Yelderman",
+        "DepCode": "LS",
+        "AFS Groups": "0",
+        "Users AFS": "32426528",
+        "Users Panas.": "0",
+        "Tot.Used Space": "32426528"
+    },
+    "287": {
+        "Id": "287",
+        "Full Name": "Timothy C Ovaert",
+        "DepCode": "AME",
+        "AFS Groups": "0",
+        "Users AFS": "14981979",
+        "Users Panas.": "17070000",
+        "Tot.Used Space": "32051979"
+    },
+    "288": {
+        "Id": "288",
+        "Full Name": "Fanny Ye",
+        "DepCode": "CSE",
+        "AFS Groups": "0",
+        "Users AFS": "31292189",
+        "Users Panas.": "32",
+        "Tot.Used Space": "31292221"
+    },
+    "289": {
+        "Id": "289",
+        "Full Name": "Bradley Smith",
+        "DepCode": "CHEM",
+        "AFS Groups": "0",
+        "Users AFS": "30541542",
+        "Users Panas.": "0",
+        "Tot.Used Space": "30541542"
+    },
+    "290": {
+        "Id": "290",
+        "Full Name": "Rick Johnson",
+        "DepCode": "CSR",
+        "AFS Groups": "0",
+        "Users AFS": "30297717",
+        "Users Panas.": "0",
+        "Tot.Used Space": "30297717"
+    },
+    "291": {
+        "Id": "291",
+        "Full Name": "Graham Peaslee",
+        "DepCode": "PHYS",
+        "AFS Groups": "29439332",
+        "Users AFS": "524269",
+        "Users Panas.": "0",
+        "Tot.Used Space": "29963601"
+    },
+    "292": {
+        "Id": "292",
+        "Full Name": "Peter James Bui",
+        "DepCode": "CSE",
+        "AFS Groups": "0",
+        "Users AFS": "27527814",
+        "Users Panas.": "0",
+        "Tot.Used Space": "27527814"
+    },
+    "293": {
+        "Id": "293",
+        "Full Name": "Thomas E Fuja",
+        "DepCode": "EE",
+        "AFS Groups": "0",
+        "Users AFS": "23372898",
+        "Users Panas.": "0",
+        "Tot.Used Space": "23372898"
+    },
+    "294": {
+        "Id": "294",
+        "Full Name": "Kenneth Kelley III",
+        "DepCode": "MGMT",
+        "AFS Groups": "0",
+        "Users AFS": "23230112",
+        "Users Panas.": "0",
+        "Tot.Used Space": "23230112"
+    },
+    "295": {
+        "Id": "295",
+        "Full Name": "Yixing Chen",
+        "DepCode": "MKTG",
+        "AFS Groups": "0",
+        "Users AFS": "22414089",
+        "Users Panas.": "0",
+        "Tot.Used Space": "22414089"
+    },
+    "296": {
+        "Id": "296",
+        "Full Name": "Shaun Wook Lee",
+        "DepCode": "BIO",
+        "AFS Groups": "20534239",
+        "Users AFS": "1516039",
+        "Users Panas.": "0",
+        "Tot.Used Space": "22050278"
+    },
+    "297": {
+        "Id": "297",
+        "Full Name": "Flint Thomas",
+        "DepCode": "AME",
+        "AFS Groups": "0",
+        "Users AFS": "21688175",
+        "Users Panas.": "24",
+        "Tot.Used Space": "21688199"
+    },
+    "298": {
+        "Id": "298",
+        "Full Name": "Donald Alan Brower",
+        "DepCode": "LIB",
+        "AFS Groups": "0",
+        "Users AFS": "18884403",
+        "Users Panas.": "0",
+        "Tot.Used Space": "18884403"
+    },
+    "299": {
+        "Id": "299",
+        "Full Name": "Natalie K Munn",
+        "DepCode": "LIB",
+        "AFS Groups": "0",
+        "Users AFS": "18621684",
+        "Users Panas.": "0",
+        "Tot.Used Space": "18621684"
+    },
+    "300": {
+        "Id": "300",
+        "Full Name": "Ken Sauer",
+        "DepCode": "EE",
+        "AFS Groups": "0",
+        "Users AFS": "18467610",
+        "Users Panas.": "0",
+        "Tot.Used Space": "18467610"
+    },
+    "301": {
+        "Id": "301",
+        "Full Name": "Jeffrey Campbell",
+        "DepCode": "ECON",
+        "AFS Groups": "0",
+        "Users AFS": "18031465",
+        "Users Panas.": "0",
+        "Tot.Used Space": "18031465"
+    },
+    "302": {
+        "Id": "302",
+        "Full Name": "Patrick Brewick",
+        "DepCode": "CEEES",
+        "AFS Groups": "0",
+        "Users AFS": "16524170",
+        "Users Panas.": "24",
+        "Tot.Used Space": "16524194"
+    },
+    "303": {
+        "Id": "303",
+        "Full Name": "Merlin Bruening",
+        "DepCode": "CBE",
+        "AFS Groups": "0",
+        "Users AFS": "16388177",
+        "Users Panas.": "0",
+        "Tot.Used Space": "16388177"
+    },
+    "304": {
+        "Id": "304",
+        "Full Name": "Victoria Woodard",
+        "DepCode": "ACMS",
+        "AFS Groups": "0",
+        "Users AFS": "16288933",
+        "Users Panas.": "0",
+        "Tot.Used Space": "16288933"
+    },
+    "305": {
+        "Id": "305",
+        "Full Name": "Joshua Shrout PhD",
+        "DepCode": "CEEES",
+        "AFS Groups": "0",
+        "Users AFS": "15819939",
+        "Users Panas.": "0",
+        "Tot.Used Space": "15819939"
+    },
+    "306": {
+        "Id": "306",
+        "Full Name": "Alexandre Sezgeevich Moukasian",
+        "DepCode": "CBE",
+        "AFS Groups": "0",
+        "Users AFS": "15789297",
+        "Users Panas.": "0",
+        "Tot.Used Space": "15789297"
+    },
+    "307": {
+        "Id": "307",
+        "Full Name": "Lei Liu",
+        "DepCode": "EE",
+        "AFS Groups": "0",
+        "Users AFS": "14931186",
+        "Users Panas.": "0",
+        "Tot.Used Space": "14931186"
+    },
+    "308": {
+        "Id": "308",
+        "Full Name": "Margaret Schwarz",
+        "DepCode": "CHEM",
+        "AFS Groups": "0",
+        "Users AFS": "13489023",
+        "Users Panas.": "0",
+        "Tot.Used Space": "13489023"
+    },
+    "309": {
+        "Id": "309",
+        "Full Name": "Jessica Morales",
+        "DepCode": "LIB",
+        "AFS Groups": "0",
+        "Users AFS": "13287334",
+        "Users Panas.": "0",
+        "Tot.Used Space": "13287334"
+    },
+    "310": {
+        "Id": "310",
+        "Full Name": "David Galvin",
+        "DepCode": "MATH",
+        "AFS Groups": "0",
+        "Users AFS": "13029035",
+        "Users Panas.": "0",
+        "Tot.Used Space": "13029035"
+    },
+    "311": {
+        "Id": "311",
+        "Full Name": "Sylwia Ptasinska",
+        "DepCode": "PHYS",
+        "AFS Groups": "0",
+        "Users AFS": "12418369",
+        "Users Panas.": "0",
+        "Tot.Used Space": "12418369"
+    },
+    "312": {
+        "Id": "312",
+        "Full Name": "Joseph M. Powers",
+        "DepCode": "AME",
+        "AFS Groups": "0",
+        "Users AFS": "12204675",
+        "Users Panas.": "0",
+        "Tot.Used Space": "12204675"
+    },
+    "313": {
+        "Id": "313",
+        "Full Name": "Roxana Smarandache",
+        "DepCode": "MATH",
+        "AFS Groups": "0",
+        "Users AFS": "11870314",
+        "Users Panas.": "0",
+        "Tot.Used Space": "11870314"
+    },
+    "314": {
+        "Id": "314",
+        "Full Name": "Jay Brockman",
+        "DepCode": "ENG",
+        "AFS Groups": "0",
+        "Users AFS": "4836747",
+        "Users Panas.": "7000064",
+        "Tot.Used Space": "11836811"
+    },
+    "315": {
+        "Id": "315",
+        "Full Name": "Jennifer Schaefer",
+        "DepCode": "CBE",
+        "AFS Groups": "0",
+        "Users AFS": "11138009",
+        "Users Panas.": "0",
+        "Tot.Used Space": "11138009"
+    },
+    "316": {
+        "Id": "316",
+        "Full Name": "Matthew Charles Bloom",
+        "DepCode": "COBA",
+        "AFS Groups": "0",
+        "Users AFS": "10733908",
+        "Users Panas.": "0",
+        "Tot.Used Space": "10733908"
+    },
+    "317": {
+        "Id": "317",
+        "Full Name": "Michael Lemmon",
+        "DepCode": "EE",
+        "AFS Groups": "0",
+        "Users AFS": "10333069",
+        "Users Panas.": "32",
+        "Tot.Used Space": "10333101"
+    },
+    "318": {
+        "Id": "318",
+        "Full Name": "Eric Riedl",
+        "DepCode": "MATH",
+        "AFS Groups": "0",
+        "Users AFS": "10284120",
+        "Users Panas.": "0",
+        "Tot.Used Space": "10284120"
+    },
+    "319": {
+        "Id": "319",
+        "Full Name": "Thomas Juliano",
+        "DepCode": "AME",
+        "AFS Groups": "0",
+        "Users AFS": "9969905",
+        "Users Panas.": "0",
+        "Tot.Used Space": "9969905"
+    },
+    "320": {
+        "Id": "320",
+        "Full Name": "Alan C Seabaugh",
+        "DepCode": "EE",
+        "AFS Groups": "0",
+        "Users AFS": "9538485",
+        "Users Panas.": "0",
+        "Tot.Used Space": "9538485"
+    },
+    "321": {
+        "Id": "321",
+        "Full Name": "Patricia L Clark",
+        "DepCode": "CHEM",
+        "AFS Groups": "8486028",
+        "Users AFS": "151",
+        "Users Panas.": "0",
+        "Tot.Used Space": "8486179"
+    },
+    "322": {
+        "Id": "322",
+        "Full Name": "Stephen Jonathan Crass",
+        "DepCode": "PHYS",
+        "AFS Groups": "0",
+        "Users AFS": "8085026",
+        "Users Panas.": "0",
+        "Tot.Used Space": "8085026"
+    },
+    "323": {
+        "Id": "323",
+        "Full Name": "Jeffrey Harden",
+        "DepCode": "POLSCI",
+        "AFS Groups": "0",
+        "Users AFS": "7703154",
+        "Users Panas.": "0",
+        "Tot.Used Space": "7703154"
+    },
+    "324": {
+        "Id": "324",
+        "Full Name": "Keith Wayne Davis",
+        "DepCode": "SCI",
+        "AFS Groups": "0",
+        "Users AFS": "7515992",
+        "Users Panas.": "0",
+        "Tot.Used Space": "7515992"
+    },
+    "325": {
+        "Id": "325",
+        "Full Name": "Peter Kogge",
+        "DepCode": "CSE",
+        "AFS Groups": "0",
+        "Users AFS": "6545853",
+        "Users Panas.": "0",
+        "Tot.Used Space": "6545853"
+    },
+    "326": {
+        "Id": "326",
+        "Full Name": "Alan Euan Lindsay",
+        "DepCode": "ACMS",
+        "AFS Groups": "0",
+        "Users AFS": "6070853",
+        "Users Panas.": "0",
+        "Tot.Used Space": "6070853"
+    },
+    "327": {
+        "Id": "327",
+        "Full Name": "Nosang Myung",
+        "DepCode": "CBE",
+        "AFS Groups": "2",
+        "Users AFS": "5633555",
+        "Users Panas.": "0",
+        "Tot.Used Space": "5633557"
+    },
+    "328": {
+        "Id": "328",
+        "Full Name": "Jonathan Sapirstein",
+        "DepCode": "PHYS",
+        "AFS Groups": "0",
+        "Users AFS": "5200429",
+        "Users Panas.": "0",
+        "Tot.Used Space": "5200429"
+    },
+    "329": {
+        "Id": "329",
+        "Full Name": "Benjamin Radcliff",
+        "DepCode": "POLSCI",
+        "AFS Groups": "0",
+        "Users AFS": "4977527",
+        "Users Panas.": "0",
+        "Tot.Used Space": "4977527"
+    },
+    "330": {
+        "Id": "330",
+        "Full Name": "Stanislav Gordeyev",
+        "DepCode": "AME",
+        "AFS Groups": "0",
+        "Users AFS": "4975007",
+        "Users Panas.": "0",
+        "Tot.Used Space": "4975007"
+    },
+    "331": {
+        "Id": "331",
+        "Full Name": "Lizhen Lin",
+        "DepCode": "ACMS",
+        "AFS Groups": "0",
+        "Users AFS": "4600778",
+        "Users Panas.": "0",
+        "Tot.Used Space": "4600778"
+    },
+    "332": {
+        "Id": "332",
+        "Full Name": "Donny Hanjaya Putra",
+        "DepCode": "AME",
+        "AFS Groups": "0",
+        "Users AFS": "4435978",
+        "Users Panas.": "0",
+        "Tot.Used Space": "4435978"
+    },
+    "333": {
+        "Id": "333",
+        "Full Name": "Ian Bentley",
+        "DepCode": "PHYS",
+        "AFS Groups": "0",
+        "Users AFS": "4250749",
+        "Users Panas.": "0",
+        "Tot.Used Space": "4250749"
+    },
+    "334": {
+        "Id": "334",
+        "Full Name": "Robert Stevenson",
+        "DepCode": "EE",
+        "AFS Groups": "0",
+        "Users AFS": "3736876",
+        "Users Panas.": "0",
+        "Tot.Used Space": "3736876"
+    },
+    "335": {
+        "Id": "335",
+        "Full Name": "William Anthony Phillip",
+        "DepCode": "CBE",
+        "AFS Groups": "0",
+        "Users AFS": "3724312",
+        "Users Panas.": "0",
+        "Tot.Used Space": "3724312"
+    },
+    "336": {
+        "Id": "336",
+        "Full Name": "Felipe Santiago Tirado",
+        "DepCode": "BIO",
+        "AFS Groups": "1592942",
+        "Users AFS": "2006578",
+        "Users Panas.": "0",
+        "Tot.Used Space": "3599520"
+    },
+    "337": {
+        "Id": "337",
+        "Full Name": "Milind Saraph",
+        "DepCode": "OIT",
+        "AFS Groups": "0",
+        "Users AFS": "3390263",
+        "Users Panas.": "0",
+        "Tot.Used Space": "3390263"
+    },
+    "338": {
+        "Id": "338",
+        "Full Name": "Changbo Zhu",
+        "DepCode": "ACMS",
+        "AFS Groups": "0",
+        "Users AFS": "3091874",
+        "Users Panas.": "0",
+        "Tot.Used Space": "3091874"
+    },
+    "339": {
+        "Id": "339",
+        "Full Name": "David Sikkink",
+        "DepCode": "SOC",
+        "AFS Groups": "0",
+        "Users AFS": "2839297",
+        "Users Panas.": "0",
+        "Tot.Used Space": "2839297"
+    },
+    "340": {
+        "Id": "340",
+        "Full Name": "Theodore Beauchaine",
+        "DepCode": "PSYC",
+        "AFS Groups": "0",
+        "Users AFS": "2275485",
+        "Users Panas.": "0",
+        "Tot.Used Space": "2275485"
+    },
+    "341": {
+        "Id": "341",
+        "Full Name": "Abigail Ocobock",
+        "DepCode": "SOC",
+        "AFS Groups": "0",
+        "Users AFS": "1971337",
+        "Users Panas.": "0",
+        "Tot.Used Space": "1971337"
+    },
+    "342": {
+        "Id": "342",
+        "Full Name": "Marya Lieberman",
+        "DepCode": "CHEM",
+        "AFS Groups": "0",
+        "Users AFS": "1803675",
+        "Users Panas.": "0",
+        "Tot.Used Space": "1803675"
+    },
+    "343": {
+        "Id": "343",
+        "Full Name": "Jeffrey Allan Diller",
+        "DepCode": "MATH",
+        "AFS Groups": "0",
+        "Users AFS": "1785844",
+        "Users Panas.": "0",
+        "Tot.Used Space": "1785844"
+    },
+    "344": {
+        "Id": "344",
+        "Full Name": "Craig Lent",
+        "DepCode": "EE",
+        "AFS Groups": "0",
+        "Users AFS": "1706864",
+        "Users Panas.": "0",
+        "Tot.Used Space": "1706864"
+    },
+    "345": {
+        "Id": "345",
+        "Full Name": "Samuel Evens",
+        "DepCode": "MATH",
+        "AFS Groups": "0",
+        "Users AFS": "1676419",
+        "Users Panas.": "0",
+        "Tot.Used Space": "1676419"
+    },
+    "346": {
+        "Id": "346",
+        "Full Name": "Sarah Kroeger",
+        "DepCode": "ECON",
+        "AFS Groups": "0",
+        "Users AFS": "1480486",
+        "Users Panas.": "0",
+        "Tot.Used Space": "1480486"
+    },
+    "347": {
+        "Id": "347",
+        "Full Name": "Luis Felipe Rosado Murillo",
+        "DepCode": "ANTHRO",
+        "AFS Groups": "0",
+        "Users AFS": "1337949",
+        "Users Panas.": "0",
+        "Tot.Used Space": "1337949"
+    },
+    "348": {
+        "Id": "348",
+        "Full Name": "Juan Del Valle",
+        "DepCode": "CHEM",
+        "AFS Groups": "0",
+        "Users AFS": "1289522",
+        "Users Panas.": "0",
+        "Tot.Used Space": "1289522"
+    },
+    "349": {
+        "Id": "349",
+        "Full Name": "Joseph Freeland",
+        "DepCode": "CSE",
+        "AFS Groups": "0",
+        "Users AFS": "1165466",
+        "Users Panas.": "0",
+        "Tot.Used Space": "1165466"
+    },
+    "350": {
+        "Id": "350",
+        "Full Name": "Matthew Learoyd Sisk",
+        "DepCode": "LIB",
+        "AFS Groups": "0",
+        "Users AFS": "1125363",
+        "Users Panas.": "0",
+        "Tot.Used Space": "1125363"
+    },
+    "351": {
+        "Id": "351",
+        "Full Name": "Pinar Zorlutuna",
+        "DepCode": "AME",
+        "AFS Groups": "0",
+        "Users AFS": "1031205",
+        "Users Panas.": "0",
+        "Tot.Used Space": "1031205"
+    },
+    "352": {
+        "Id": "352",
+        "Full Name": "Thomas Mustillo",
+        "DepCode": "KSGA",
+        "AFS Groups": "0",
+        "Users AFS": "1030661",
+        "Users Panas.": "0",
+        "Tot.Used Space": "1030661"
+    },
+    "353": {
+        "Id": "353",
+        "Full Name": "Cindy Bergeman",
+        "DepCode": "PSYC",
+        "AFS Groups": "0",
+        "Users AFS": "833001",
+        "Users Panas.": "0",
+        "Tot.Used Space": "833001"
+    },
+    "354": {
+        "Id": "354",
+        "Full Name": "Michele Muller-Itten",
+        "DepCode": "ECON",
+        "AFS Groups": "0",
+        "Users AFS": "604139",
+        "Users Panas.": "0",
+        "Tot.Used Space": "604139"
+    },
+    "355": {
+        "Id": "355",
+        "Full Name": "Jing Wu",
+        "DepCode": "ECON",
+        "AFS Groups": "0",
+        "Users AFS": "564608",
+        "Users Panas.": "0",
+        "Tot.Used Space": "564608"
+    },
+    "356": {
+        "Id": "356",
+        "Full Name": "Dae Kun Kwon",
+        "DepCode": "CEEES",
+        "AFS Groups": "0",
+        "Users AFS": "558759",
+        "Users Panas.": "0",
+        "Tot.Used Space": "558759"
+    },
+    "357": {
+        "Id": "357",
+        "Full Name": "Sergey Leonov",
+        "DepCode": "AME",
+        "AFS Groups": "0",
+        "Users AFS": "510216",
+        "Users Panas.": "0",
+        "Tot.Used Space": "510216"
+    },
+    "358": {
+        "Id": "358",
+        "Full Name": "Aktar Ali",
+        "DepCode": "CHEM",
+        "AFS Groups": "0",
+        "Users AFS": "447171",
+        "Users Panas.": "0",
+        "Tot.Used Space": "447171"
+    },
+    "359": {
+        "Id": "359",
+        "Full Name": "Susanne Wengle",
+        "DepCode": "POLSCI",
+        "AFS Groups": "0",
+        "Users AFS": "442280",
+        "Users Panas.": "0",
+        "Tot.Used Space": "442280"
+    },
+    "360": {
+        "Id": "360",
+        "Full Name": "Robert Nerenberg",
+        "DepCode": "CEEES",
+        "AFS Groups": "0",
+        "Users AFS": "411664",
+        "Users Panas.": "0",
+        "Tot.Used Space": "411664"
+    },
+    "361": {
+        "Id": "361",
+        "Full Name": "Jason Rohr",
+        "DepCode": "BIO",
+        "AFS Groups": "0",
+        "Users AFS": "411427",
+        "Users Panas.": "0",
+        "Tot.Used Space": "411427"
+    },
+    "362": {
+        "Id": "362",
+        "Full Name": "Xiaolong Liu",
+        "DepCode": "PHYS",
+        "AFS Groups": "2",
+        "Users AFS": "402243",
+        "Users Panas.": "0",
+        "Tot.Used Space": "402245"
+    },
+    "363": {
+        "Id": "363",
+        "Full Name": "Timothy David Hubbard",
+        "DepCode": "MGMT",
+        "AFS Groups": "0",
+        "Users AFS": "390187",
+        "Users Panas.": "0",
+        "Tot.Used Space": "390187"
+    },
+    "364": {
+        "Id": "364",
+        "Full Name": "Adam Jaffe",
+        "DepCode": "CHEM",
+        "AFS Groups": "0",
+        "Users AFS": "267245",
+        "Users Panas.": "0",
+        "Tot.Used Space": "267245"
+    },
+    "365": {
+        "Id": "365",
+        "Full Name": "Scott Kirner",
+        "DepCode": "OIT",
+        "AFS Groups": "0",
+        "Users AFS": "256828",
+        "Users Panas.": "0",
+        "Tot.Used Space": "256828"
+    },
+    "366": {
+        "Id": "366",
+        "Full Name": "Felix Janda",
+        "DepCode": "MATH",
+        "AFS Groups": "0",
+        "Users AFS": "241024",
+        "Users Panas.": "0",
+        "Tot.Used Space": "241024"
+    },
+    "367": {
+        "Id": "367",
+        "Full Name": "Peter Burns",
+        "DepCode": "CEEES",
+        "AFS Groups": "0",
+        "Users AFS": "240870",
+        "Users Panas.": "0",
+        "Tot.Used Space": "240870"
+    },
+    "368": {
+        "Id": "368",
+        "Full Name": "Matthew Morrison",
+        "DepCode": "CSE",
+        "AFS Groups": "0",
+        "Users AFS": "182055",
+        "Users Panas.": "0",
+        "Tot.Used Space": "182055"
+    },
+    "369": {
+        "Id": "369",
+        "Full Name": "Michael Gekhtman",
+        "DepCode": "MATH",
+        "AFS Groups": "0",
+        "Users AFS": "174665",
+        "Users Panas.": "0",
+        "Tot.Used Space": "174665"
+    },
+    "370": {
+        "Id": "370",
+        "Full Name": "Arnaldo Luis Serrano",
+        "DepCode": "CHEM",
+        "AFS Groups": "0",
+        "Users AFS": "156478",
+        "Users Panas.": "0",
+        "Tot.Used Space": "156478"
+    },
+    "371": {
+        "Id": "371",
+        "Full Name": "Paul Bohn",
+        "DepCode": "CHEM",
+        "AFS Groups": "0",
+        "Users AFS": "132637",
+        "Users Panas.": "0",
+        "Tot.Used Space": "132637"
+    },
+    "372": {
+        "Id": "372",
+        "Full Name": "Doug Hall",
+        "DepCode": "EE",
+        "AFS Groups": "0",
+        "Users AFS": "129845",
+        "Users Panas.": "0",
+        "Tot.Used Space": "129845"
+    },
+    "373": {
+        "Id": "373",
+        "Full Name": "Christopher Hinkle",
+        "DepCode": "EE",
+        "AFS Groups": "0",
+        "Users AFS": "121798",
+        "Users Panas.": "0",
+        "Tot.Used Space": "121798"
+    },
+    "374": {
+        "Id": "374",
+        "Full Name": "Bill D McDonald",
+        "DepCode": "FIN",
+        "AFS Groups": "0",
+        "Users AFS": "120043",
+        "Users Panas.": "0",
+        "Tot.Used Space": "120043"
+    },
+    "375": {
+        "Id": "375",
+        "Full Name": "Thomas OSullivan",
+        "DepCode": "EE",
+        "AFS Groups": "0",
+        "Users AFS": "118533",
+        "Users Panas.": "0",
+        "Tot.Used Space": "118533"
+    },
+    "376": {
+        "Id": "376",
+        "Full Name": "Elliott Thomas Visconsi",
+        "DepCode": "EN",
+        "AFS Groups": "0",
+        "Users AFS": "114245",
+        "Users Panas.": "0",
+        "Tot.Used Space": "114245"
+    },
+    "377": {
+        "Id": "377",
+        "Full Name": "Karla Badillo-Urquiola",
+        "DepCode": "CSE",
+        "AFS Groups": "0",
+        "Users AFS": "107714",
+        "Users Panas.": "0",
+        "Tot.Used Space": "107714"
+    },
+    "378": {
+        "Id": "378",
+        "Full Name": "Yanliang Zhang",
+        "DepCode": "AME",
+        "AFS Groups": "0",
+        "Users AFS": "104492",
+        "Users Panas.": "0",
+        "Tot.Used Space": "104492"
+    },
+    "379": {
+        "Id": "379",
+        "Full Name": "Kaliprasad Rath",
+        "DepCode": "ECON",
+        "AFS Groups": "0",
+        "Users AFS": "100951",
+        "Users Panas.": "0",
+        "Tot.Used Space": "100951"
+    },
+    "380": {
+        "Id": "380",
+        "Full Name": "Erin McDonnell",
+        "DepCode": "SOC",
+        "AFS Groups": "0",
+        "Users AFS": "96151",
+        "Users Panas.": "0",
+        "Tot.Used Space": "96151"
+    },
+    "381": {
+        "Id": "381",
+        "Full Name": "Mary Batistich",
+        "DepCode": "ECON",
+        "AFS Groups": "0",
+        "Users AFS": "83912",
+        "Users Panas.": "0",
+        "Tot.Used Space": "83912"
+    },
+    "382": {
+        "Id": "382",
+        "Full Name": "Marc Francois Muller",
+        "DepCode": "CEEES",
+        "AFS Groups": "0",
+        "Users AFS": "82747",
+        "Users Panas.": "0",
+        "Tot.Used Space": "82747"
+    },
+    "383": {
+        "Id": "383",
+        "Full Name": "Shane Corwin",
+        "DepCode": "FIN",
+        "AFS Groups": "0",
+        "Users AFS": "82282",
+        "Users Panas.": "0",
+        "Tot.Used Space": "82282"
+    },
+    "384": {
+        "Id": "384",
+        "Full Name": "Christian Smith",
+        "DepCode": "SOC",
+        "AFS Groups": "0",
+        "Users AFS": "81853",
+        "Users Panas.": "0",
+        "Tot.Used Space": "81853"
+    },
+    "385": {
+        "Id": "385",
+        "Full Name": "Xuemin NA Lu",
+        "DepCode": "BIO",
+        "AFS Groups": "0",
+        "Users AFS": "57461",
+        "Users Panas.": "0",
+        "Tot.Used Space": "57461"
+    },
+    "386": {
+        "Id": "386",
+        "Full Name": "Sunny Boyd",
+        "DepCode": "BIO",
+        "AFS Groups": "0",
+        "Users AFS": "45028",
+        "Users Panas.": "0",
+        "Tot.Used Space": "45028"
+    },
+    "387": {
+        "Id": "387",
+        "Full Name": "Yazen Khasawneh",
+        "DepCode": "CEEES",
+        "AFS Groups": "0",
+        "Users AFS": "40863",
+        "Users Panas.": "0",
+        "Tot.Used Space": "40863"
+    },
+    "388": {
+        "Id": "388",
+        "Full Name": "Brittany Morgan",
+        "DepCode": "CHEM",
+        "AFS Groups": "0",
+        "Users AFS": "37282",
+        "Users Panas.": "0",
+        "Tot.Used Space": "37282"
+    },
+    "389": {
+        "Id": "389",
+        "Full Name": "Daewon Sun",
+        "DepCode": "ITM",
+        "AFS Groups": "0",
+        "Users AFS": "25423",
+        "Users Panas.": "0",
+        "Tot.Used Space": "25423"
+    },
+    "390": {
+        "Id": "390",
+        "Full Name": "Will E. Bruckert",
+        "DepCode": "OIT",
+        "AFS Groups": "0",
+        "Users AFS": "9995",
+        "Users Panas.": "0",
+        "Tot.Used Space": "9995"
+    },
+    "391": {
+        "Id": "391",
+        "Full Name": "Jane Ryngaert",
+        "DepCode": "ECON",
+        "AFS Groups": "0",
+        "Users AFS": "9804",
+        "Users Panas.": "0",
+        "Tot.Used Space": "9804"
+    },
+    "392": {
+        "Id": "392",
+        "Full Name": "Michael Jason Pries",
+        "DepCode": "ECON",
+        "AFS Groups": "0",
+        "Users AFS": "8362",
+        "Users Panas.": "0",
+        "Tot.Used Space": "8362"
+    },
+    "393": {
+        "Id": "393",
+        "Full Name": "Gabriel Burks",
+        "DepCode": "CBE",
+        "AFS Groups": "0",
+        "Users AFS": "7559",
+        "Users Panas.": "0",
+        "Tot.Used Space": "7559"
+    },
+    "394": {
+        "Id": "394",
+        "Full Name": "Michel Hockx",
+        "DepCode": "EALC",
+        "AFS Groups": "0",
+        "Users AFS": "6235",
+        "Users Panas.": "0",
+        "Tot.Used Space": "6235"
+    },
+    "395": {
+        "Id": "395",
+        "Full Name": "David Boone",
+        "DepCode": "BIO",
+        "AFS Groups": "0",
+        "Users AFS": "6047",
+        "Users Panas.": "0",
+        "Tot.Used Space": "6047"
+    },
+    "396": {
+        "Id": "396",
+        "Full Name": "John M. LoSecco",
+        "DepCode": "PHYS",
+        "AFS Groups": "0",
+        "Users AFS": "6044",
+        "Users Panas.": "0",
+        "Tot.Used Space": "6044"
+    },
+    "397": {
+        "Id": "397",
+        "Full Name": "Xuying Zhao",
+        "DepCode": "ITM",
+        "AFS Groups": "0",
+        "Users AFS": "4209",
+        "Users Panas.": "0",
+        "Tot.Used Space": "4209"
+    },
+    "398": {
+        "Id": "398",
+        "Full Name": "Yu Xiao",
+        "DepCode": "ECON",
+        "AFS Groups": "0",
+        "Users AFS": "3189",
+        "Users Panas.": "0",
+        "Tot.Used Space": "3189"
+    },
+    "399": {
+        "Id": "399",
+        "Full Name": "Alexandra Jilkine",
+        "DepCode": "ACMS",
+        "AFS Groups": "0",
+        "Users AFS": "3160",
+        "Users Panas.": "0",
+        "Tot.Used Space": "3160"
+    },
+    "400": {
+        "Id": "400",
+        "Full Name": "Jeremy Ben Fein",
+        "DepCode": "CEEES",
+        "AFS Groups": "0",
+        "Users AFS": "2028",
+        "Users Panas.": "0",
+        "Tot.Used Space": "2028"
+    },
+    "401": {
+        "Id": "401",
+        "Full Name": "Daniel Johnson",
+        "DepCode": "LIB",
+        "AFS Groups": "0",
+        "Users AFS": "2027",
+        "Users Panas.": "0",
+        "Tot.Used Space": "2027"
+    },
+    "402": {
+        "Id": "402",
+        "Full Name": "Drew Creal",
+        "DepCode": "ECON",
+        "AFS Groups": "0",
+        "Users AFS": "1385",
+        "Users Panas.": "0",
+        "Tot.Used Space": "1385"
+    },
+    "403": {
+        "Id": "403",
+        "Full Name": "Kristin Valentino Diehl",
+        "DepCode": "PSYC",
+        "AFS Groups": "0",
+        "Users AFS": "1368",
+        "Users Panas.": "0",
+        "Tot.Used Space": "1368"
+    },
+    "404": {
+        "Id": "404",
+        "Full Name": "Amy Hixon",
+        "DepCode": "CEEES",
+        "AFS Groups": "0",
+        "Users AFS": "1356",
+        "Users Panas.": "0",
+        "Tot.Used Space": "1356"
+    },
+    "405": {
+        "Id": "405",
+        "Full Name": "Manuel Alejandro Estefan Davila",
+        "DepCode": "KSGA",
+        "AFS Groups": "0",
+        "Users AFS": "1354",
+        "Users Panas.": "0",
+        "Tot.Used Space": "1354"
+    },
+    "406": {
+        "Id": "406",
+        "Full Name": "Meredith Chesson",
+        "DepCode": "ANTHRO",
+        "AFS Groups": "0",
+        "Users AFS": "1352",
+        "Users Panas.": "0",
+        "Tot.Used Space": "1352"
+    },
+    "407": {
+        "Id": "407",
+        "Full Name": "Lee Anna Clark",
+        "DepCode": "PSYC",
+        "AFS Groups": "142",
+        "Users AFS": "1133",
+        "Users Panas.": "0",
+        "Tot.Used Space": "1275"
+    },
+    "408": {
+        "Id": "408",
+        "Full Name": "David Hachen",
+        "DepCode": "SOC",
+        "AFS Groups": "0",
+        "Users AFS": "1178",
+        "Users Panas.": "0",
+        "Tot.Used Space": "1178"
+    },
+    "409": {
+        "Id": "409",
+        "Full Name": "Rory McVeigh",
+        "DepCode": "SOC",
+        "AFS Groups": "0",
+        "Users AFS": "808",
+        "Users Panas.": "0",
+        "Tot.Used Space": "808"
+    },
+    "410": {
+        "Id": "410",
+        "Full Name": "Jon Coleman",
+        "DepCode": "HIST",
+        "AFS Groups": "0",
+        "Users AFS": "715",
+        "Users Panas.": "0",
+        "Tot.Used Space": "715"
+    },
+    "411": {
+        "Id": "411",
+        "Full Name": "Curtis Franks",
+        "DepCode": "PHIL",
+        "AFS Groups": "0",
+        "Users AFS": "713",
+        "Users Panas.": "0",
+        "Tot.Used Space": "713"
+    },
+    "412": {
+        "Id": "412",
+        "Full Name": "Daniel K Lapsley",
+        "DepCode": "PSYC",
+        "AFS Groups": "0",
+        "Users AFS": "493",
+        "Users Panas.": "0",
+        "Tot.Used Space": "493"
+    },
+    "413": {
+        "Id": "413",
+        "Full Name": "Carolina Avendano",
+        "DepCode": "ACMS",
+        "AFS Groups": "0",
+        "Users AFS": "178",
+        "Users Panas.": "0",
+        "Tot.Used Space": "178"
+    },
+    "414": {
+        "Id": "414",
+        "Full Name": "Claudia Polini",
+        "DepCode": "MATH",
+        "AFS Groups": "0",
+        "Users AFS": "167",
+        "Users Panas.": "0",
+        "Tot.Used Space": "167"
+    },
+    "415": {
+        "Id": "415",
+        "Full Name": "Shreya Kumar",
+        "DepCode": "CSE",
+        "AFS Groups": "0",
+        "Users AFS": "115",
+        "Users Panas.": "0",
+        "Tot.Used Space": "115"
+    },
+    "416": {
+        "Id": "416",
+        "Full Name": "Martin Haenggi",
+        "DepCode": "EE",
+        "AFS Groups": "0",
+        "Users AFS": "66",
+        "Users Panas.": "0",
+        "Tot.Used Space": "66"
+    },
+    "417": {
+        "Id": "417",
+        "Full Name": "Alvaro Acosta Serrano",
+        "DepCode": "BIO",
+        "AFS Groups": "2",
+        "Users AFS": "63",
+        "Users Panas.": "0",
+        "Tot.Used Space": "65"
+    },
+    "418": {
+        "Id": "418",
+        "Full Name": "Badih Assaf",
+        "DepCode": "PHYS",
+        "AFS Groups": "0",
+        "Users AFS": "52",
+        "Users Panas.": "0",
+        "Tot.Used Space": "52"
+    },
+    "419": {
+        "Id": "419",
+        "Full Name": "Zach Schafer",
+        "DepCode": "BIO",
+        "AFS Groups": "0",
+        "Users AFS": "52",
+        "Users Panas.": "0",
+        "Tot.Used Space": "52"
+    },
+    "420": {
+        "Id": "420",
+        "Full Name": "Sarah Chapman VanHouten",
+        "DepCode": "NDR",
+        "AFS Groups": "0",
+        "Users AFS": "49",
+        "Users Panas.": "0",
+        "Tot.Used Space": "49"
+    },
+    "421": {
+        "Id": "421",
+        "Full Name": "Alexandra Kjuchukova",
+        "DepCode": "MATH",
+        "AFS Groups": "0",
+        "Users AFS": "48",
+        "Users Panas.": "0",
+        "Tot.Used Space": "48"
+    },
+    "422": {
+        "Id": "422",
+        "Full Name": "Adrian V Rocha",
+        "DepCode": "BIO",
+        "AFS Groups": "0",
+        "Users AFS": "42",
+        "Users Panas.": "0",
+        "Tot.Used Space": "42"
+    },
+    "423": {
+        "Id": "423",
+        "Full Name": "Dafei Jin",
+        "DepCode": "PHYS",
+        "AFS Groups": "0",
+        "Users AFS": "42",
+        "Users Panas.": "0",
+        "Tot.Used Space": "42"
+    },
+    "424": {
+        "Id": "424",
+        "Full Name": "Davin Raiha",
+        "DepCode": "ECON",
+        "AFS Groups": "0",
+        "Users AFS": "42",
+        "Users Panas.": "0",
+        "Tot.Used Space": "42"
+    },
+    "425": {
+        "Id": "425",
+        "Full Name": "George Alex Ambrose",
+        "DepCode": "KANEB",
+        "AFS Groups": "0",
+        "Users AFS": "42",
+        "Users Panas.": "0",
+        "Tot.Used Space": "42"
+    },
+    "426": {
+        "Id": "426",
+        "Full Name": "Guillermo Trejo",
+        "DepCode": "POLSCI",
+        "AFS Groups": "0",
+        "Users AFS": "42",
+        "Users Panas.": "0",
+        "Tot.Used Space": "42"
+    },
+    "427": {
+        "Id": "427",
+        "Full Name": "Jennifer Leah Tank",
+        "DepCode": "BIO",
+        "AFS Groups": "0",
+        "Users AFS": "42",
+        "Users Panas.": "0",
+        "Tot.Used Space": "42"
+    },
+    "428": {
+        "Id": "428",
+        "Full Name": "Kyle Doudrick",
+        "DepCode": "CEEES",
+        "AFS Groups": "0",
+        "Users AFS": "42",
+        "Users Panas.": "0",
+        "Tot.Used Space": "42"
+    },
+    "429": {
+        "Id": "429",
+        "Full Name": "Lyn Spillman",
+        "DepCode": "SOC",
+        "AFS Groups": "0",
+        "Users AFS": "42",
+        "Users Panas.": "0",
+        "Tot.Used Space": "42"
+    },
+    "430": {
+        "Id": "430",
+        "Full Name": "Mark Joseph Behrens",
+        "DepCode": "MATH",
+        "AFS Groups": "0",
+        "Users AFS": "42",
+        "Users Panas.": "0",
+        "Tot.Used Space": "42"
+    },
+    "431": {
+        "Id": "431",
+        "Full Name": "Masaru K Kuno",
+        "DepCode": "CHEM",
+        "AFS Groups": "0",
+        "Users AFS": "42",
+        "Users Panas.": "0",
+        "Tot.Used Space": "42"
+    },
+    "432": {
+        "Id": "432",
+        "Full Name": "Orlando Carter Snead",
+        "DepCode": "POLSCI",
+        "AFS Groups": "0",
+        "Users AFS": "42",
+        "Users Panas.": "0",
+        "Tot.Used Space": "42"
+    },
+    "433": {
+        "Id": "433",
+        "Full Name": "Peter Bauer",
+        "DepCode": "EE",
+        "AFS Groups": "0",
+        "Users AFS": "42",
+        "Users Panas.": "0",
+        "Tot.Used Space": "42"
+    },
+    "434": {
+        "Id": "434",
+        "Full Name": "Patricia A Champion",
+        "DepCode": "BIO",
+        "AFS Groups": "0",
+        "Users AFS": "42",
+        "Users Panas.": "0",
+        "Tot.Used Space": "42"
+    },
+    "435": {
+        "Id": "435",
+        "Full Name": "Paul Perrin",
+        "DepCode": "PIGD",
+        "AFS Groups": "0",
+        "Users AFS": "42",
+        "Users Panas.": "0",
+        "Tot.Used Space": "42"
+    },
+    "436": {
+        "Id": "436",
+        "Full Name": "Suzanne Shanahan",
+        "DepCode": "CSC",
+        "AFS Groups": "0",
+        "Users AFS": "42",
+        "Users Panas.": "0",
+        "Tot.Used Space": "42"
+    },
+    "437": {
+        "Id": "437",
+        "Full Name": "Stephan Stolz",
+        "DepCode": "MATH",
+        "AFS Groups": "0",
+        "Users AFS": "42",
+        "Users Panas.": "0",
+        "Tot.Used Space": "42"
+    },
+    "438": {
+        "Id": "438",
+        "Full Name": "Tracy Weber",
+        "DepCode": "OIT",
+        "AFS Groups": "0",
+        "Users AFS": "42",
+        "Users Panas.": "0",
+        "Tot.Used Space": "42"
+    },
+    "439": {
+        "Id": "439",
+        "Full Name": "oit ( acgen )",
+        "DepCode": "OIT",
+        "AFS Groups": "0",
+        "Users AFS": "34",
+        "Users Panas.": "0",
+        "Tot.Used Space": "34"
+    },
+    "440": {
+        "Id": "440",
+        "Full Name": "Ben Matthies",
+        "DepCode": "FIN",
+        "AFS Groups": "0",
+        "Users AFS": "34",
+        "Users Panas.": "0",
+        "Tot.Used Space": "34"
+    },
+    "441": {
+        "Id": "441",
+        "Full Name": "Sharif Nijim",
+        "DepCode": "COBA",
+        "AFS Groups": "0",
+        "Users AFS": "33",
+        "Users Panas.": "0",
+        "Tot.Used Space": "33"
+    },
+    "442": {
+        "Id": "442",
+        "Full Name": "Brady Russo",
+        "DepCode": "CTR",
+        "AFS Groups": "0",
+        "Users AFS": "31",
+        "Users Panas.": "0",
+        "Tot.Used Space": "31"
+    },
+    "443": {
+        "Id": "443",
+        "Full Name": "Jay LaVerne",
+        "DepCode": "RAD",
+        "AFS Groups": "0",
+        "Users AFS": "31",
+        "Users Panas.": "0",
+        "Tot.Used Space": "31"
+    },
+    "444": {
+        "Id": "444",
+        "Full Name": "Jun Yang",
+        "DepCode": "FIN",
+        "AFS Groups": "0",
+        "Users AFS": "31",
+        "Users Panas.": "0",
+        "Tot.Used Space": "31"
+    },
+    "445": {
+        "Id": "445",
+        "Full Name": "AD Test Account",
+        "DepCode": "OIT",
+        "AFS Groups": "0",
+        "Users AFS": "29",
+        "Users Panas.": "0",
+        "Tot.Used Space": "29"
+    },
+    "446": {
+        "Id": "446",
+        "Full Name": "AD Test Account",
+        "DepCode": "OIT",
+        "AFS Groups": "0",
+        "Users AFS": "29",
+        "Users Panas.": "0",
+        "Tot.Used Space": "29"
+    },
+    "447": {
+        "Id": "447",
+        "Full Name": "Collin McMillan",
+        "DepCode": "CSE",
+        "AFS Groups": "0",
+        "Users AFS": "25",
+        "Users Panas.": "0",
+        "Tot.Used Space": "25"
+    },
+    "448": {
+        "Id": "448",
+        "Full Name": "Edwin Huang",
+        "DepCode": "PHYS",
+        "AFS Groups": "0",
+        "Users AFS": "25",
+        "Users Panas.": "0",
+        "Tot.Used Space": "25"
+    },
+    "449": {
+        "Id": "449",
+        "Full Name": "Thomas Joseph Loughran",
+        "DepCode": "PHYS",
+        "AFS Groups": "0",
+        "Users AFS": "24",
+        "Users Panas.": "0",
+        "Tot.Used Space": "24"
+    },
+    "450": {
+        "Id": "450",
+        "Full Name": "Aaron Dingler",
+        "DepCode": "CSE",
+        "AFS Groups": "0",
+        "Users AFS": "23",
+        "Users Panas.": "0",
+        "Tot.Used Space": "23"
+    },
+    "451": {
+        "Id": "451",
+        "Full Name": "Christopher Frank Kolda",
+        "DepCode": "PHYS",
+        "AFS Groups": "0",
+        "Users AFS": "23",
+        "Users Panas.": "0",
+        "Tot.Used Space": "23"
+    },
+    "452": {
+        "Id": "452",
+        "Full Name": "Iossif Lozovatsky",
+        "DepCode": "CEEES",
+        "AFS Groups": "0",
+        "Users AFS": "23",
+        "Users Panas.": "0",
+        "Tot.Used Space": "23"
+    },
+    "453": {
+        "Id": "453",
+        "Full Name": "Robert Battalio",
+        "DepCode": "FIN",
+        "AFS Groups": "0",
+        "Users AFS": "22",
+        "Users Panas.": "0",
+        "Tot.Used Space": "22"
+    },
+    "454": {
+        "Id": "454",
+        "Full Name": "Slavi Sevov",
+        "DepCode": "CHEM",
+        "AFS Groups": "0",
+        "Users AFS": "22",
+        "Users Panas.": "0",
+        "Tot.Used Space": "22"
+    },
+    "455": {
+        "Id": "455",
+        "Full Name": "Alexei Orlov",
+        "DepCode": "EE",
+        "AFS Groups": "0",
+        "Users AFS": "21",
+        "Users Panas.": "0",
+        "Tot.Used Space": "21"
+    },
+    "456": {
+        "Id": "456",
+        "Full Name": "Adrienne Sabety",
+        "DepCode": "ECON",
+        "AFS Groups": "0",
+        "Users AFS": "21",
+        "Users Panas.": "0",
+        "Tot.Used Space": "21"
+    },
+    "457": {
+        "Id": "457",
+        "Full Name": "Aidan Seale-Feldman",
+        "DepCode": "ANTHRO",
+        "AFS Groups": "0",
+        "Users AFS": "21",
+        "Users Panas.": "0",
+        "Tot.Used Space": "21"
+    },
+    "458": {
+        "Id": "458",
+        "Full Name": "Brooke Ammerman",
+        "DepCode": "PSYC",
+        "AFS Groups": "0",
+        "Users AFS": "21",
+        "Users Panas.": "0",
+        "Tot.Used Space": "21"
+    },
+    "459": {
+        "Id": "459",
+        "Full Name": "Brian Fogarty",
+        "DepCode": "CSR",
+        "AFS Groups": "0",
+        "Users AFS": "21",
+        "Users Panas.": "0",
+        "Tot.Used Space": "21"
+    },
+    "460": {
+        "Id": "460",
+        "Full Name": "Benjamin Golez",
+        "DepCode": "FIN",
+        "AFS Groups": "0",
+        "Users AFS": "21",
+        "Users Panas.": "0",
+        "Tot.Used Space": "21"
+    },
+    "461": {
+        "Id": "461",
+        "Full Name": "Crislyn DSouzaSchorey",
+        "DepCode": "BIO",
+        "AFS Groups": "0",
+        "Users AFS": "21",
+        "Users Panas.": "0",
+        "Tot.Used Space": "21"
+    },
+    "462": {
+        "Id": "462",
+        "Full Name": "Office of the Registrar",
+        "DepCode": "CRC",
+        "AFS Groups": "0",
+        "Users AFS": "21",
+        "Users Panas.": "0",
+        "Tot.Used Space": "21"
+    },
+    "463": {
+        "Id": "463",
+        "Full Name": "Cheryl S Smith",
+        "DepCode": "LIB",
+        "AFS Groups": "0",
+        "Users AFS": "21",
+        "Users Panas.": "0",
+        "Tot.Used Space": "21"
+    },
+    "464": {
+        "Id": "464",
+        "Full Name": "Christina Wolbrecht",
+        "DepCode": "POLSCI",
+        "AFS Groups": "0",
+        "Users AFS": "21",
+        "Users Panas.": "0",
+        "Tot.Used Space": "21"
+    },
+    "465": {
+        "Id": "465",
+        "Full Name": "David Edward Campbell",
+        "DepCode": "POLSCI",
+        "AFS Groups": "0",
+        "Users AFS": "21",
+        "Users Panas.": "0",
+        "Tot.Used Space": "21"
+    },
+    "466": {
+        "Id": "466",
+        "Full Name": "David T Leighton Jr",
+        "DepCode": "CBE",
+        "AFS Groups": "0",
+        "Users AFS": "21",
+        "Users Panas.": "0",
+        "Tot.Used Space": "21"
+    },
+    "467": {
+        "Id": "467",
+        "Full Name": "David Jude Veselik",
+        "DepCode": "BIO",
+        "AFS Groups": "0",
+        "Users AFS": "21",
+        "Users Panas.": "0",
+        "Tot.Used Space": "21"
+    },
+    "468": {
+        "Id": "468",
+        "Full Name": "Edward Mark Cummings",
+        "DepCode": "PSYC",
+        "AFS Groups": "0",
+        "Users AFS": "21",
+        "Users Panas.": "0",
+        "Tot.Used Space": "21"
+    },
+    "469": {
+        "Id": "469",
+        "Full Name": "Emily Johnson",
+        "DepCode": "AME",
+        "AFS Groups": "0",
+        "Users AFS": "21",
+        "Users Panas.": "0",
+        "Tot.Used Space": "21"
+    },
+    "470": {
+        "Id": "470",
+        "Full Name": "Evan Mast",
+        "DepCode": "ECON",
+        "AFS Groups": "0",
+        "Users AFS": "21",
+        "Users Panas.": "0",
+        "Tot.Used Space": "21"
+    },
+    "471": {
+        "Id": "471",
+        "Full Name": "Giles Duffield",
+        "DepCode": "BIO",
+        "AFS Groups": "0",
+        "Users AFS": "21",
+        "Users Panas.": "0",
+        "Tot.Used Space": "21"
+    },
+    "472": {
+        "Id": "472",
+        "Full Name": "Gregory Hartland",
+        "DepCode": "CHEM",
+        "AFS Groups": "0",
+        "Users AFS": "21",
+        "Users Panas.": "0",
+        "Tot.Used Space": "21"
+    },
+    "473": {
+        "Id": "473",
+        "Full Name": "Gary Lamberti",
+        "DepCode": "BIO",
+        "AFS Groups": "0",
+        "Users AFS": "21",
+        "Users Panas.": "0",
+        "Tot.Used Space": "21"
+    },
+    "474": {
+        "Id": "474",
+        "Full Name": "Geoffrey Layman",
+        "DepCode": "POLSCI",
+        "AFS Groups": "0",
+        "Users AFS": "21",
+        "Users Panas.": "0",
+        "Tot.Used Space": "21"
+    },
+    "475": {
+        "Id": "475",
+        "Full Name": "Yihfang Huang",
+        "DepCode": "EE",
+        "AFS Groups": "0",
+        "Users AFS": "21",
+        "Users Panas.": "0",
+        "Tot.Used Space": "21"
+    },
+    "476": {
+        "Id": "476",
+        "Full Name": "Jeffrey Bergstrand",
+        "DepCode": "FIN",
+        "AFS Groups": "0",
+        "Users AFS": "21",
+        "Users Panas.": "0",
+        "Tot.Used Space": "21"
+    },
+    "477": {
+        "Id": "477",
+        "Full Name": "Jon Philip Camden",
+        "DepCode": "CHEM",
+        "AFS Groups": "0",
+        "Users AFS": "21",
+        "Users Panas.": "0",
+        "Tot.Used Space": "21"
+    },
+    "478": {
+        "Id": "478",
+        "Full Name": "Jesse Lander",
+        "DepCode": "EN",
+        "AFS Groups": "0",
+        "Users AFS": "21",
+        "Users Panas.": "0",
+        "Tot.Used Space": "21"
+    },
+    "479": {
+        "Id": "479",
+        "Full Name": "Joel Mittleman",
+        "DepCode": "SOC",
+        "AFS Groups": "0",
+        "Users AFS": "21",
+        "Users Panas.": "0",
+        "Tot.Used Space": "21"
+    },
+    "480": {
+        "Id": "480",
+        "Full Name": "Jessica Payne",
+        "DepCode": "PSYC",
+        "AFS Groups": "0",
+        "Users AFS": "21",
+        "Users Panas.": "0",
+        "Tot.Used Space": "21"
+    },
+    "481": {
+        "Id": "481",
+        "Full Name": "James Patrick Schmiedeler",
+        "DepCode": "AME",
+        "AFS Groups": "0",
+        "Users AFS": "21",
+        "Users Panas.": "0",
+        "Tot.Used Space": "21"
+    },
+    "482": {
+        "Id": "482",
+        "Full Name": "Kraig Beyerlein",
+        "DepCode": "SOC",
+        "AFS Groups": "0",
+        "Users AFS": "21",
+        "Users Panas.": "0",
+        "Tot.Used Space": "21"
+    },
+    "483": {
+        "Id": "483",
+        "Full Name": "Kate Elizabeth Mueller",
+        "DepCode": "CSR",
+        "AFS Groups": "0",
+        "Users AFS": "21",
+        "Users Panas.": "0",
+        "Tot.Used Space": "21"
+    },
+    "484": {
+        "Id": "484",
+        "Full Name": "Kai Ni",
+        "DepCode": "EE",
+        "AFS Groups": "0",
+        "Users AFS": "21",
+        "Users Panas.": "0",
+        "Tot.Used Space": "21"
+    },
+    "485": {
+        "Id": "485",
+        "Full Name": "Kathy Phillips",
+        "DepCode": "ACMS",
+        "AFS Groups": "0",
+        "Users AFS": "21",
+        "Users Panas.": "0",
+        "Tot.Used Space": "21"
+    },
+    "486": {
+        "Id": "486",
+        "Full Name": "Laura Fields",
+        "DepCode": "PHYS",
+        "AFS Groups": "0",
+        "Users AFS": "21",
+        "Users Panas.": "0",
+        "Tot.Used Space": "21"
+    },
+    "487": {
+        "Id": "487",
+        "Full Name": "Liviu Nicolaescu",
+        "DepCode": "MATH",
+        "AFS Groups": "0",
+        "Users AFS": "21",
+        "Users Panas.": "0",
+        "Tot.Used Space": "21"
+    },
+    "488": {
+        "Id": "488",
+        "Full Name": "Michael Joseph Chapple",
+        "DepCode": "AL",
+        "AFS Groups": "0",
+        "Users AFS": "21",
+        "Users Panas.": "0",
+        "Tot.Used Space": "21"
+    },
+    "489": {
+        "Id": "489",
+        "Full Name": "Matthew J Gursky",
+        "DepCode": "MATH",
+        "AFS Groups": "0",
+        "Users AFS": "21",
+        "Users Panas.": "0",
+        "Tot.Used Space": "21"
+    },
+    "490": {
+        "Id": "490",
+        "Full Name": "Michael Joseph Mannor",
+        "DepCode": "MGMT",
+        "AFS Groups": "0",
+        "Users AFS": "21",
+        "Users Panas.": "0",
+        "Tot.Used Space": "21"
+    },
+    "491": {
+        "Id": "491",
+        "Full Name": "Mitchell Charles Olsen",
+        "DepCode": "MKTG",
+        "AFS Groups": "0",
+        "Users AFS": "21",
+        "Users Panas.": "0",
+        "Tot.Used Space": "21"
+    },
+    "492": {
+        "Id": "492",
+        "Full Name": "Molly Scheel",
+        "DepCode": "BIO",
+        "AFS Groups": "0",
+        "Users AFS": "21",
+        "Users Panas.": "0",
+        "Tot.Used Space": "21"
+    },
+    "493": {
+        "Id": "493",
+        "Full Name": "Panos Antsaklis",
+        "DepCode": "EE",
+        "AFS Groups": "0",
+        "Users AFS": "21",
+        "Users Panas.": "0",
+        "Tot.Used Space": "21"
+    },
+    "494": {
+        "Id": "494",
+        "Full Name": "Paul Helquist",
+        "DepCode": "CHEM",
+        "AFS Groups": "0",
+        "Users AFS": "21",
+        "Users Panas.": "0",
+        "Tot.Used Space": "21"
+    },
+    "495": {
+        "Id": "495",
+        "Full Name": "Ruilan Guo",
+        "DepCode": "CBE",
+        "AFS Groups": "0",
+        "Users AFS": "21",
+        "Users Panas.": "0",
+        "Tot.Used Space": "21"
+    },
+    "496": {
+        "Id": "496",
+        "Full Name": "Rebecca Ann Wingert",
+        "DepCode": "BIO",
+        "AFS Groups": "0",
+        "Users AFS": "21",
+        "Users Panas.": "0",
+        "Tot.Used Space": "21"
+    },
+    "497": {
+        "Id": "497",
+        "Full Name": "Roger Woodard",
+        "DepCode": "ACMS",
+        "AFS Groups": "0",
+        "Users AFS": "21",
+        "Users Panas.": "0",
+        "Tot.Used Space": "21"
+    },
+    "498": {
+        "Id": "498",
+        "Full Name": "Stefan Frauendorf",
+        "DepCode": "PHYS",
+        "AFS Groups": "0",
+        "Users AFS": "21",
+        "Users Panas.": "0",
+        "Tot.Used Space": "21"
+    },
+    "499": {
+        "Id": "499",
+        "Full Name": "Scott Mainwaring",
+        "DepCode": "POLSCI",
+        "AFS Groups": "0",
+        "Users AFS": "21",
+        "Users Panas.": "0",
+        "Tot.Used Space": "21"
+    },
+    "500": {
+        "Id": "500",
+        "Full Name": "Swapnil Motghare",
+        "DepCode": "LFIDS",
+        "AFS Groups": "0",
+        "Users AFS": "21",
+        "Users Panas.": "0",
+        "Tot.Used Space": "21"
+    },
+    "501": {
+        "Id": "501",
+        "Full Name": "Viva Bartkus",
+        "DepCode": "ITM",
+        "AFS Groups": "0",
+        "Users AFS": "21",
+        "Users Panas.": "0",
+        "Tot.Used Space": "21"
+    }
+}

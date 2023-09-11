@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import Logo2 from '../logos/logo512.png'
 import { FaUser } from 'react-icons/fa6'
 import { FaCircleInfo } from 'react-icons/fa6'
+import { FaSistrix } from 'react-icons/fa6'
 
 function Home () {
   const [windowSize, setWindowSize] = useState([
@@ -26,7 +27,7 @@ function Home () {
         <div className='box1'>
           <div style={{ backgroundColor: 'white' }} className='logo-box'>
             <img
-              style={{ width: '18vh' }}
+              style={{ width: '20vh' }}
               className='logo'
               src={Logo2}
               alt=''
@@ -34,9 +35,15 @@ function Home () {
           </div>
           <div className='route-box'>
             <div className='route'>
+              <Link className='route' style={{ gap: '15px' }} to='/search'>
+                <FaSistrix />
+                Search
+              </Link>
+            </div>
+            <div className='route'>
               <Link className='route' style={{ gap: '15px' }} to='/test'>
                 <FaUser></FaUser>
-                User Search
+                User
               </Link>
             </div>
             <div className='route'>
@@ -50,12 +57,7 @@ function Home () {
         <div className='box2'>
           <div className='search-bar'>
             <h1>Home Page</h1>
-            <h3>
-              Height: {windowSize[1]}
-              Width: {windowSize[0]}
-            </h3>
           </div>
-
           <div className='data-container'>
             <div className='data-box'>
               <p style={{ textAlign: 'center' }}>
@@ -117,6 +119,11 @@ function Home () {
                 ligula. Proin et accumsan ex. Proin consectetur leo purus, vel
                 consequat metus aliquam sit amet. Nulla facilisi.
               </p>
+              <h3>
+                Height: {windowSize[1]}
+                <br />
+                Width: {windowSize[0]}
+              </h3>
             </div>
             <div className='footer'></div>
           </div>
