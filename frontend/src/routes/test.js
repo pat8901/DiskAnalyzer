@@ -4,8 +4,9 @@ import Logo2 from '../logos/logo512.png'
 import { FaHouseChimney } from 'react-icons/fa6'
 import { FaCircleInfo } from 'react-icons/fa6'
 import { SearchBar } from '../components/SearchBar'
+import { SearchBarTest } from '../components/SearchBarTest'
 
-function Test () {
+function Test() {
   return (
     <div className='contain'>
       <div className='item-box'>
@@ -34,9 +35,11 @@ function Test () {
           </div>
         </div>
         <div className='box2'>
+
           <div className='search-bar'>
             <SearchBar />
           </div>
+
           <div className='data-container'>
             <div className='data-box'>
               <div className='matplot'>
