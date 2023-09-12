@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import { NavLink } from "react-router-dom";
 import Logo2 from '../logos/logo512.png'
+import { FaUser } from 'react-icons/fa6'
+import { FaCircleInfo } from 'react-icons/fa6'
+import { FaSistrix } from 'react-icons/fa6'
 import { FaHouseChimney } from 'react-icons/fa6'
-// import { FaCircleInfo } from 'react-icons/fa6'
 import { SearchBar } from '../components/SearchBar'
 import { SearchResultsList } from '../components/SearchResultsList'
 import '../components/SearchBarTest.css'
-import { FaUser } from 'react-icons/fa6'
 
-function Search () {
+function Search() {
   const [windowSize, setWindowSize] = useState([
     window.innerWidth,
     window.innerHeight
@@ -46,9 +48,25 @@ function Search () {
               </Link>
             </div>
             <div className='route'>
+              <NavLink className='route' to='/search' style={({ isPending }) => {
+                return {
+                  backgroundColor: isPending ? "red" : '#1d3e66',
+                };
+              }}>
+                <FaSistrix />
+                Search
+              </NavLink>
+            </div>
+            <div className='route'>
               <Link className='route' style={{ gap: '15px' }} to='/test'>
                 <FaUser></FaUser>
                 User
+              </Link>
+            </div>
+            <div className='route'>
+              <Link className='route' style={{ gap: '15px' }} to='/about'>
+                <FaCircleInfo></FaCircleInfo>
+                About
               </Link>
             </div>
           </div>

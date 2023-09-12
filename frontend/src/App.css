@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 * {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 html,
@@ -45,14 +45,16 @@ body {
   gap: 1rem;
 }
 .route {
-  /* background-color: white; */
   padding-top: 1em;
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 5vh;
   width: 100%;
   color: #ffffff;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14pt;
+  gap: 15px;
 }
 .box1 {
   display: flex;
@@ -125,10 +127,18 @@ a:visited {
   border-radius: 10%;
 }
 
-a:hover,
+/* a:hover,
 a:active {
   background-color: #1d3e66;
   color: white;
+} */
+
+a:hover {
+  background-color: #1d3e66;
+  /* color: white; */
+}
+a:active {
+  background-color: #1d3e66;
 }
 
 .list {
@@ -137,11 +147,11 @@ a:active {
   height: 100%;
   width: 60%;
   align-items: flex-start;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .text {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .scroll {

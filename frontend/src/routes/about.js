@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react'
+import { NavLink } from "react-router-dom";
 import { Link } from 'react-router-dom'
 import Logo2 from '../logos/logo512.png'
-import { FaHouseChimney } from 'react-icons/fa6'
-import { FaUser } from 'react-icons/fa6'
 import { SearchBarTest } from '../components/SearchBarTest'
+import { FaUser } from 'react-icons/fa6'
+import { FaCircleInfo } from 'react-icons/fa6'
 import { FaSistrix } from 'react-icons/fa6'
+import { FaHouseChimney } from 'react-icons/fa6'
 
-function About () {
+function About() {
   const [windowSize, setWindowSize] = useState([
     window.innerWidth,
     window.innerHeight
@@ -38,10 +40,32 @@ function About () {
           </div>
           <div className='route-box'>
             <div className='route'>
-              <Link className='route' style={{ gap: '15px' }} to='/'>
+              <NavLink className='route' style={{ gap: '15px' }} to='/'>
                 <FaHouseChimney></FaHouseChimney>
                 Home
+              </NavLink>
+            </div>
+            <div className='route'>
+              <Link className='route' style={{ gap: '15px' }} to='/search'>
+                <FaSistrix />
+                Search
               </Link>
+            </div>
+            <div className='route'>
+              <Link className='route' style={{ gap: '15px' }} to='/test'>
+                <FaUser></FaUser>
+                User
+              </Link>
+            </div>
+            <div className='route'>
+              <NavLink className='route' to='/about' style={({ isPending }) => {
+                return {
+                  backgroundColor: isPending ? "red" : '#1d3e66',
+                };
+              }}>
+                <FaCircleInfo></FaCircleInfo>
+                About
+              </NavLink>
             </div>
           </div>
         </div>

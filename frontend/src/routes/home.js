@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react'
+import { NavLink } from "react-router-dom";
 import { Link } from 'react-router-dom'
 import Logo2 from '../logos/logo512.png'
 import { FaUser } from 'react-icons/fa6'
 import { FaCircleInfo } from 'react-icons/fa6'
 import { FaSistrix } from 'react-icons/fa6'
+import { FaHouseChimney } from 'react-icons/fa6'
 
-function Home () {
+function Home() {
   const [windowSize, setWindowSize] = useState([
     window.innerWidth,
     window.innerHeight
@@ -34,6 +36,16 @@ function Home () {
             />
           </div>
           <div className='route-box'>
+            <div className='route'>
+              <NavLink className='route' to='/' style={({ isPending }) => {
+                return {
+                  backgroundColor: isPending ? "red" : '#1d3e66',
+                };
+              }}>
+                <FaHouseChimney></FaHouseChimney>
+                Home
+              </NavLink>
+            </div>
             <div className='route'>
               <Link className='route' style={{ gap: '15px' }} to='/search'>
                 <FaSistrix />

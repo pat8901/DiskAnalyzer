@@ -1,14 +1,17 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { NavLink } from "react-router-dom";
 import Logo2 from '../logos/logo512.png'
-import { FaHouseChimney } from 'react-icons/fa6'
+import { FaUser } from 'react-icons/fa6'
 import { FaCircleInfo } from 'react-icons/fa6'
+import { FaSistrix } from 'react-icons/fa6'
+import { FaHouseChimney } from 'react-icons/fa6'
 import { SearchBar } from '../components/SearchBar'
 // import { SearchBarTest } from '../components/SearchBarTest'
 // import { SearchResultsList } from '../components/SearchResultsList'
-import { FaSistrix } from 'react-icons/fa6'
 
-function Test () {
+
+function Test() {
   return (
     <div className='contain'>
       <div className='item-box'>
@@ -32,6 +35,22 @@ function Test () {
               <Link className='route' style={{ gap: '15px' }} to='/search'>
                 <FaSistrix />
                 Search
+              </Link>
+            </div>
+            <div className='route'>
+              <NavLink className='route' to='/test' style={({ isPending }) => {
+                return {
+                  backgroundColor: isPending ? "red" : '#1d3e66',
+                };
+              }}>
+                <FaUser></FaUser>
+                User
+              </NavLink>
+            </div>
+            <div className='route'>
+              <Link className='route' style={{ gap: '15px' }} to='/about'>
+                <FaCircleInfo></FaCircleInfo>
+                About
               </Link>
             </div>
           </div>

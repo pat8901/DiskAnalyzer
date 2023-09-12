@@ -47,15 +47,10 @@ def csvWriter3():
     input = "research"
     output = "research"
     date = "2023-08-10"
-    with open(f"text/grouped_output/{input}_{date}.txt", "r") as f:
-        with open(f"csv/{output}_{9999999}.txt", "w", newline="") as file:
-            writer = csv.writer(file)
-            for line in f:
-                trimmedWords = []
-                line = line.split("|")
-                trimmedWords.append(count)
-                for word in line:
-                    new_word = word.strip()
-                    trimmedWords.append(new_word)
-                # writer = csv.writer(file)
-                writer.writerow(trimmedWords)
+    trimmedWords = []
+    with open(f"text/research_2023-08-10.txt", "r") as f:
+        for line in f:
+            line = line.split("|")
+            trimmedWords.append(line[0].strip())
+
+    return trimmedWords
