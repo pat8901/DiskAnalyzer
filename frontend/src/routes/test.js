@@ -1,17 +1,17 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
-import { NavLink } from "react-router-dom";
+import { NavLink } from 'react-router-dom'
 import Logo2 from '../logos/logo512.png'
 import { FaUser } from 'react-icons/fa6'
 import { FaCircleInfo } from 'react-icons/fa6'
 import { FaSistrix } from 'react-icons/fa6'
 import { FaHouseChimney } from 'react-icons/fa6'
-import { SearchBar } from '../components/SearchBar'
+//import { SearchBar } from '../components/SearchBar'
+import { UserName } from '../components/username'
 // import { SearchBarTest } from '../components/SearchBarTest'
 // import { SearchResultsList } from '../components/SearchResultsList'
 
-
-function Test() {
+function Test () {
   return (
     <div className='contain'>
       <div className='item-box'>
@@ -38,11 +38,15 @@ function Test() {
               </Link>
             </div>
             <div className='route'>
-              <NavLink className='route' to='/test' style={({ isPending }) => {
-                return {
-                  backgroundColor: isPending ? "red" : '#1d3e66',
-                };
-              }}>
+              <NavLink
+                className='route'
+                to='/test'
+                style={({ isPending }) => {
+                  return {
+                    backgroundColor: isPending ? 'red' : '#1d3e66'
+                  }
+                }}
+              >
                 <FaUser></FaUser>
                 User
               </NavLink>
@@ -66,7 +70,9 @@ function Test() {
                   alt=''
                 />
               </div>
-              <div className='data-table'>world</div>
+              <div className='data-table'>
+                <UserName />
+              </div>
             </div>
             <div className='footer'></div>
           </div>

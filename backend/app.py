@@ -44,6 +44,22 @@ def user():
     return jsonify(file)
 
 
+@app.route("/username", methods=["GET", "POST"])
+def receiveUsername():
+    id = 1
+    user = "John Smith"
+    response = [
+        {
+            "id": id,
+            "name": user,
+            "Age": 100,
+        }
+    ]
+
+    # print(jsonify(response))
+    return response
+
+
 # Running app
 if __name__ == "__main__":
     app.run(debug=True)
