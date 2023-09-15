@@ -39,7 +39,9 @@ export const UserName = () => {
           <h1 key={data.id}>
             Name: {data.name}
             <br></br>
-            Age: {data.Age}
+            ID: {data.id}
+            <br />
+            Total Storage: {data.total}
           </h1>
         )
       })}

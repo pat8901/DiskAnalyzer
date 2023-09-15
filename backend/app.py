@@ -45,19 +45,37 @@ def user():
 
 
 @app.route("/username", methods=["GET", "POST"])
-def receiveUsername():
+def sendUsername():
     id = 1
     user = "John Smith"
+    # response = [
+    #     {
+    #         "id": id,
+    #         "name": user,
+    #         "Age": 100,
+    #     }
+    # ]
     response = [
         {
-            "id": id,
-            "name": user,
-            "Age": 100,
+            "id": "1",
+            "name": "Patrick Joseph Flynn",
+            "DepCode": "CSE",
+            "AFS Groups": "154246196295",
+            "Users AFS": "18783536436",
+            "Users Panas.": "43559500120",
+            "total": "216589232851",
         }
     ]
 
     # print(jsonify(response))
     return response
+
+
+@app.route("/test", methods=["POST"])
+def recieveUsername():
+    id = 1
+    user = "John Smith"
+    print(user)
 
 
 # Running app

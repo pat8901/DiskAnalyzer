@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { NavLink } from 'react-router-dom'
 import Logo2 from '../logos/logo512.png'
@@ -12,8 +12,23 @@ import { UserName } from '../components/username'
 // import { SearchResultsList } from '../components/SearchResultsList'
 
 function Test () {
+  const [windowSize, setWindowSize] = useState([
+    window.innerWidth,
+    window.innerHeight
+  ])
+
+  useEffect(() => {
+    const handleWindowResize = () => {
+      setWindowSize([window.innerWidth, window.innerHeight])
+    }
+    window.addEventListener('resize', handleWindowResize)
+    return () => {
+      window.removeEventListener('resize', handleWindowResize)
+    }
+  }, [])
+
   return (
-    <div className='contain'>
+    <div className='contain' style={{ height: windowSize[1] }}>
       <div className='item-box'>
         <div className='box1'>
           <div style={{ backgroundColor: 'white' }} className='logo-box'>
