@@ -27,6 +27,18 @@ function Test () {
     }
   }, [])
 
+  const [whisper, setWhisper] = useState('Hello Jeff!')
+  const HandleSumbit = e => {
+    const message = { whisper }
+    fetch('http://localhost:5000/test', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(message)
+    }).then(() => {
+      console.log('posted!')
+    })
+  }
+
   return (
     <div className='contain' style={{ height: windowSize[1] }}>
       <div className='item-box'>
@@ -87,6 +99,7 @@ function Test () {
               </div>
               <div className='data-table'>
                 <UserName />
+                <HandleSumbit />
               </div>
             </div>
             <div className='footer'></div>
