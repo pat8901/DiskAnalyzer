@@ -75,7 +75,7 @@ def sendUsername():
 def recieveUsername():
     id = 1
     user = "John Smith"
-    print(user)
+    return user
 
 
 # Running app

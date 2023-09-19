@@ -34,8 +34,8 @@ function Test () {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(message)
-    }).then(() => {
-      console.log('posted!')
+    }).then(data => {
+      console.log(data)
     })
   }
 
