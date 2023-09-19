@@ -1,5 +1,5 @@
 # Import flask and datetime module for showing date and time
-from flask import Flask, send_file, jsonify
+from flask import Flask, send_file, jsonify, request
 import datetime
 import os
 import csv
@@ -48,13 +48,6 @@ def user():
 def sendUsername():
     id = 1
     user = "John Smith"
-    # response = [
-    #     {
-    #         "id": id,
-    #         "name": user,
-    #         "Age": 100,
-    #     }
-    # ]
     response = [
         {
             "id": "1",
@@ -66,7 +59,6 @@ def sendUsername():
             "total": "216589232851",
         }
     ]
-
     # print(jsonify(response))
     return response
 
@@ -75,7 +67,9 @@ def sendUsername():
 def recieveUsername():
     id = 1
     user = "John Smith"
-    return user
+    data = request.json()
+    print(data.get("whisper"))
+    return data
 
 
 # Running app
