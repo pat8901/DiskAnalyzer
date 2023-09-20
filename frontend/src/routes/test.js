@@ -27,15 +27,18 @@ function Test () {
     }
   }, [])
 
-  const [whisper, setWhisper] = useState('Hello Jeff!')
+  // const [whisper, setWhisper] = useState('Hello Jeff!')
+  const ID = 85
+  const Name = 'Larry David'
+  const storageAmount = 100
   const HandleSumbit = e => {
-    const message = { whisper }
+    const message = { ID, Name, storageAmount }
     fetch('http://localhost:5000/test', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(message)
-    }).then(data => {
-      console.log(data)
+    }).then(() => {
+      console.log(message)
     })
   }
 

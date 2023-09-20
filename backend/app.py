@@ -14,6 +14,7 @@ x = datetime.datetime.now()
 
 # Initializing flask app
 app = Flask(__name__)
+# Allows for any website to access my backend server resources. Not secure need to have only specific whitelist
 CORS(app)
 
 
@@ -25,7 +26,7 @@ def get_time():
 
 
 def sendImage():
-    image_path = "images/research_combined_histogram_2023-08-10.png"
+    image_path = "pngs/Patrick Joseph Flynn_user_report_2023-08-10.png"
     # img_dir = "backend/images"
     # img_list = os.listdir(img_dir)
     # img_path = os.path.join(img_dir, random.choice(img_list))
@@ -36,6 +37,18 @@ def sendImage():
 def myapp():
     image = sendImage()
     return send_file(image, mimetype="image/png")
+
+
+@app.route("/getUser", methods=["POST"])
+def getUser():
+    status = "good"
+    content = request.json
+    name = content["result"]
+    image_path = f"pngs/{name}_user_report_2023-08-10.png"
+    print(f"Type: {type(name)}")
+    print(f"Name recieved: {name}")
+
+    return image_path
 
 
 @app.route("/users", methods=["GET", "POST"])
@@ -65,11 +78,11 @@ def sendUsername():
 
 @app.route("/test", methods=["POST"])
 def recieveUsername():
-    id = 1
-    user = "John Smith"
-    data = request.json()
-    print(data.get("whisper"))
-    return data
+    status = "good"
+    content = request.json
+    print(f'ID: {content["ID"]}')
+    print(f'Name: {content["Name"]}')
+    return status
 
 
 # Running app
