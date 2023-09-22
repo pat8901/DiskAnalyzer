@@ -24,7 +24,7 @@ export const SearchResult = ({ result }) => {
     <div
       className='search-result'
       onClick={e => {
-        alert(`You clicked on ${result}`)
+        // alert(`You clicked on ${result}`)
         //const message = { result }
         // fetch('http://localhost:5000/getUser', {
         //   method: 'POST',
