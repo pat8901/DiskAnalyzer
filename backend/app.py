@@ -33,9 +33,41 @@ def sendImage():
     return image_path
 
 
+def sendImage2():
+    image_path = f"pngs/_user_report_2023-08-10.png"
+    # img_dir = "backend/images"
+    # img_list = os.listdir(img_dir)
+    # img_path = os.path.join(img_dir, random.choice(img_list))
+    return image_path
+
+
+@app.route("/getUser2", methods=["POST"])
+def getUser2():
+    status = "good"
+    content = request.json
+    name = content["result"]
+    image_path = f"pngs/{name}_user_report_2023-08-10.png"
+    print(f"Type: {type(name)}")
+    print(f"Name recieved: {name}")
+    return image_path
+
+
 @app.route("/image")
 def myapp():
     image = sendImage()
+    return send_file(image, mimetype="image/png")
+
+
+# I am working on this currently
+@app.route("/piIMage/<string:Name>")
+def sendingImage(Name):
+    image = f"pngs/{Name}_user_report_2023-08-10.png"
+    return send_file(image, mimetype="image/png")
+
+
+@app.route("/getImage")
+def getImage():
+    image = getUser2()
     return send_file(image, mimetype="image/png")
 
 
@@ -47,7 +79,6 @@ def getUser():
     image_path = f"pngs/{name}_user_report_2023-08-10.png"
     print(f"Type: {type(name)}")
     print(f"Name recieved: {name}")
-
     return image_path
 
 

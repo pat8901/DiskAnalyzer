@@ -4,6 +4,8 @@ import Home from './home'
 import Test from './test'
 import About from './about'
 import Search from './search'
+import Imagesearch from './Imagesearch'
+import User from './user'
 
 function App () {
   return (
@@ -13,6 +15,8 @@ function App () {
         <Route path='test' element={<Test />} />
         <Route path='about' element={<About />} />
         <Route path='search' element={<Search />} />
+        <Route path='imagesearch' element={<Imagesearch />} />
+        <Route path='search/user/:slug' element={<User />} />
       </Routes>
     </div>
   )

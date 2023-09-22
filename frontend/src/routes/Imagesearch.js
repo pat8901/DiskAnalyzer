@@ -10,7 +10,22 @@ import { SearchBar } from '../components/SearchBar'
 import { SearchResultsList } from '../components/SearchResultsList'
 import '../components/SearchBarTest.css'
 
-function Search () {
+function Imagesearch () {
+  const imageUrl = 'https://i.imgur.com/fHyEMsl.jpg'
+
+  const [img, setImg] = useState()
+
+  const fetchImage = async () => {
+    const res = await fetch(imageUrl)
+    const imageBlob = await res.blob()
+    const imageObjectURL = URL.createObjectURL(imageBlob)
+    setImg(imageObjectURL)
+  }
+
+  useEffect(() => {
+    fetchImage()
+  }, [])
+
   const [windowSize, setWindowSize] = useState([
     window.innerWidth,
     window.innerHeight
@@ -72,12 +87,6 @@ function Search () {
                 <FaCircleInfo></FaCircleInfo>
                 About
               </Link>
-              {/* Temportay code */}
-              {/* <Link className='route' style={{ gap: '15px' }} to='/imagesearch'>
-                <FaCircleInfo></FaCircleInfo>
-                Image Search
-              </Link> */}
-              {/* ends here */}
             </div>
           </div>
         </div>
@@ -91,6 +100,11 @@ function Search () {
                 <SearchResultsList results={results} />
               </div>
             </div>
+            <div className='matplot'>
+              <>
+                <img src={img} alt='icons' />
+              </>
+            </div>
             <div className='footer'></div>
           </div>
         </div>
@@ -99,4 +113,4 @@ function Search () {
   )
 }
 
-export default Search
+export default Imagesearch
