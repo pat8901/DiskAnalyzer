@@ -102,9 +102,7 @@ const User = () => {
           </div>
         </div>
         <div className='box2'>
-          <div className='search-bar'>
-            <h1>{slug}</h1>
-          </div>
+          <div className='search-bar'></div>
           <div className='data-container'>
             <div className='data-box'>
               <div className='matplot'>
