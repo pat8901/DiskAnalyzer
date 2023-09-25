@@ -1,7 +1,8 @@
 .searcher {
   background-color: white;
   border-radius: 10px;
-  width: 25vw;
+  /* width: 25vw; */
+  width: 28%;
   height: 1.5rem;
   box-shadow: 0 0 8px #ddd;
   padding: 0 15px;

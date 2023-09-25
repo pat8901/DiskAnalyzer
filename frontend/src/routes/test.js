@@ -100,10 +100,10 @@ function Test () {
                   alt=''
                 />
               </div>
-              <div className='data-table'>
+              {/* <div className='data-table'>
                 <UserName />
                 <HandleSumbit />
-              </div>
+              </div> */}
             </div>
             <div className='footer'></div>
           </div>
