@@ -26,7 +26,7 @@ def get_time():
 
 
 def sendImage():
-    image_path = "pngs/Patrick Joseph Flynn_user_report_2023-08-10.png"
+    image_path = "images/research_totals_2023-08-10.png"
     # img_dir = "backend/images"
     # img_list = os.listdir(img_dir)
     # img_path = os.path.join(img_dir, random.choice(img_list))
@@ -56,6 +56,18 @@ def getUser2():
 def myapp():
     image = sendImage()
     return send_file(image, mimetype="image/png")
+
+
+@app.route("/image/afsGroup")
+def myapp0():
+    image_path = "images/research_AFS Groups_histogram_2023-08-10.png"
+    return send_file(image_path, mimetype="image/png")
+
+
+@app.route("/image/combined")
+def myapp1():
+    image_path = "images/research_combined_histogram_2023-08-10.png"
+    return send_file(image_path, mimetype="image/png")
 
 
 # I am working on this currently

@@ -100,6 +100,20 @@ function Test () {
                   alt=''
                 />
               </div>
+              <div className='matplot'>
+                <img
+                  className='matplot-image'
+                  src={'http://localhost:5000/image/combined'}
+                  alt=''
+                />
+              </div>
+              <div className='matplot'>
+                <img
+                  className='matplot-image'
+                  src={'http://localhost:5000/image/afsGroup'}
+                  alt=''
+                />
+              </div>
               {/* <div className='data-table'>
                 <UserName />
                 <HandleSumbit />
