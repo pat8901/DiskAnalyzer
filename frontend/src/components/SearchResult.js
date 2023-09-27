@@ -16,7 +16,9 @@ export const SearchResult = ({ result }) => {
   let navigate = useNavigate()
   const routeChange = route => {
     console.log(route)
-    let path = 'user/' + route
+    let path = route
+    // let path = 'user/' + route
+    console.log(path)
     navigate(path)
   }
 

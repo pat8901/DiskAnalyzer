@@ -77,7 +77,7 @@ function Imagesearch () {
               </NavLink>
             </div>
             <div className='route'>
-              <Link className='route' style={{ gap: '15px' }} to='/test'>
+              <Link className='route' style={{ gap: '15px' }} to='/group'>
                 <FaUser></FaUser>
                 User
               </Link>

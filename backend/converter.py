@@ -16,12 +16,12 @@ def toJSON():
             # Assuming a column named 'No' to
             # be the primary key
 
-            key = rows["Id"]
+            key = rows["Full Name"]
             data[key] = rows
 
     # Open a json writer, and use the json.dumps()
     # function to dump data
-    with open("./json/names.json", "w", encoding="utf-8") as jsonf:
+    with open("./json/names_verson2.json", "w", encoding="utf-8") as jsonf:
         jsonf.write(json.dumps(data, indent=4))
 
 
@@ -54,3 +54,6 @@ def csvWriter3():
             trimmedWords.append(line[0].strip())
 
     return trimmedWords
+
+
+toJSON()

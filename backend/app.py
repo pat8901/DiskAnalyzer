@@ -70,7 +70,7 @@ def myapp1():
     return send_file(image_path, mimetype="image/png")
 
 
-# I am working on this currently
+# Returns dynamic routes (slug)
 @app.route("/piIMage/<string:Name>")
 def sendingImage(Name):
     image = f"pngs/{Name}_user_report_2023-08-10.png"
@@ -119,6 +119,7 @@ def sendUsername():
     return response
 
 
+# from this route I recive the name of the dynamic route from the frontend. how to I return json data just for the dynamic name recieved?
 @app.route("/test", methods=["POST"])
 def recieveUsername():
     status = "good"
@@ -126,6 +127,15 @@ def recieveUsername():
     print(f'ID: {content["ID"]}')
     print(f'Name: {content["Name"]}')
     return status
+
+
+# need a better json source file.One that uses names instead of numbers for indexes
+@app.route("/user-info", methods=["GET"])
+def sendUserInfo():
+    with open("json/names_version2.json", "r") as json_file:
+        data = json.load(json_file)
+
+    return jsonify(data["Steven A Corcelli"])
 
 
 # Running app

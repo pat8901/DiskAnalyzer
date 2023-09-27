@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from 'react'
-import { NavLink } from "react-router-dom";
+import { NavLink } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import Logo2 from '../logos/logo512.png'
 import { SearchBarTest } from '../components/SearchBarTest'
 import { FaUser } from 'react-icons/fa6'
+import { FaBoxesStacked } from 'react-icons/fa6'
 import { FaCircleInfo } from 'react-icons/fa6'
 import { FaSistrix } from 'react-icons/fa6'
 import { FaHouseChimney } from 'react-icons/fa6'
 
-function About() {
+function About () {
   const [windowSize, setWindowSize] = useState([
     window.innerWidth,
     window.innerHeight
@@ -52,17 +53,21 @@ function About() {
               </Link>
             </div>
             <div className='route'>
-              <Link className='route' style={{ gap: '15px' }} to='/test'>
-                <FaUser></FaUser>
-                User
+              <Link className='route' style={{ gap: '15px' }} to='/group'>
+                <FaBoxesStacked />
+                Inventory
               </Link>
             </div>
             <div className='route'>
-              <NavLink className='route' to='/about' style={({ isPending }) => {
-                return {
-                  backgroundColor: isPending ? "red" : '#1d3e66',
-                };
-              }}>
+              <NavLink
+                className='route'
+                to='/about'
+                style={({ isPending }) => {
+                  return {
+                    backgroundColor: isPending ? 'red' : '#1d3e66'
+                  }
+                }}
+              >
                 <FaCircleInfo></FaCircleInfo>
                 About
               </NavLink>

@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 import '../App.css'
 import Home from './home'
-import Test from './test'
+import Group from './group'
 import About from './about'
 import Search from './search'
 import Imagesearch from './Imagesearch'
@@ -12,11 +12,12 @@ function App () {
     <div>
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='test' element={<Test />} />
+        <Route path='group' element={<Group />} />
         <Route path='about' element={<About />} />
         <Route path='search' element={<Search />} />
+        <Route path='search/:slug' element={<User />} />
+        {/* <Route path='search/user/:slug' element={<User />} /> */}
         <Route path='imagesearch' element={<Imagesearch />} />
-        <Route path='search/user/:slug' element={<User />} />
       </Routes>
     </div>
   )

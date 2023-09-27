@@ -6,6 +6,7 @@ import { FaUser } from 'react-icons/fa6'
 import { FaCircleInfo } from 'react-icons/fa6'
 import { FaSistrix } from 'react-icons/fa6'
 import { FaHouseChimney } from 'react-icons/fa6'
+import { FaBoxesStacked } from 'react-icons/fa6'
 import { UserName } from '../components/username'
 
 const User = () => {
@@ -40,9 +41,11 @@ const User = () => {
   }, [])
 
   const ID = 85
+  // Finds the dynamic user
   const Name = slug
   const storageAmount = 100
 
+  // Probably should be a get request to receive json data
   const HandleSumbit = e => {
     const message = { ID, Name, storageAmount }
     fetch('http://localhost:5000/test', {
@@ -80,18 +83,22 @@ const User = () => {
               </Link>
             </div>
             <div className='route'>
-              <NavLink
+              {/* <NavLink
                 className='route'
-                to='/test'
+                to='/group'
                 style={({ isPending }) => {
                   return {
                     backgroundColor: isPending ? 'red' : '#1d3e66'
                   }
                 }}
               >
-                <FaUser></FaUser>
+                <FaBoxesStacked />
                 User
-              </NavLink>
+              </NavLink> */}
+              <Link className='route' style={{ gap: '15px' }} to='/group'>
+                <FaBoxesStacked />
+                Inventory
+              </Link>
             </div>
             <div className='route'>
               <Link className='route' style={{ gap: '15px' }} to='/about'>

@@ -24,7 +24,8 @@ export const UserName = () => {
   //   return <div>{post}</div>
 
   useEffect(() => {
-    fetch('http://localhost:5000/username')
+    // fetch('http://localhost:5000/username')
+    fetch('http://localhost:5000/user-info')
       .then(response => response.json())
       .then(data => {
         console.log(data)
