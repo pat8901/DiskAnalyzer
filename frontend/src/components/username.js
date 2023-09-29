@@ -10,7 +10,7 @@ export const UserName = () => {
     fetch('http://localhost:5000/user-info/' + slug)
       .then(response => response.json())
       .then(data => {
-        console.log(data)
+        //console.log(data)
         setPost(data)
       })
   }, [])
