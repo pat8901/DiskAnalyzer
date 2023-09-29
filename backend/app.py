@@ -1,14 +1,8 @@
-# Import flask and datetime module for showing date and time
 from flask import Flask, send_file, jsonify, request
 import datetime
-import os
-import csv
 import json
 import converter
-from datetime import timedelta
-from functools import update_wrapper
 from flask_cors import CORS
-
 
 x = datetime.datetime.now()
 
@@ -16,17 +10,6 @@ x = datetime.datetime.now()
 app = Flask(__name__)
 # Allows for any website to access my backend server resources. Not secure need to have only specific whitelist
 CORS(app)
-
-
-# @app.route("/getUser2", methods=["POST"])
-# def getUser2():
-#     status = "good"
-#     content = request.json
-#     name = content["result"]
-#     image_path = f"pngs/{name}_user_report_2023-08-10.png"
-#     print(f"Type: {type(name)}")
-#     print(f"Name recieved: {name}")
-#     return image_path
 
 
 # +==============================================================================
@@ -65,23 +48,6 @@ def sendingImage(Name):
     return send_file(image, mimetype="image/png")
 
 
-# @app.route("/getImage")
-# def getImage():
-#     image = getUser2()
-#     return send_file(image, mimetype="image/png")
-
-
-# @app.route("/getUser", methods=["POST"])
-# def getUser():
-#     status = "good"
-#     content = request.json
-#     name = content["result"]
-#     image_path = f"pngs/{name}_user_report_2023-08-10.png"
-#     print(f"Type: {type(name)}")
-#     print(f"Name recieved: {name}")
-#     return image_path
-
-
 # +==============================================================================
 # |           Runs csv to json converter. Returns json to the browser           |
 # +==============================================================================
@@ -89,43 +55,6 @@ def sendingImage(Name):
 def user():
     file = converter.toJSON2()
     return jsonify(file)
-
-
-# @app.route("/username", methods=["GET", "POST"])
-# def sendUsername():
-
-#     response = [
-#         {
-#             "id": "1",
-#             "name": "Patrick Joseph Flynn",
-#             "DepCode": "CSE",
-#             "AFS Groups": "154246196295",
-#             "Users AFS": "18783536436",
-#             "Users Panas.": "43559500120",
-#             "total": "216589232851",
-#         }
-#     ]
-#     # print(jsonify(response))
-#     return response
-
-
-# from this route I recive the name of the dynamic route from the frontend. how to I return json data just for the dynamic name recieved?
-@app.route("/test", methods=["POST"])
-def recieveUsername():
-    status = "good"
-    content = request.json
-    print(f'ID: {content["ID"]}')
-    print(f'Name: {content["Name"]}')
-    return status
-
-
-# # need a better json source file.One that uses names instead of numbers for indexes
-# @app.route("/user-info", methods=["GET"])
-# def sendUserInfo():
-#     with open("json/names_version2.json", "r") as json_file:
-#         data = json.load(json_file)
-
-#     return jsonify([data["Steven A Corcelli"]])
 
 
 # +==============================================================================
@@ -138,6 +67,16 @@ def sendUserInfo(Name):
         data = json.load(json_file)
 
     return jsonify([data[Name]])
+
+
+# from this route I recive the name of the dynamic route from the frontend. how to I return json data just for the dynamic name recieved?
+@app.route("/test", methods=["POST"])
+def recieveUsername():
+    status = "good"
+    content = request.json
+    print(f'ID: {content["ID"]}')
+    print(f'Name: {content["Name"]}')
+    return status
 
 
 # +==============================================================================
