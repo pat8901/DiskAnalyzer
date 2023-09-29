@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { NavLink, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import Logo2 from '../logos/logo512.png'
-import { FaUser } from 'react-icons/fa6'
 import { FaCircleInfo } from 'react-icons/fa6'
 import { FaSistrix } from 'react-icons/fa6'
 import { FaHouseChimney } from 'react-icons/fa6'
@@ -10,18 +9,20 @@ import { FaBoxesStacked } from 'react-icons/fa6'
 import { UserName } from '../components/username'
 
 const User = () => {
-  const { slug } = useParams()
-  const imageUrl = 'http://localhost:5000/piIMage/' + slug
   const [img, setImg] = useState()
-
-  const fetchImage = async () => {
-    const res = await fetch(imageUrl)
-    const imageBlob = await res.blob()
-    const imageObjectURL = URL.createObjectURL(imageBlob)
-    setImg(imageObjectURL)
-  }
+  const { slug } = useParams()
+  // const slugObject = useMemo(() => {
+  //   return { slug: slug }
+  // }, [slug])
 
   useEffect(() => {
+    const fetchImage = async () => {
+      const imageUrl = 'http://localhost:5000/piIMage/' + slug
+      const res = await fetch(imageUrl)
+      const imageBlob = await res.blob()
+      const imageObjectURL = URL.createObjectURL(imageBlob)
+      setImg(imageObjectURL)
+    }
     fetchImage()
   }, [])
 
@@ -39,23 +40,6 @@ const User = () => {
       window.removeEventListener('resize', handleWindowResize)
     }
   }, [])
-
-  const ID = 85
-  // Finds the dynamic user
-  const Name = slug
-  const storageAmount = 100
-
-  // Probably should be a get request to receive json data
-  const HandleSumbit = e => {
-    const message = { ID, Name, storageAmount }
-    fetch('http://localhost:5000/test', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(message)
-    }).then(() => {
-      console.log(message)
-    })
-  }
 
   return (
     <div className='contain' style={{ height: windowSize[1] }}>
@@ -83,18 +67,6 @@ const User = () => {
               </Link>
             </div>
             <div className='route'>
-              {/* <NavLink
-                className='route'
-                to='/group'
-                style={({ isPending }) => {
-                  return {
-                    backgroundColor: isPending ? 'red' : '#1d3e66'
-                  }
-                }}
-              >
-                <FaBoxesStacked />
-                User
-              </NavLink> */}
               <Link className='route' style={{ gap: '15px' }} to='/group'>
                 <FaBoxesStacked />
                 Inventory
@@ -117,7 +89,6 @@ const User = () => {
               </div>
               <div className='data-table'>
                 <UserName />
-                <HandleSumbit />
               </div>
             </div>
             <div className='footer'></div>

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { NavLink } from 'react-router-dom'
 import Logo2 from '../logos/logo512.png'
-import { FaUser } from 'react-icons/fa6'
 import { FaCircleInfo } from 'react-icons/fa6'
 import { FaBoxesStacked } from 'react-icons/fa6'
 import { FaSistrix } from 'react-icons/fa6'
@@ -64,10 +63,6 @@ function Search () {
             </div>
             <div className='route'>
               <Link className='route' style={{ gap: '15px' }} to='/group'>
-                {/* <FontAwesomeIcon
-                  icon='fa-solid fa-boxes-stacked'
-                  style={{ color: '#ffffff' }}
-                /> */}
                 <FaBoxesStacked />
                 Inventory
               </Link>
@@ -77,12 +72,6 @@ function Search () {
                 <FaCircleInfo></FaCircleInfo>
                 About
               </Link>
-              {/* Temportay code */}
-              {/* <Link className='route' style={{ gap: '15px' }} to='/imagesearch'>
-                <FaCircleInfo></FaCircleInfo>
-                Image Search
-              </Link> */}
-              {/* ends here */}
             </div>
           </div>
         </div>

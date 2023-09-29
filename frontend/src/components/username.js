@@ -1,31 +1,13 @@
 import React, { useState, useEffect } from 'react'
+import { useParams } from 'react-router-dom'
+import '../components/table.css'
 
 export const UserName = () => {
+  const { slug } = useParams()
   const [post, setPost] = useState([])
-  //   const [result, setResult] = useState([])
-
-  //   useEffect(() => {
-  //     fetch('https://jsonplaceholder.typicode.com/users')
-  //       .then(responce => responce.json())
-  //       .then(data => {
-  //         console.log(data)
-  //         setResult(data)
-  //       })
-  //   }, [])
-
-  //   useEffect(() => {
-  //     fetch('http://localhost:5000/username')
-  //       .then(response => response.json())
-  //       .then(data => {
-  //         console.log(data)
-  //         setPost(data.name)
-  //       })
-  //   }, [])
-  //   return <div>{post}</div>
 
   useEffect(() => {
-    // fetch('http://localhost:5000/username')
-    fetch('http://localhost:5000/user-info')
+    fetch('http://localhost:5000/user-info/' + slug)
       .then(response => response.json())
       .then(data => {
         console.log(data)
@@ -37,13 +19,26 @@ export const UserName = () => {
     <div>
       {post.map(data => {
         return (
-          <h1 key={data.Id}>
-            Name: {data['Full Name']}
-            <br></br>
-            ID: {data.Id}
-            <br />
-            Total Storage: {data.DepCode}
-          </h1>
+          <table key={data.Id}>
+            <tbody>
+              <tr>
+                <th>Name</th>
+                <td>{data['Full Name']}</td>
+              </tr>
+              <tr>
+                <th>Id</th>
+                <td>{data.Id}</td>
+              </tr>
+              <tr>
+                <th>Dept Code</th>
+                <td>{data['DepCode']}</td>
+              </tr>
+              <tr>
+                <th>Total Storage (TB)</th>
+                <td>{data['Tot.Used Space'] / 1000000000}</td>
+              </tr>
+            </tbody>
+          </table>
         )
       })}
     </div>

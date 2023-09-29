@@ -1,0 +1,19 @@
+table,
+th,
+tr {
+  border: 1px solid;
+  text-align: left;
+  background-color: white;
+  border-collapse: collapse;
+  height: 100%;
+  width: 100%;
+}
+
+td {
+  text-align: left;
+  border-collapse: collapse;
+  border: 1px solid;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+}

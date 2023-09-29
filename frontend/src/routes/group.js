@@ -2,17 +2,28 @@ import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { NavLink } from 'react-router-dom'
 import Logo2 from '../logos/logo512.png'
-import { FaUser } from 'react-icons/fa6'
 import { FaBoxesStacked } from 'react-icons/fa6'
 import { FaCircleInfo } from 'react-icons/fa6'
 import { FaSistrix } from 'react-icons/fa6'
 import { FaHouseChimney } from 'react-icons/fa6'
-//import { SearchBar } from '../components/SearchBar'
-import { UserName } from '../components/username'
-// import { SearchBarTest } from '../components/SearchBarTest'
-// import { SearchResultsList } from '../components/SearchResultsList'
 
 function Group () {
+  // This code may be useful to remember
+  // const ID = 85
+  // const Name = 'Larry David'
+  // const storageAmount = 100
+  // const HandleSumbit = e => {
+  //   const message = { ID, Name, storageAmount }
+  //   fetch('http://localhost:5000/test', {
+  //     method: 'POST',
+  //     headers: { 'Content-Type': 'application/json' },
+  //     body: JSON.stringify(message)
+  //   }).then(() => {
+  //     console.log(message)
+  //   })
+  // }
+  // End
+
   const [windowSize, setWindowSize] = useState([
     window.innerWidth,
     window.innerHeight
@@ -27,21 +38,6 @@ function Group () {
       window.removeEventListener('resize', handleWindowResize)
     }
   }, [])
-
-  // const [whisper, setWhisper] = useState('Hello Jeff!')
-  const ID = 85
-  const Name = 'Larry David'
-  const storageAmount = 100
-  const HandleSumbit = e => {
-    const message = { ID, Name, storageAmount }
-    fetch('http://localhost:5000/test', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(message)
-    }).then(() => {
-      console.log(message)
-    })
-  }
 
   return (
     <div className='contain' style={{ height: windowSize[1] }}>
@@ -115,10 +111,6 @@ function Group () {
                   alt=''
                 />
               </div>
-              {/* <div className='data-table'>
-                <UserName />
-                <HandleSumbit />
-              </div> */}
             </div>
             <div className='footer'></div>
           </div>

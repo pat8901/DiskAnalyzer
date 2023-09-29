@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 import { Link } from 'react-router-dom'
-import Logo2 from '../logos/logo512.png'
-import { SearchBarTest } from '../components/SearchBarTest'
-import { FaUser } from 'react-icons/fa6'
+import crc_logo from '../logos/logo512.png'
 import { FaBoxesStacked } from 'react-icons/fa6'
 import { FaCircleInfo } from 'react-icons/fa6'
 import { FaSistrix } from 'react-icons/fa6'
@@ -25,8 +23,6 @@ function About () {
     }
   }, [])
 
-  // const [results, setResults] = useState([])
-
   return (
     <div className='contain' style={{ height: windowSize[1] }}>
       <div className='item-box'>
@@ -35,7 +31,7 @@ function About () {
             <img
               style={{ width: '20vh' }}
               className='logo'
-              src={Logo2}
+              src={crc_logo}
               alt=''
             />
           </div>

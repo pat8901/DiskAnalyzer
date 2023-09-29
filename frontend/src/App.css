@@ -74,14 +74,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: red; */
   height: 10vh;
   /* width: 100%; */
   width: calc(100% - 20px);
   padding: 10px;
 }
 .data-container {
-  /* background-color: purple; */
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -121,11 +119,13 @@ body {
   width: 100%;
 }
 .data-table {
-  background-color: blue;
+  /* background-color: blue; */
+  display: flex;
   /* height: 50rem;
   width: 70rem; */
   max-width: 75%;
-  height: auto;
+  width: 500px;
+  height: 500px;
 }
 
 a:link,
