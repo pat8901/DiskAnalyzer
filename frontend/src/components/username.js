@@ -37,12 +37,12 @@ export const UserName = () => {
     <div>
       {post.map(data => {
         return (
-          <h1 key={data.id}>
-            Name: {data.name}
+          <h1 key={data.Id}>
+            Name: {data['Full Name']}
             <br></br>
-            ID: {data.id}
+            ID: {data.Id}
             <br />
-            Total Storage: {data.total}
+            Total Storage: {data.DepCode}
           </h1>
         )
       })}

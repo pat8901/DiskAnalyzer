@@ -135,7 +135,7 @@ def sendUserInfo():
     with open("json/names_version2.json", "r") as json_file:
         data = json.load(json_file)
 
-    return jsonify(data["Steven A Corcelli"])
+    return jsonify([data["Steven A Corcelli"]])
 
 
 # Running app
