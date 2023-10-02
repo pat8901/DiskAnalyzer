@@ -4,6 +4,7 @@ import json
 import converter
 from flask_cors import CORS
 
+
 x = datetime.datetime.now()
 
 # Initializing flask app
@@ -17,6 +18,20 @@ CORS(app)
 # +==============================================================================
 @app.route("/image", methods=["GET"])
 def myapp():
+    image = "images/research_totals_2023-08-10.png"
+    return send_file(image, mimetype="image/png")
+
+
+# +=============================================================================+
+# |         Return array of users to frontend found in specific report          |
+# |                                                                             |
+# |   *In the future may be able to dynamically return users based off report   |
+# |       by using the slug and parsing the path to fid the correct report*     |
+# +=============================================================================+
+@app.route("/people", methods=["GET"])
+def getUsers():
+    report_path = "./reports/base/Storage_Rep_2023-08-10.pdf"
+
     image = "images/research_totals_2023-08-10.png"
     return send_file(image, mimetype="image/png")
 

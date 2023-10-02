@@ -8,7 +8,7 @@ import { FaSistrix } from 'react-icons/fa6'
 import { FaHouseChimney } from 'react-icons/fa6'
 import { SearchBar } from '../components/SearchBar'
 import { SearchResultsList } from '../components/SearchResultsList'
-import '../components/SearchBarTest.css'
+import '../components/styles/SearchBarTest.css'
 
 function Search () {
   const [windowSize, setWindowSize] = useState([

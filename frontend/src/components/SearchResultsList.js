@@ -1,5 +1,5 @@
 import React from 'react'
-import './SearchBarTest.css'
+import './styles/SearchBarTest.css'
 import { SearchResult } from './SearchResult'
 
 export const SearchResultsList = ({ results }) => {

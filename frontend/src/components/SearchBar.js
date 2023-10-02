@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
 import { FaSistrix } from 'react-icons/fa6'
-import './SearchBar.css'
+import './styles/SearchBar.css'
 
 export const SearchBar = ({ setResults }) => {
   const [input, setInput] = useState('')
-  // const users = ['joe', 'jeff', 'pat', 'tim', 'sam', 'bill', 'ash']
   const pi_users = [
     'Patrick Joseph Flynn',
     'Steven A Corcelli',
@@ -544,9 +543,13 @@ export const SearchBar = ({ setResults }) => {
 
   const fetchEstablishedData = value => {
     const filteredItems = pi_users.filter(user => {
-      return value && user.toLowerCase().includes(value)
+      // console.log(value.toLowerCase())
+      // console.log(user)
+      // console.log(value && user.toLowerCase().includes(value.toLowerCase()))
+      return value && user.toLowerCase().includes(value.toLowerCase())
     })
-    setResults(filteredItems)
+    // console.log(filteredItems.sort())
+    setResults(filteredItems.sort())
   }
 
   const handleChange = value => {

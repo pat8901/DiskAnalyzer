@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import './SearchResult.css'
+import './styles/SearchResult.css'
 
 export const SearchResult = ({ result }) => {
   let navigate = useNavigate()

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import '../components/table.css'
+import './styles/table.css'
 
 export const UserName = () => {
   const { slug } = useParams()
