@@ -3,6 +3,9 @@ import datetime
 import json
 import converter
 from flask_cors import CORS
+import plots
+import plots.writer
+import plots.tools
 
 
 x = datetime.datetime.now()
@@ -31,9 +34,8 @@ def myapp():
 @app.route("/people", methods=["GET"])
 def getUsers():
     report_path = "./reports/base/Storage_Rep_2023-08-10.pdf"
-
-    image = "images/research_totals_2023-08-10.png"
-    return send_file(image, mimetype="image/png")
+    array = plots.writer.nameExtractor()
+    return jsonify(array)
 
 
 # +==============================================================================

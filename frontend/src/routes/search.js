@@ -7,6 +7,7 @@ import { FaBoxesStacked } from 'react-icons/fa6'
 import { FaSistrix } from 'react-icons/fa6'
 import { FaHouseChimney } from 'react-icons/fa6'
 import { SearchBar } from '../components/SearchBar'
+import { DateFilter } from '../components/DateFilter'
 import { SearchResultsList } from '../components/SearchResultsList'
 import '../components/styles/SearchBarTest.css'
 
@@ -78,6 +79,7 @@ function Search () {
         <div className='box2'>
           <div className='search-bar'>
             <SearchBar setResults={setResults} />
+            <DateFilter />
           </div>
           <div className='data-container'>
             <div className='data-box'>
