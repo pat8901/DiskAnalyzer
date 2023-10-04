@@ -1,4 +1,6 @@
-from flask import Flask, send_file, jsonify, request
+import os
+from werkzeug.utils import secure_filename
+from flask import Flask, send_file, jsonify, request, redirect, url_for, flash
 import datetime
 import json
 import converter
@@ -7,13 +9,20 @@ import plots
 import plots.writer
 import plots.tools
 
-
 x = datetime.datetime.now()
-
+UPLOAD_FOLDER = "./api"
+ALLOWED_EXTENSIONS = {"txt", "pdf", "csv"}
 # Initializing flask app
 app = Flask(__name__)
+app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
+
+
 # Allows for any website to access my backend server resources. Not secure need to have only specific whitelist
 CORS(app)
+
+
+def allowed_file(filename):
+    return "." in filename and filename.rsplit(".", 1)[1].lower() in ALLOWED_EXTENSIONS
 
 
 # +==============================================================================
@@ -23,6 +32,27 @@ CORS(app)
 def myapp():
     image = "images/research_totals_2023-08-10.png"
     return send_file(image, mimetype="image/png")
+
+
+@app.route("/upload", methods=["POST"])
+def getUpload():
+    status = "good"
+    if request.method == "POST":
+        # check if the post request has the file part
+        if "file" not in request.files:
+            flash("No file part")
+            return redirect(request.url)
+        file = request.files["file"]
+        # If the user does not select a file, the browser submits an
+        # empty file without a filename.
+        if file.filename == "":
+            flash("No selected file")
+            return redirect(request.url)
+        if file and allowed_file(file.filename):
+            filename = secure_filename(file.filename)
+            file.save(os.path.join(app.config["UPLOAD_FOLDER"], filename))
+            # return redirect(url_for("download_file", name=filename))
+    return status
 
 
 # +=============================================================================+
