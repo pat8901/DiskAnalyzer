@@ -199,7 +199,7 @@ def csvChecker():
 # |       Gets the names found in a group text file and returns an array of names        |
 # +======================================================================================+
 def nameExtractor():
-    with open("text/group_output/research_2023-08-10.txt", "r") as file:
+    with open("./text/group_output/research_2023-08-10.txt", "r") as file:
         names = []
         for line in file:
             line = line.split("|")
