@@ -22,6 +22,7 @@ ALLOWED_EXTENSIONS = {"txt", "pdf", "csv"}
 
 # Initializing flask app
 app = Flask(__name__)
+# what is "app.config"?
 app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
 # Allows for any website to access my backend server resources. Not secure need to have only specific whitelist
 CORS(app)
@@ -45,7 +46,7 @@ my_thread.start()
 
 # +=============================================================================+
 # |                    Watchdog that runs on backround thread                   |
-# |           that watch for file changes in a folder and execute code          |
+# |     watches for file changes in a folder and executes code upon detection   |
 # +=============================================================================+
 def my_watchdog():
     print("I entered watchdog")
@@ -89,9 +90,14 @@ watchdog_thread.start()
 def testcall(event):
     print(f"you called a fucntion ")
 
+def prepareFile():
+    print("writing output...")
+    plots.writer.createFullOutput(".\\reports\\base\\Storage_Rep_2023-08-10.pdf","test")
+    print("Complete!")
+
 
 # +==============================================================================
-# |         Takes csv file and makes a json file where names are the key        |
+# |         Checks to see if the file extention is allowed for uplaod           |
 # +==============================================================================
 def allowed_file(filename):
     return "." in filename and filename.rsplit(".", 1)[1].lower() in ALLOWED_EXTENSIONS
@@ -105,18 +111,26 @@ def myapp():
     image = "images/research_totals_2023-08-10.png"
     return send_file(image, mimetype="image/png")
 
-
+# +=============================================================================+
+# |         Recieve file upload from frontend and save file to storage          |
+# +=============================================================================+
 @app.route("/upload", methods=["POST"])
 def getUpload():
     status = "good"
     if request.method == "POST":
-        # check if the post request has the file part
+        # POST data should be a formdata object which contain key:value pairs
+        # Key should = "file", Value should = Json data
+        # If the key ("file") is not found then cancel request
+        # For more info find "FileUpload.js" on the frontend server
         if "file" not in request.files:
             flash("No file part")
             return redirect(request.url)
-        file = request.files["file"]
+        # Looks for key:value pairs in the POST request.
+        # The key it looks for is "file". This was set in "FileUpload.js" on the frontend
+        file = request.files["file"]  
         # If the user does not select a file, the browser submits an
         # empty file without a filename.
+        # * I don't believe this is implmented on the frontend yet *
         if file.filename == "":
             flash("No selected file")
             return redirect(request.url)
@@ -198,8 +212,8 @@ def recieveUsername():
     return status
 
 
-# +==============================================================================
+# +=============================================================================+
 # |                              Running app                                    |
-# +==============================================================================
+# +=============================================================================+
 if __name__ == "__main__":
     app.run(debug=True)

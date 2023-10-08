@@ -21,7 +21,8 @@ def createFullOutput(input, date):
             page = reader.pages[count]
             text = page.extract_text()
             f_output.write(text + "\n")
-            count = count + 1
+            # count = count + 1 
+            count+=1 # Do I even need to count like this?
 
 
 # +======================================================================================+
@@ -98,7 +99,7 @@ def createCollegesOutput(date):
 
 
 # +======================================================================================+
-# |           Creates a csv file from previosuly generated csv files                     |
+# |           Creates a csv file from previosuly generated csv (text) files                     |
 # +======================================================================================+
 def csvWriter(input, output, date):
     with open(f"text/grouped_output/{input}_{date}.txt", "r") as f:
