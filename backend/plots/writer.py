@@ -1,4 +1,5 @@
 import sys
+import os
 from pypdf import PdfReader
 import csv
 import pandas as pd
@@ -15,14 +16,15 @@ from . import tools
 def createFullOutput(input, date):
     pdf = open(f"{input}", "rb")
     reader = PdfReader(pdf)
-    with open(f"text/full_output/full_output_{date}.txt", "w") as f_output:
+    # print(os.getcwd())
+    with open(f"./text/full_output/full_output_{date}.txt", "w") as f_output:
         count = 0
         for i in reader.pages:
             page = reader.pages[count]
             text = page.extract_text()
             f_output.write(text + "\n")
-            # count = count + 1 
-            count+=1 # Do I even need to count like this?
+            # count = count + 1
+            count += 1  # Do I even need to count like this?
 
 
 # +======================================================================================+

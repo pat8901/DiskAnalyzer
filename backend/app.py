@@ -41,7 +41,7 @@ def backroundTask():
 
 
 my_thread = threading.Thread(target=backroundTask, daemon=True, name="my_thread")
-my_thread.start()
+# my_thread.start()
 
 
 # +=============================================================================+
@@ -63,8 +63,9 @@ def my_watchdog():
 
     # Determines what to do when a event occurs
     event_handler = LoggingEventHandler()
-    event_handler.on_created = testcall
-    event_handler.on_modified = testcall
+    event_handler.on_created = prepareFile  # Whats the difference to not having ()
+    # event_handler.on_modified = prepareFile()
+
     # The entity that will be watching the folder and call the handler
     # when it detects something
     observer = Observer()
@@ -88,11 +89,16 @@ watchdog_thread.start()
 
 
 def testcall(event):
-    print(f"you called a fucntion ")
+    print(f"you called a function ")
 
-def prepareFile():
+
+# I need to grab the file that was uploaded and pass to function
+def prepareFile(
+    event,
+):  # What is the event? Must have this for the function to not run until event is detected
+    print(event.src_path)  # Gets the location of the file created
     print("writing output...")
-    plots.writer.createFullOutput(".\\reports\\base\\Storage_Rep_2023-08-10.pdf","test")
+    plots.writer.createFullOutput("./reports/base/Storage_Rep_2023-08-10.pdf", "test")
     print("Complete!")
 
 
@@ -111,6 +117,7 @@ def myapp():
     image = "images/research_totals_2023-08-10.png"
     return send_file(image, mimetype="image/png")
 
+
 # +=============================================================================+
 # |         Recieve file upload from frontend and save file to storage          |
 # +=============================================================================+
@@ -127,7 +134,7 @@ def getUpload():
             return redirect(request.url)
         # Looks for key:value pairs in the POST request.
         # The key it looks for is "file". This was set in "FileUpload.js" on the frontend
-        file = request.files["file"]  
+        file = request.files["file"]
         # If the user does not select a file, the browser submits an
         # empty file without a filename.
         # * I don't believe this is implmented on the frontend yet *
