@@ -59,7 +59,6 @@ def my_watchdog():
     # Setting the file we want to monitor
     # path = sys.argv[1] if len(sys.argv) > 1 else "."
     path = "./api"
-    print(path)
 
     # Determines what to do when a event occurs
     event_handler = LoggingEventHandler()
@@ -88,17 +87,19 @@ watchdog_thread = threading.Thread(
 watchdog_thread.start()
 
 
-def testcall(event):
-    print(f"you called a function ")
-
-
 # I need to grab the file that was uploaded and pass to function
 def prepareFile(
     event,
 ):  # What is the event? Must have this for the function to not run until event is detected
-    print(event.src_path)  # Gets the location of the file created
+    print(f"Source: {event.src_path}")  # Gets the location of the file created
+
     print("writing output...")
-    plots.writer.createFullOutput("./reports/base/Storage_Rep_2023-08-10.pdf", "test")
+    # plots.writer.createFullOutput("./reports/base/Storage_Rep_2023-08-10.pdf", "test")
+    print(f"file date:{event.src_path[18:-4]}")
+    # plots.writer.createFullOutput(f"{event.src_path}", f"{event.src_path[18:-4]}")
+    plots.writer.generateReports(
+        f"{event.src_path}", f"{event.src_path[18:-4]}"
+    )  # Wrapper to call all functions
     print("Complete!")
 
 

@@ -1,3 +1,5 @@
+# *Note* When a file is uploaded to the backend we do not know if the data is formated correcly. If the cuntions below do not work throw and exception and tell the user that the files are not formated correctly
+
 import sys
 import os
 from pypdf import PdfReader
@@ -29,7 +31,7 @@ def createFullOutput(input, date):
 
 # +======================================================================================+
 # |           Converts input pdf into a txt file to be used in further processing        |
-# |                           *Can be optimized further*                                 |
+# |                *Can be optimized further, can probably combine with others*          |
 # +======================================================================================+
 def createResearchOutput(date):
     begin = "-------------------------------   -------    ------------    ------------    ------------    --------------"
@@ -58,8 +60,8 @@ def createDepartmentOutput(date):
     end = "=========================================|===============|===============|===============|=================|"
     headerFound = False
     beginFound = False
-    with open(f"text/full_output/full_output_{date}.txt", "r") as f_input:
-        with open(f"text/grouped_output/departments_{date}.txt", "w") as f_output:
+    with open(f"./text/full_output/full_output_{date}.txt", "r") as f_input:
+        with open(f"./text/grouped_output/departments_{date}.txt", "w") as f_output:
             for line in f_input:
                 if header in line:
                     headerFound = True
@@ -84,8 +86,8 @@ def createCollegesOutput(date):
     end = "=========================================|===============|===============|===============|=================|"
     headerFound = False
     beginFound = False
-    with open(f"text/full_output/full_output_{date}.txt", "r") as f_input:
-        with open(f"text/grouped_output/colleges_{date}.txt", "w") as f_output:
+    with open(f"./text/full_output/full_output_{date}.txt", "r") as f_input:
+        with open(f"./text/grouped_output/colleges_{date}.txt", "w") as f_output:
             for line in f_input:
                 if header in line:
                     headerFound = True
@@ -101,11 +103,11 @@ def createCollegesOutput(date):
 
 
 # +======================================================================================+
-# |           Creates a csv file from previosuly generated csv (text) files                     |
+# |           Creates a csv file from previosuly generated csv (text) files              |
 # +======================================================================================+
 def csvWriter(input, output, date):
-    with open(f"text/grouped_output/{input}_{date}.txt", "r") as f:
-        with open(f"csv/{output}_{date}.csv", "w", newline="") as file:
+    with open(f"./text/grouped_output/{input}_{date}.txt", "r") as f:
+        with open(f"./csv/{output}_{date}.csv", "w", newline="") as file:
             writer = csv.writer(file)
             if output == "research":
                 headers = [
@@ -209,3 +211,18 @@ def nameExtractor():
             name = line[0].strip()
             names.append(name)
     return names
+
+
+# +======================================================================================+
+# |                 calls all the functions to generate reports in one go                |
+# +======================================================================================+
+def generateReports(input, date):
+    groups = ["research", "colleges", "departments"]
+
+    createFullOutput(input, date)
+    createResearchOutput(date)
+    createCollegesOutput(date)
+    createDepartmentOutput(date)
+
+    for group in groups:
+        csvWriter(group, group, date)
