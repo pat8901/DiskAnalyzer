@@ -1,5 +1,4 @@
 # *Note* When a file is uploaded to the backend we do not know if the data is formated correcly. If the cuntions below do not work throw and exception and tell the user that the files are not formated correctly
-
 import sys
 import os
 from pypdf import PdfReader
@@ -38,7 +37,7 @@ def createResearchOutput(date):
     end = "=========================================|===============|===============|===============|=================|"
     beginFound = False
     with open(f"text/full_output/full_output_{date}.txt", "r") as f_input:
-        with open(f"text/grouped_output/research_{date}.txt", "w") as f_output:
+        with open(f"text/grouped_output/research/research_{date}.txt", "w") as f_output:
             for line in f_input:
                 if end in line:
                     break
@@ -61,7 +60,9 @@ def createDepartmentOutput(date):
     headerFound = False
     beginFound = False
     with open(f"./text/full_output/full_output_{date}.txt", "r") as f_input:
-        with open(f"./text/grouped_output/departments_{date}.txt", "w") as f_output:
+        with open(
+            f"./text/grouped_output/departments/departments_{date}.txt", "w"
+        ) as f_output:
             for line in f_input:
                 if header in line:
                     headerFound = True
@@ -87,7 +88,9 @@ def createCollegesOutput(date):
     headerFound = False
     beginFound = False
     with open(f"./text/full_output/full_output_{date}.txt", "r") as f_input:
-        with open(f"./text/grouped_output/colleges_{date}.txt", "w") as f_output:
+        with open(
+            f"./text/grouped_output/colleges/colleges_{date}.txt", "w"
+        ) as f_output:
             for line in f_input:
                 if header in line:
                     headerFound = True
@@ -106,8 +109,25 @@ def createCollegesOutput(date):
 # |           Creates a csv file from previosuly generated csv (text) files              |
 # +======================================================================================+
 def csvWriter(input, output, date):
-    with open(f"./text/grouped_output/{input}_{date}.txt", "r") as f:
-        with open(f"./csv/{output}_{date}.csv", "w", newline="") as file:
+    folder_date = date.replace("-", "_")
+    folder_year = folder_date[0:-6]
+
+    year_save_path = f"./csv/{folder_year}"
+    year_is_exist = os.path.exists(year_save_path)
+    if not year_is_exist:
+        os.makedirs(year_save_path)
+        print(f"Directory {year_save_path} was created!")
+
+    save_path = f"./csv/{folder_year}/{folder_date}"
+    is_exist = os.path.exists(save_path)
+    if not is_exist:
+        os.makedirs(save_path)
+        print(f"Directory {save_path} was created!")
+
+    with open(f"./text/grouped_output/{input}/{input}_{date}.txt", "r") as f:
+        with open(
+            f"./csv/{folder_year}/{folder_date}/{output}_{date}.csv", "w", newline=""
+        ) as file:
             writer = csv.writer(file)
             if output == "research":
                 headers = [

@@ -8,6 +8,7 @@ import time
 import logging
 from watchdog.observers import Observer
 from watchdog.events import LoggingEventHandler
+from watchdog.events import FileSystemEventHandler
 import threading
 import plots
 import plots.writer
@@ -17,7 +18,7 @@ import converter
 
 
 x = datetime.datetime.now()
-UPLOAD_FOLDER = "./api"
+UPLOAD_FOLDER = "./reports"
 ALLOWED_EXTENSIONS = {"txt", "pdf", "csv"}
 
 # Initializing flask app
@@ -49,7 +50,7 @@ my_thread = threading.Thread(target=backroundTask, daemon=True, name="my_thread"
 # |     watches for file changes in a folder and executes code upon detection   |
 # +=============================================================================+
 def my_watchdog():
-    print("I entered watchdog")
+    print("watchdog thread active...")
     logging.basicConfig(
         level=logging.INFO,
         format="%(asctime)s -%(process)d -%(message)s",
@@ -58,18 +59,21 @@ def my_watchdog():
 
     # Setting the file we want to monitor
     # path = sys.argv[1] if len(sys.argv) > 1 else "."
-    path = "./api"
+    path = "./reports"
 
     # Determines what to do when a event occurs
     event_handler = LoggingEventHandler()
-    event_handler.on_created = prepareFile  # Whats the difference to not having ()
+    test_handler = FileSystemEventHandler()
+    test_handler.on_created = prepareFile
+    # event_handler.on_created = prepareFile  # Whats the difference to not having ()
     # event_handler.on_modified = prepareFile()
 
     # The entity that will be watching the folder and call the handler
     # when it detects something
     observer = Observer()
     # This tells the observer entity what parameters it will take. Determining how it will function
-    observer.schedule(event_handler, path, recursive=True)
+    observer.schedule(test_handler, path, recursive=False)
+    observer.daemon = True
     observer.start()
 
     try:
@@ -78,27 +82,43 @@ def my_watchdog():
             time.sleep(1)
     except KeyboardInterrupt:
         observer.stop()
-        observer.join()
+        # observer.join()
 
 
-watchdog_thread = threading.Thread(
-    target=my_watchdog, daemon=True, name="watchdog_thread"
-)
+# watchdog_thread = threading.Thread(
+#     target=my_watchdog, daemon=True, name="watchdog_thread"
+# )
+watchdog_thread = threading.Thread(target=my_watchdog, name="watchdog_thread")
 watchdog_thread.start()
 
 
 # I need to grab the file that was uploaded and pass to function
-def prepareFile(
-    event,
-):  # What is the event? Must have this for the function to not run until event is detected
+# def prepareFile(
+#     event,
+# ):  # What is the event? Must have this for the function to not run until event is detected
+#     print(f"Source: {event.src_path}")  # Gets the location of the file created
+
+#     print("writing output...")
+#     # plots.writer.createFullOutput("./reports/base/Storage_Rep_2023-08-10.pdf", "test")
+#     # plots.writer.createFullOutput(f"{event.src_path}", f"{event.src_path[18:-4]}")
+
+#     print(event.src_path[22:-4])
+#     plots.writer.generateReports(
+#         f"{event.src_path}", f"{event.src_path[22:-4]}"
+#     )  # Wrapper to call all functions
+#     print("Complete!")
+
+
+def prepareFile(event):
     print(f"Source: {event.src_path}")  # Gets the location of the file created
 
     print("writing output...")
     # plots.writer.createFullOutput("./reports/base/Storage_Rep_2023-08-10.pdf", "test")
-    print(f"file date:{event.src_path[18:-4]}")
     # plots.writer.createFullOutput(f"{event.src_path}", f"{event.src_path[18:-4]}")
+
+    print(event.src_path[22:-4])
     plots.writer.generateReports(
-        f"{event.src_path}", f"{event.src_path[18:-4]}"
+        f"{event.src_path}", f"{event.src_path[22:-4]}"
     )  # Wrapper to call all functions
     print("Complete!")
 
