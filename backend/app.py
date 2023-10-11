@@ -28,16 +28,16 @@ CORS(
 )  # Allows for any website to access my backend server resources. Not secure need to have only specific whitelist
 
 
-# +==============================================================================
+# +=============================================================================+
 # |         Checks to see if the file extention is allowed for uplaod           |
-# +==============================================================================
+# +=============================================================================+
 def allowed_file(filename):
     return "." in filename and filename.rsplit(".", 1)[1].lower() in ALLOWED_EXTENSIONS
 
 
-# +==============================================================================
+# +=============================================================================+
 # |         Takes csv file and makes a json file where names are the key        |
-# +==============================================================================
+# +=============================================================================+
 @app.route("/image", methods=["GET"])
 def myapp():
     image = "images/research_totals_2023-08-10.png"
@@ -86,61 +86,61 @@ def getUsers():
     return jsonify(array)
 
 
-# +==============================================================================
+# +=============================================================================+
 # |         Takes csv file and makes a json file where names are the key        |
-# +==============================================================================
+# +=============================================================================+
 @app.route("/image/afsGroup", methods=["GET"])
 def myapp0():
     image_path = "images/research_AFS Groups_histogram_2023-08-10.png"
     return send_file(image_path, mimetype="image/png")
 
 
-# +==============================================================================
+# +=============================================================================+
 # |         Takes csv file and makes a json file where names are the key        |
-# +==============================================================================
+# +=============================================================================+
 @app.route("/image/combined", methods=["GET"])
 def myapp1():
     image_path = "images/research_combined_histogram_2023-08-10.png"
     return send_file(image_path, mimetype="image/png")
 
 
-# +==============================================================================
+# +=============================================================================+
 # |                      Returns dynamic routes (slug)                          |
-# +==============================================================================
+# +=============================================================================+
 @app.route("/piIMage/<string:Name>")
 def sendingImage(Name):
     image = f"pngs/{Name}_user_report_2023-08-10.png"
     return send_file(image, mimetype="image/png")
 
 
-# +==============================================================================
+# +=============================================================================+
 # |    Returns dynamic routes with dynamic images based on the date (slug)      |
-# +==============================================================================
-@app.route("/piIMage/<string:Name>/<string:date>")
-def sendingImage2(Name, date):
+# +=============================================================================+
+@app.route("/piIMage/<string:date>/<string:name>")
+def sendingImage2(date, name):
     """add funcion here to create user report dynamically. Should it be stored after wards or discared.
     Probably store it for a little while and delete after some time
     in the function add a check to see if the file was already created and if not create the image to send.
     """
     print(date)
 
-    image = f"pngs/{Name}_user_report_{date}.png"
+    image = f"pngs/{name}_user_report_{date}.png"
     return send_file(image, mimetype="image/png")
 
 
-# +==============================================================================
+# +=============================================================================+
 # |           Runs csv to json converter. Returns json to the browser           |
-# +==============================================================================
+# +=============================================================================+
 @app.route("/users", methods=["GET", "POST"])
 def user():
     file = converter.toJSON2()
     return jsonify(file)
 
 
-# +==============================================================================
+# +=============================================================================+
 # |               Sends user data dynamically to frontend based on the          |
 # |                         name recived  from the backend                      |
-# +==============================================================================
+# +=============================================================================+
 @app.route("/user-info/<string:Name>", methods=["GET"])
 def sendUserInfo(Name):
     with open("json/names_version2.json", "r") as json_file:

@@ -129,8 +129,10 @@ def test_getUserBarCharts(input):
     gigabyte = 1000000
     megabyte = 1000
     kilobytes = 1
-    i = 112
-    df = pd.read_csv(f"csv/{input}.csv")
+    date = input[9:]
+    i = 0
+    df = pd.read_csv(f"../csv/2023/2023_07_01/{input}.csv")
+    # df = pd.read_csv(f"../csv/2023/2023_08_10/{input}.csv")
 
     divisor = tools.getDivisor(df.iloc[i]["Tot.Used Space"])
     print(f'raw storage amount: {df.iloc[i]["Tot.Used Space"]}')
@@ -223,10 +225,13 @@ def test_getUserBarCharts(input):
 
     # Saving the figure
     plt.savefig(
-        f"graphs/research/tests/{df.iloc[i]['Full Name']}_user_report.pdf",
+        f"../pngs/{df.iloc[i]['Full Name']}_user_report_{date}.png",
         dpi=300,
-        format="pdf",
+        format="png",
         bbox_extra_artists=(lgd,),
         bbox_inches="tight",
     )
-    plt.show()
+
+
+test_getUserBarCharts("research_2023-07-01")
+# test_getUserBarCharts("research_2023-08-10")

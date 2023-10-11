@@ -1,17 +1,36 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { NavLink } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import Logo2 from '../logos/logo512.png'
 import { FaCircleInfo } from 'react-icons/fa6'
-import { FaBoxesStacked } from 'react-icons/fa6'
 import { FaSistrix } from 'react-icons/fa6'
 import { FaHouseChimney } from 'react-icons/fa6'
-import { SearchBar } from '../components/SearchBar'
-import { Calender } from '../components/Calender'
-import { SearchResultsList } from '../components/SearchResultsList'
-import '../components/styles/SearchBarTest.css'
+import { FaBoxesStacked } from 'react-icons/fa6'
+import { UserName } from '../components/username'
 
-function Search () {
+const UserDynamic = () => {
+  const [img, setImg] = useState()
+  const { date } = useParams()
+  const { slug } = useParams()
+  console.log('date:')
+  console.log(date)
+  console.log('slug:')
+  console.log(slug)
+  // const slugObject = useMemo(() => {
+  //   return { slug: slug }
+  // }, [slug])
+
+  useEffect(() => {
+    const fetchImage = async () => {
+      const imageUrl = `http://localhost:5000/piIMage/${date}/${slug}`
+      const res = await fetch(imageUrl)
+      const imageBlob = await res.blob()
+      const imageObjectURL = URL.createObjectURL(imageBlob)
+      setImg(imageObjectURL)
+    }
+    fetchImage()
+  }, [])
+
   const [windowSize, setWindowSize] = useState([
     window.innerWidth,
     window.innerHeight
@@ -26,8 +45,6 @@ function Search () {
       window.removeEventListener('resize', handleWindowResize)
     }
   }, [])
-
-  const [results, setResults] = useState([])
 
   return (
     <div className='contain' style={{ height: windowSize[1] }}>
@@ -49,18 +66,10 @@ function Search () {
               </Link>
             </div>
             <div className='route'>
-              <NavLink
-                className='route'
-                to='/search'
-                style={({ isPending }) => {
-                  return {
-                    backgroundColor: isPending ? 'red' : '#1d3e66'
-                  }
-                }}
-              >
+              <Link className='route' style={{ gap: '15px' }} to='/search'>
                 <FaSistrix />
                 Search
-              </NavLink>
+              </Link>
             </div>
             <div className='route'>
               <Link className='route' style={{ gap: '15px' }} to='/group'>
@@ -78,13 +87,15 @@ function Search () {
         </div>
         <div className='box2'>
           <div className='search-bar'>
-            <SearchBar setResults={setResults} />
-            <Calender />
+            <h1>User Dynamic</h1>
           </div>
           <div className='data-container'>
             <div className='data-box'>
-              <div className='list'>
-                <SearchResultsList results={results} />
+              <div className='matplot'>
+                <img className='matplot-image' src={img} alt='' />
+              </div>
+              <div className='data-table'>
+                <UserName />
               </div>
             </div>
             <div className='footer'></div>
@@ -95,4 +106,4 @@ function Search () {
   )
 }
 
-export default Search
+export default UserDynamic

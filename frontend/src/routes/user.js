@@ -11,6 +11,8 @@ import { UserName } from '../components/username'
 const User = () => {
   const [img, setImg] = useState()
   const { slug } = useParams()
+  console.log('slug:')
+  console.log(slug)
   // const slugObject = useMemo(() => {
   //   return { slug: slug }
   // }, [slug])

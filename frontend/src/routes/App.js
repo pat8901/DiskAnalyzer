@@ -5,10 +5,10 @@ import Group from './group'
 import About from './about'
 import Search from './search'
 import Upload from './upload'
-
 import User from './user'
+import UserDynamic from './userDynamic'
 
-function App() {
+function App () {
   return (
     <div>
       <Routes>
@@ -18,6 +18,7 @@ function App() {
         <Route path='upload' element={<Upload />} />
         <Route path='search' element={<Search />} />
         <Route path='search/:slug' element={<User />} />
+        <Route path='search/:date/:slug' element={<UserDynamic />} />
       </Routes>
     </div>
   )
