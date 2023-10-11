@@ -1,4 +1,5 @@
-# *Note* When a file is uploaded to the backend we do not know if the data is formated correcly. If the cuntions below do not work throw and exception and tell the user that the files are not formated correctly
+# *Note* When a file is uploaded to the backend we do not know if the data is formated correcly.
+# If the cuntions below do not work throw and exception and tell the user that the files are not formated correctly
 import sys
 import os
 from pypdf import PdfReader
@@ -24,7 +25,6 @@ def createFullOutput(input, date):
             page = reader.pages[count]
             text = page.extract_text()
             f_output.write(text + "\n")
-            # count = count + 1
             count += 1  # Do I even need to count like this?
 
 
@@ -167,6 +167,10 @@ def csvWriter(input, output, date):
                 writer.writerow(trimmedWords)
 
 
+# +======================================================================================+
+# |           Creates a csv file from previosuly generated csv (text) files              |
+# |                          *Not sure what is used for*                                 |
+# +======================================================================================+
 def csvWriter2():
     input = "research"
     output = "research"
@@ -216,21 +220,49 @@ def csvWriter2():
                 writer.writerow(trimmedWords)
 
 
-def csvChecker():
-    print("hello")
-
-
 # +======================================================================================+
 # |       Gets the names found in a group text file and returns an array of names        |
 # +======================================================================================+
 def nameExtractor():
-    with open("./text/group_output/research_2023-08-10.txt", "r") as file:
+    groups = ["research", "colleges", "departments"]
+
+    with open("./text/grouped_output/research/research_2023-08-10.txt", "r") as file:
         names = []
         for line in file:
             line = line.split("|")
             name = line[0].strip()
             names.append(name)
     return names
+
+
+# +======================================================================================+
+# |                 creates files of names for each report uploaded                      |
+# +======================================================================================+
+def nameGenerator(date):
+    groups = ["research", "colleges", "departments"]
+
+    month = date.replace("-", "_")
+    year = month[0:-6]
+
+    year_save_path = f"./text/names/{year}"
+    year_is_exist = os.path.exists(year_save_path)
+    if not year_is_exist:
+        os.makedirs(year_save_path)
+        print(f"Directory {year_save_path} was created!")
+
+    save_path = f"./text/names/{year}/{month}"
+    is_exist = os.path.exists(save_path)
+    if not is_exist:
+        os.makedirs(save_path)
+        print(f"Directory {save_path} was created!")
+
+    for group in groups:
+        with open(f"./text/grouped_output/{group}/{group}_{date}.txt", "r") as file:
+            with open(f"./text/names/{year}/{month}/{group}_{date}.txt", "w") as output:
+                for line in file:
+                    line = line.split("|")
+                    name = line[0].strip()
+                    output.write(name + "\n")
 
 
 # +======================================================================================+
@@ -243,6 +275,7 @@ def generateReports(input, date):
     createResearchOutput(date)
     createCollegesOutput(date)
     createDepartmentOutput(date)
+    nameGenerator(date)
 
     for group in groups:
         csvWriter(group, group, date)

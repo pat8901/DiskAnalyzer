@@ -6,7 +6,7 @@ from flask_cors import CORS
 import sys
 import time
 import logging
-from watchdog.observers import Observer
+from watchdog.observers import Observer, api
 from watchdog.events import LoggingEventHandler
 from watchdog.events import FileSystemEventHandler
 import threading
@@ -15,112 +15,17 @@ import plots.writer
 import plots.tools
 import json
 import converter
+import thread  # This import will run if you just import it
 
 
 x = datetime.datetime.now()
 UPLOAD_FOLDER = "./reports"
 ALLOWED_EXTENSIONS = {"txt", "pdf", "csv"}
-
-# Initializing flask app
-app = Flask(__name__)
-# what is "app.config"?
-app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
-# Allows for any website to access my backend server resources. Not secure need to have only specific whitelist
-CORS(app)
-
-
-# +=============================================================================+
-# |                                  *TEST*                                     |
-# |                         Testing daemon thread                               |
-# +=============================================================================+
-def backroundTask():
-    count = 0
-    while True:
-        time.sleep(1)
-        print(f"Count: {count} hello")
-        count += 1
-
-
-my_thread = threading.Thread(target=backroundTask, daemon=True, name="my_thread")
-# my_thread.start()
-
-
-# +=============================================================================+
-# |                    Watchdog that runs on backround thread                   |
-# |     watches for file changes in a folder and executes code upon detection   |
-# +=============================================================================+
-def my_watchdog():
-    print("watchdog thread active...")
-    logging.basicConfig(
-        level=logging.INFO,
-        format="%(asctime)s -%(process)d -%(message)s",
-        datefmt="%Y-%m-%d %H:%M:%S",
-    )
-
-    # Setting the file we want to monitor
-    # path = sys.argv[1] if len(sys.argv) > 1 else "."
-    path = "./reports"
-
-    # Determines what to do when a event occurs
-    event_handler = LoggingEventHandler()
-    test_handler = FileSystemEventHandler()
-    test_handler.on_created = prepareFile
-    # event_handler.on_created = prepareFile  # Whats the difference to not having ()
-    # event_handler.on_modified = prepareFile()
-
-    # The entity that will be watching the folder and call the handler
-    # when it detects something
-    observer = Observer()
-    # This tells the observer entity what parameters it will take. Determining how it will function
-    observer.schedule(test_handler, path, recursive=False)
-    observer.daemon = True
-    observer.start()
-
-    try:
-        while True:
-            print("Watching for changes...")
-            time.sleep(1)
-    except KeyboardInterrupt:
-        observer.stop()
-        # observer.join()
-
-
-# watchdog_thread = threading.Thread(
-#     target=my_watchdog, daemon=True, name="watchdog_thread"
-# )
-watchdog_thread = threading.Thread(target=my_watchdog, name="watchdog_thread")
-watchdog_thread.start()
-
-
-# I need to grab the file that was uploaded and pass to function
-# def prepareFile(
-#     event,
-# ):  # What is the event? Must have this for the function to not run until event is detected
-#     print(f"Source: {event.src_path}")  # Gets the location of the file created
-
-#     print("writing output...")
-#     # plots.writer.createFullOutput("./reports/base/Storage_Rep_2023-08-10.pdf", "test")
-#     # plots.writer.createFullOutput(f"{event.src_path}", f"{event.src_path[18:-4]}")
-
-#     print(event.src_path[22:-4])
-#     plots.writer.generateReports(
-#         f"{event.src_path}", f"{event.src_path[22:-4]}"
-#     )  # Wrapper to call all functions
-#     print("Complete!")
-
-
-def prepareFile(event):
-    print(f"Source: {event.src_path}")  # Gets the location of the file created
-
-    print("writing output...")
-    # plots.writer.createFullOutput("./reports/base/Storage_Rep_2023-08-10.pdf", "test")
-    # plots.writer.createFullOutput(f"{event.src_path}", f"{event.src_path[18:-4]}")
-
-    print(event.src_path[22:-4])
-    plots.writer.generateReports(
-        f"{event.src_path}", f"{event.src_path[22:-4]}"
-    )  # Wrapper to call all functions
-    print("Complete!")
+app = Flask(__name__)  # Initializing flask app
+app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER  # what is "app.config"?
+CORS(
+    app
+)  # Allows for any website to access my backend server resources. Not secure need to have only specific whitelist
 
 
 # +==============================================================================
@@ -177,7 +82,6 @@ def getUpload():
 # +=============================================================================+
 @app.route("/people", methods=["GET"])
 def getUsers():
-    report_path = "./reports/base/Storage_Rep_2023-08-10.pdf"
     array = plots.writer.nameExtractor()
     return jsonify(array)
 
@@ -206,6 +110,21 @@ def myapp1():
 @app.route("/piIMage/<string:Name>")
 def sendingImage(Name):
     image = f"pngs/{Name}_user_report_2023-08-10.png"
+    return send_file(image, mimetype="image/png")
+
+
+# +==============================================================================
+# |    Returns dynamic routes with dynamic images based on the date (slug)      |
+# +==============================================================================
+@app.route("/piIMage/<string:Name>/<string:date>")
+def sendingImage2(Name, date):
+    """add funcion here to create user report dynamically. Should it be stored after wards or discared.
+    Probably store it for a little while and delete after some time
+    in the function add a check to see if the file was already created and if not create the image to send.
+    """
+    print(date)
+
+    image = f"pngs/{Name}_user_report_{date}.png"
     return send_file(image, mimetype="image/png")
 
 

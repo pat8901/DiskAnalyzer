@@ -45,4 +45,17 @@ def dogThread():
     my_thread.start()
 
 
-# my_watchdog()
+# +=============================================================================+
+# |                                  *TEST*                                     |
+# |                         Testing daemon thread                               |
+# +=============================================================================+
+def backroundTask():
+    count = 0
+    while True:
+        time.sleep(1)
+        print(f"Count: {count} hello")
+        count += 1
+
+
+my_thread = threading.Thread(target=backroundTask, daemon=True, name="my_thread")
+my_thread.start()
