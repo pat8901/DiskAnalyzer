@@ -10,19 +10,20 @@ import { UserName } from '../components/username'
 
 const UserDynamic = () => {
   const [img, setImg] = useState()
+  const { year } = useParams()
+  const { month } = useParams()
   const { date } = useParams()
   const { slug } = useParams()
-  console.log('date:')
-  console.log(date)
-  console.log('slug:')
-  console.log(slug)
+  console.log(`date: ${date}`)
+  console.log(`slug:${slug}`)
   // const slugObject = useMemo(() => {
   //   return { slug: slug }
   // }, [slug])
 
   useEffect(() => {
     const fetchImage = async () => {
-      const imageUrl = `http://localhost:5000/piIMage/${date}/${slug}`
+      // const imageUrl = `http://localhost:5000/piIMage/${date}/${slug}`
+      const imageUrl = `http://localhost:5000/piIMage/${year}/${month}/${slug}`
       const res = await fetch(imageUrl)
       const imageBlob = await res.blob()
       const imageObjectURL = URL.createObjectURL(imageBlob)

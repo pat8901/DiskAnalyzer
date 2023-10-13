@@ -12,6 +12,20 @@ import { SearchResultsList } from '../components/SearchResultsList'
 import '../components/styles/SearchBarTest.css'
 
 function Search () {
+  var today = new Date()
+  var mm = String(today.getMonth() + 1).padStart(2, '0') // January is 0
+  var dd = String(today.getDate()).padStart(2, '0')
+  var year = today.getFullYear()
+  // console.log(`date: ${date}`)
+  // console.log(`Real time Date: ${today}`)
+  // console.log(`Real time month: ${mm}`)
+  // console.log(`Real time day: ${dd}`)
+  // console.log(`Real time year: ${year}`)
+
+  const [results, setResults] = useState([])
+  const [query, setQuery] = useState(`${year}-${mm}-${dd}`)
+  console.log(`search mydate: ${query}`)
+
   const [windowSize, setWindowSize] = useState([
     window.innerWidth,
     window.innerHeight
@@ -26,8 +40,6 @@ function Search () {
       window.removeEventListener('resize', handleWindowResize)
     }
   }, [])
-
-  const [results, setResults] = useState([])
 
   return (
     <div className='contain' style={{ height: windowSize[1] }}>
@@ -79,12 +91,12 @@ function Search () {
         <div className='box2'>
           <div className='search-bar'>
             <SearchBar setResults={setResults} />
-            <Calender />
+            <Calender onQuery={setQuery} />
           </div>
           <div className='data-container'>
             <div className='data-box'>
               <div className='list'>
-                <SearchResultsList results={results} />
+                <SearchResultsList results={results} date={query} />
               </div>
             </div>
             <div className='footer'></div>

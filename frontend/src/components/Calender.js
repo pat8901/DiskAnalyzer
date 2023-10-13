@@ -1,27 +1,27 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 
-export const Calender = () => {
-  var today = new Date()
-  var mm = String(today.getMonth() + 1).padStart(2, '0') // January is 0
-  var dd = String(today.getDate()).padStart(2, '0')
-  var year = today.getFullYear()
-  const [date, setDate] = useState(`${year}-${mm}-${dd}`)
+export const Calender = ({ onQuery }) => {
+  // var today = new Date()
+  // var mm = String(today.getMonth() + 1).padStart(2, '0') // January is 0
+  // var dd = String(today.getDate()).padStart(2, '0')
+  // var year = today.getFullYear()
+  // const [date, setDate] = useState(`${year}-${mm}-${dd}`)
 
-  console.log(`date: ${date}`)
-  console.log(`Real time Date: ${today}`)
-  console.log(`Real time month: ${mm}`)
-  console.log(`Real time day: ${dd}`)
-  console.log(`Real time year: ${year}`)
+  // function handleInput (e) {
+  //   onQuery(e.target.value)
+  //   console.log(`e: ${e.target.value}`)
+  // }
+  const handleInput = e => {
+    onQuery(e.target.value)
+    console.log(`e: ${e.target.value}`)
+  }
 
   return (
     <>
-      <h3>calender</h3>
       {/* <input type='date' onChange={e => setDate(e.target.value)} /> */}
       <input
         type='date'
-        onChange={e => {
-          setDate(e.target.value)
-        }}
+        onChange={handleInput}
         // onChange={e => {
         //   setDate(e.target.value)
         // }}

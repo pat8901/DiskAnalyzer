@@ -111,6 +111,32 @@ def createCollegesOutput(date):
 def csvWriter(input, output, date):
     folder_date = date.replace("-", "_")
     folder_year = folder_date[0:-6]
+    month = folder_date[5:7]
+
+    if month == "01":
+        month = "January"
+    if month == "02":
+        month = "Feburary"
+    if month == "03":
+        month = "March"
+    if month == "04":
+        month = "April"
+    if month == "05":
+        month = "May"
+    if month == "06":
+        month = "June"
+    if month == "07":
+        month = "July"
+    if month == "08":
+        month = "August"
+    if month == "09":
+        month = "September"
+    if month == "10":
+        month = "October"
+    if month == "11":
+        month = "November"
+    if month == "12":
+        month = "December"
 
     year_save_path = f"./csv/{folder_year}"
     year_is_exist = os.path.exists(year_save_path)
@@ -118,7 +144,8 @@ def csvWriter(input, output, date):
         os.makedirs(year_save_path)
         print(f"Directory {year_save_path} was created!")
 
-    save_path = f"./csv/{folder_year}/{folder_date}"
+    save_path = f"./csv/{folder_year}/{month}"
+    # save_path = f"./csv/{folder_year}/{folder_date}"
     is_exist = os.path.exists(save_path)
     if not is_exist:
         os.makedirs(save_path)
@@ -126,7 +153,7 @@ def csvWriter(input, output, date):
 
     with open(f"./text/grouped_output/{input}/{input}_{date}.txt", "r") as f:
         with open(
-            f"./csv/{folder_year}/{folder_date}/{output}_{date}.csv", "w", newline=""
+            f"./csv/{folder_year}/{month}/{output}_{date}.csv", "w", newline=""
         ) as file:
             writer = csv.writer(file)
             if output == "research":

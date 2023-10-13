@@ -18,7 +18,8 @@ function App () {
         <Route path='upload' element={<Upload />} />
         <Route path='search' element={<Search />} />
         <Route path='search/:slug' element={<User />} />
-        <Route path='search/:date/:slug' element={<UserDynamic />} />
+        {/* <Route path='search/:date/:slug' element={<UserDynamic />} /> */}
+        <Route path='search/:year/:month/:slug' element={<UserDynamic />} />
       </Routes>
     </div>
   )

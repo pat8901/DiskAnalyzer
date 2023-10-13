@@ -10,9 +10,8 @@ from watchdog.observers import Observer, api
 from watchdog.events import LoggingEventHandler
 from watchdog.events import FileSystemEventHandler
 import threading
-import plots
 import plots.writer
-import plots.tools
+import plots.bar
 import json
 import converter
 import thread  # This import will run if you just import it
@@ -125,6 +124,56 @@ def sendingImage2(date, name):
     print(date)
 
     image = f"pngs/{name}_user_report_{date}.png"
+    return send_file(image, mimetype="image/png")
+
+
+# +=============================================================================+
+# |                                 *Test*                                      |
+# |      Returns dynamic routes with dynamic images based on the date (slug)    |
+# +=============================================================================+
+@app.route("/piIMage/<string:year>/<string:date>/<string:name>")
+def sendingImage3(year, date, name):
+    """add funcion here to create user report dynamically. Should it be stored after wards or discared.
+    Probably store it for a little while and delete after some time
+    in the function add a check to see if the file was already created and if not create the image to send.
+    """
+    month = date[0:2]
+    if month == "01":
+        month = "January"
+    if month == "02":
+        month = "Feburary"
+    if month == "03":
+        month = "March"
+    if month == "04":
+        month = "April"
+    if month == "05":
+        month = "May"
+    if month == "06":
+        month = "June"
+    if month == "07":
+        month = "July"
+    if month == "08":
+        month = "August"
+    if month == "09":
+        month = "September"
+    if month == "10":
+        month = "October"
+    if month == "11":
+        month = "November"
+    if month == "12":
+        month = "December"
+
+    group = "research"
+
+    print(f"date: {date}")
+    print(year)
+    print(month)
+    print(name)
+
+    plots.bar.dynamic_getUserBarCharts(year, month, date, name, group)
+
+    image = f"pngs/{year}/{month}/{name}_user_report.png"
+
     return send_file(image, mimetype="image/png")
 
 
