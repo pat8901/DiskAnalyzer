@@ -1,10 +1,10 @@
 import React from 'react'
 
 export const Calender = ({ onQuery }) => {
-  // var today = new Date()
-  // var mm = String(today.getMonth() + 1).padStart(2, '0') // January is 0
-  // var dd = String(today.getDate()).padStart(2, '0')
-  // var year = today.getFullYear()
+  var today = new Date()
+  var mm = String(today.getMonth() + 1).padStart(2, '0') // January is 0
+  var dd = String(today.getDate()).padStart(2, '0')
+  var year = today.getFullYear()
   // const [date, setDate] = useState(`${year}-${mm}-${dd}`)
 
   // function handleInput (e) {
@@ -22,9 +22,10 @@ export const Calender = ({ onQuery }) => {
       <input
         type='date'
         onChange={handleInput}
-        // onChange={e => {
-        //   setDate(e.target.value)
-        // }}
+        defaultValue={`${year}-${mm}-${dd}`} // Is there a more proper way to set this value?
+      // onChange={e => {
+      //   setDate(e.target.value)
+      // }}
       />
     </>
   )
