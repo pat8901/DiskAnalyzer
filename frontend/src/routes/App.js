@@ -7,6 +7,7 @@ import Search from './search'
 import Upload from './upload'
 import User from './user'
 import UserDynamic from './userDynamic'
+import PageNotFound from './pageNotFound'
 
 function App () {
   return (
@@ -20,6 +21,7 @@ function App () {
         <Route path='search/:slug' element={<User />} />
         {/* <Route path='search/:date/:slug' element={<UserDynamic />} /> */}
         <Route path='search/:year/:month/:slug' element={<UserDynamic />} />
+        <Route path='*' element={<PageNotFound />} />
       </Routes>
     </div>
   )

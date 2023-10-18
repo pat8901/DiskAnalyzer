@@ -257,7 +257,6 @@ def dynamic_getUserBarCharts(year, month, date, name, group):
         # f"./csv/{year}/{year}_{date.replace('-', '_')}/{group}_{year}-{date}.csv"
         # f"./csv/{year}/{month}/{group}_{year}-{date}.csv"
         f"./csv/{year}/{month}/{my_files[0]}"
-        
     )
     # df = pd.read_csv(f"./csv/2023/2023_08_10/research_2023-08-10.csv")
 

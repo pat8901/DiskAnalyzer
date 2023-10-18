@@ -1,14 +1,18 @@
 import React, { useEffect, useState } from 'react'
 import { FaSistrix } from 'react-icons/fa6'
 import './styles/SearchBar.css'
+import { useParams } from 'react-router-dom'
 
 export const SearchBar = ({ setResults }) => {
   const [input, setInput] = useState('')
   const [users, setUsers] = useState('')
+  const { date } = useParams()
+  console.log(`date: ${date}`)
 
   // Fetches array of users from backend to be search through
   // How can I make this cached?
   // How to change the array of users based on date
+  // This is where I will change the get response using slugs to grab the proper set of user based on date
   useEffect(() => {
     fetch('http://localhost:5000/people')
       .then(response => response.json())

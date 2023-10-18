@@ -128,7 +128,7 @@ def sendingImage2(date, name):
 
 
 # +=============================================================================+
-# |                                 *Test*                                      |
+# |                                 *Test*  Main                                |
 # |      Returns dynamic routes with dynamic images based on the date (slug)    |
 # +=============================================================================+
 @app.route("/piIMage/<string:year>/<string:date>/<string:name>")
