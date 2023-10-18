@@ -243,6 +243,7 @@ def test_getUserBarCharts(input):
 # |            Only creates one user at a time. and does not save (for now)              |
 # +======================================================================================+
 def dynamic_getUserBarCharts(year, month, date, name, group):
+    overhead_start = time.time()
     terabyte = 1000000000
     gigabyte = 1000000
     megabyte = 1000
@@ -265,7 +266,10 @@ def dynamic_getUserBarCharts(year, month, date, name, group):
     print(df[df["Full Name"] == f"{name}"].index[0])
     i = df[df["Full Name"] == f"{name}"].index[0]
     # df = pd.read_csv(f"../csv/2023/2023_08_10/{input}.csv")
+    overhead_end = time.time()
+    print(f"Overhead execution time: {overhead_end-overhead_start}")
 
+    unitcoversion_start = time.time()
     divisor = plots.tools.getDivisor(df.iloc[i]["Tot.Used Space"])
     print(f'raw storage amount: {df.iloc[i]["Tot.Used Space"]}')
     print(f"divisor: {divisor}")
@@ -281,7 +285,10 @@ def dynamic_getUserBarCharts(year, month, date, name, group):
     # Using numpy to create an array to house total values. May be better to use numpy to hold values of the other columns too!
     array = np.array(df["Tot.Used Space"])
     total = array[i]
+    unitconversion_end = time.time()
+    print(f"Unit conversion time: {unitconversion_end-unitcoversion_start}")
 
+    generatinggraph_start = time.time()
     print(f"User index: {i}")
     fig, ax = plt.subplots()
     if df.iloc[i]["AFS Groups"] != 0:
@@ -354,7 +361,10 @@ def dynamic_getUserBarCharts(year, month, date, name, group):
     # ax.ticklabel_format()
     # ax.legend([p1, p2, p3, p4], ["AFS Groups", "Users AFS", "Users Panas.", "Tot.Used Space"])
     lgd = ax.legend(bbox_to_anchor=(1.05, 1), loc="upper left")
+    generatinggraph_end = time.time()
+    print(f"Generating graph time: {generatinggraph_end-generatinggraph_start}")
 
+    savegraph_start = time.time()
     year_save_path = f"../pngs/{year}"
     year_is_exist = os.path.exists(year_save_path)
     if not year_is_exist:
@@ -375,3 +385,5 @@ def dynamic_getUserBarCharts(year, month, date, name, group):
         bbox_extra_artists=(lgd,),
         bbox_inches="tight",
     )
+    savegraph_end = time.time()
+    print(f"saving time: {savegraph_end-savegraph_start}")
