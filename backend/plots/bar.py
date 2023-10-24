@@ -1,5 +1,7 @@
 import pandas as pd
+import matplotlib
 import matplotlib.pyplot as plt
+import matplotlib.style as mplstyle
 import numpy as np
 import plots.tools
 import time
@@ -243,39 +245,38 @@ def test_getUserBarCharts(input):
 # |            Only creates one user at a time. and does not save (for now)              |
 # +======================================================================================+
 def dynamic_getUserBarCharts(year, month, date, name, group):
+    # Changed backend to a non-interactive backend. This cuts down on graph generation time
+    matplotlib.use("agg")
+    matplotlib.rcParams["path.simplify"] = True
+    matplotlib.rcParams["path.simplify_threshold"] = 1.0
+    mplstyle.use("fast")
+
     overhead_start = time.time()
-    terabyte = 1000000000
-    gigabyte = 1000000
-    megabyte = 1000
-    kilobytes = 1
+    # terabyte = 1000000000
+    # gigabyte = 1000000
+    # megabyte = 1000
+    # kilobytes = 1
+
+    # Finding the specified file and loading into dataframe
     print(f"current workng directory {os.getcwd()}")
     parent_path = os.listdir(f"./csv/{year}/{month}")
     my_files = []
     for file in parent_path:
         if file.startswith(f"{group}_{year}-{date[0:2]}"):
             my_files.append(file)
-    df = pd.read_csv(
-        # f"./csv/{year}/{year}_{date.replace('-', '_')}/{group}_{year}-{date}.csv"
-        # f"./csv/{year}/{month}/{group}_{year}-{date}.csv"
-        f"./csv/{year}/{month}/{my_files[0]}"
-    )
-    # df = pd.read_csv(f"./csv/2023/2023_08_10/research_2023-08-10.csv")
-
+    df = pd.read_csv(f"./csv/{year}/{month}/{my_files[0]}")
     print(f'row number {df[df["Full Name"] == f"{name}"].index}')
-    # print(df.index.get_loc(f"{name}"))
     print(df[df["Full Name"] == f"{name}"].index[0])
     i = df[df["Full Name"] == f"{name}"].index[0]
-    # df = pd.read_csv(f"../csv/2023/2023_08_10/{input}.csv")
     overhead_end = time.time()
     print(f"Overhead execution time: {overhead_end-overhead_start}")
 
     unitcoversion_start = time.time()
     divisor = plots.tools.getDivisor(df.iloc[i]["Tot.Used Space"])
-    print(f'raw storage amount: {df.iloc[i]["Tot.Used Space"]}')
-    print(f"divisor: {divisor}")
+    # print(f'raw storage amount: {df.iloc[i]["Tot.Used Space"]}')
+    # print(f"divisor: {divisor}")
     counter = plots.tools.getChartCounter(divisor)
-    unit = plots.tools.getUnit(counter)
-
+    # unit = plots.tools.getUnit(counter)
     # Converting units
     df["AFS Groups"] = df["AFS Groups"].div(divisor)
     df["Users AFS"] = df["Users AFS"].div(divisor)
@@ -289,8 +290,10 @@ def dynamic_getUserBarCharts(year, month, date, name, group):
     print(f"Unit conversion time: {unitconversion_end-unitcoversion_start}")
 
     generatinggraph_start = time.time()
+    # Generating graphs
+    # *Note* to fix the small bar issue. I could choose to not display if the bar value is below a certain threshhold which dynamicall changes based on the divsor unit or maybe the other values of the bars
     print(f"User index: {i}")
-    fig, ax = plt.subplots()
+    fig, ax = plt.subplots()  # Creating plot object
     if df.iloc[i]["AFS Groups"] != 0:
         p1 = ax.bar(
             df.iloc[i]["Full Name"],
@@ -323,25 +326,13 @@ def dynamic_getUserBarCharts(year, month, date, name, group):
         )
         ax.bar_label(p3, label_type="center")
 
-    if df.iloc[i]["Tot.Used Space"] == 0:
-        p4 = ax.bar(
-            "Total Storage",
-            df.iloc[i]["Tot.Used Space"],
-            width=0.5,
-            color="slateblue",
-            label="Tot.Used Space",
-        )
-        ax.bar_label(
-            # p4, labels=[f"{df.iloc[i]['Tot.Used Space']} {unit}"], label_type="center"
-            p4,
-            label_type="center",
-        )
-
+    # Setting axis and title labels
     ax.set(ylabel=counter, title=f"{df.iloc[i]['Full Name']}'s Storage Amounts")
 
     # Setting axis limits
-    xlimits = ax.get_xlim()
+    # xlimits = ax.get_xlim()
     ax.set_xlim(left=-0.7, right=0.7)
+
     ylimits = ax.get_ylim()  # getting the current yaxis limits
     ax.set_ylim(bottom=None, top=(ylimits[1] + ylimits[1] * 0.15))
 
@@ -358,32 +349,42 @@ def dynamic_getUserBarCharts(year, month, date, name, group):
         color="black",
     )
 
-    # ax.ticklabel_format()
-    # ax.legend([p1, p2, p3, p4], ["AFS Groups", "Users AFS", "Users Panas.", "Tot.Used Space"])
-    lgd = ax.legend(bbox_to_anchor=(1.05, 1), loc="upper left")
+    # lgd = ax.legend(bbox_to_anchor=(1.05, 1), loc="upper left")
+    lgd = ax.legend(bbox_to_anchor=(1, 1), prop={"size": 6})
     generatinggraph_end = time.time()
     print(f"Generating graph time: {generatinggraph_end-generatinggraph_start}")
 
+    # Saving the graph
     savegraph_start = time.time()
+    # Checking to see if year directory exist
     year_save_path = f"../pngs/{year}"
     year_is_exist = os.path.exists(year_save_path)
     if not year_is_exist:
         os.makedirs(year_save_path)
         print(f"Directory {year_save_path} was created!")
+    # Checking to see if month directory exist
     month_save_path = f"./pngs/{year}/{month}"
-
     month_is_exist = os.path.exists(month_save_path)
     if not month_is_exist:
         os.makedirs(month_save_path)
         print(f"Directory {month_save_path} was created!")
 
     # Saving the figure
-    plt.savefig(
+    # plt.savefig(
+    #     f"./pngs/{year}/{month}/{df.iloc[i]['Full Name']}_user_report.png",
+    #     dpi=150,
+    #     format="png",
+    #     bbox_extra_artists=(lgd,),
+    #     bbox_inches="tight",
+    # )
+
+    # This is faster than the above way
+    fig.savefig(
         f"./pngs/{year}/{month}/{df.iloc[i]['Full Name']}_user_report.png",
-        dpi=300,
+        dpi=150,
         format="png",
         bbox_extra_artists=(lgd,),
-        bbox_inches="tight",
+        # bbox_inches="tight", # not havng this may make saving faster
     )
     savegraph_end = time.time()
     print(f"saving time: {savegraph_end-savegraph_start}")
