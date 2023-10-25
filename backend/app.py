@@ -1,54 +1,49 @@
+# Note: Make better names for functions
 import os
 from werkzeug.utils import secure_filename
 from flask import Flask, send_file, jsonify, request, redirect, url_for, flash
-import datetime
 from flask_cors import CORS
-import sys
-import time
-import logging
 from watchdog.observers import Observer, api
 from watchdog.events import LoggingEventHandler
 from watchdog.events import FileSystemEventHandler
-import threading
 import plots.writer
 import plots.bar
 import json
 import converter
-import thread  # This import will run if you just import it
+import thread  # This import will run if you just import it. *Is this how one should be doing this?*
 
+# import datetime
+# import sys
+# import time
+# import logging
+# import threading
 
-x = datetime.datetime.now()
+# When a report is uploaded it will be saved into this directory
 UPLOAD_FOLDER = "./reports"
+# The only allowed extentions that can be uploaded. *Probably just be .pdf*
 ALLOWED_EXTENSIONS = {"txt", "pdf", "csv"}
-app = Flask(__name__)  # Initializing flask app
+# Initializing flask app
+app = Flask(__name__)
 app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER  # what is "app.config"?
-CORS(
-    app
-)  # Allows for any website to access my backend server resources. Not secure need to have only specific whitelist
+# Allows for any website to access my backend server resources. *Not secure need to have only specific whitelist*
+CORS(app)
 
 
 # +=============================================================================+
 # |         Checks to see if the file extention is allowed for uplaod           |
 # +=============================================================================+
-def allowed_file(filename):
+def allowed_file_extension(filename):
+    # Parses the filename to find the extenstion, which is then compared against the allowed extensions
     return "." in filename and filename.rsplit(".", 1)[1].lower() in ALLOWED_EXTENSIONS
 
 
 # +=============================================================================+
-# |         Takes csv file and makes a json file where names are the key        |
-# +=============================================================================+
-@app.route("/image", methods=["GET"])
-def myapp():
-    image = "images/research_totals_2023-08-10.png"
-    return send_file(image, mimetype="image/png")
-
-
-# +=============================================================================+
-# |         Recieve file upload from frontend and save file to storage          |
+# |                     Recieve file upload from frontend and                   |
+# |                 save file to storage if it passes the tests                 |
 # +=============================================================================+
 @app.route("/upload", methods=["POST"])
 def getUpload():
-    status = "good"
+    status = "good"  # may need to change this to a better status code for returning
     if request.method == "POST":
         # POST data should be a formdata object which contain key:value pairs
         # Key should = "file", Value should = Json data
@@ -66,10 +61,12 @@ def getUpload():
         if file.filename == "":
             flash("No selected file")
             return redirect(request.url)
-        if file and allowed_file(file.filename):
+        # If the file passes the allowed file extension then accept the file and continue to process it
+        if file and allowed_file_extension(file.filename):
+            # Pass the file name through this function to make the file name more secure
             filename = secure_filename(file.filename)
+            # Save the file to specified path
             file.save(os.path.join(app.config["UPLOAD_FOLDER"], filename))
-            # return redirect(url_for("download_file", name=filename))
     return status
 
 
@@ -78,33 +75,47 @@ def getUpload():
 # |                                                                             |
 # |   *In the future may be able to dynamically return users based off report   |
 # |       by using the slug and parsing the path to fid the correct report*     |
+# |                                 *Test this*                                 |
 # +=============================================================================+
 @app.route("/people", methods=["GET"])
 def getUsers():
-    array = plots.writer.nameExtractor()
-    return jsonify(array)
+    array = plots.writer.nameExtractor()  # List of names found in reports
+    return jsonify(array)  # Return the list in JSON format to the frontend
 
 
 # +=============================================================================+
-# |         Takes csv file and makes a json file where names are the key        |
+# |                     Returns research totals graph                           |
+# |                 *Need to make this dynamic based on date*                   |
+# +=============================================================================+
+@app.route("/image", methods=["GET"])
+def sendResearchTotalGraph():
+    image = "images/research_totals_2023-08-10.png"
+    return send_file(image, mimetype="image/png")  # Sending png to the frontend
+
+
+# +=============================================================================+
+# |                 Returns research AFS Groups histogram graph                 |
+# |                 *Need to make this dynamic based on date*                   |
 # +=============================================================================+
 @app.route("/image/afsGroup", methods=["GET"])
-def myapp0():
+def sendResearchAfsGraph():
     image_path = "images/research_AFS Groups_histogram_2023-08-10.png"
-    return send_file(image_path, mimetype="image/png")
+    return send_file(image_path, mimetype="image/png")  # Sending png to the frontend
 
 
 # +=============================================================================+
-# |         Takes csv file and makes a json file where names are the key        |
+# |              Returns research combined groups histogram graph               |
+# |                 *Need to make this dynamic based on date*                   |
 # +=============================================================================+
 @app.route("/image/combined", methods=["GET"])
-def myapp1():
+def sendResearchCombinedGraph():
     image_path = "images/research_combined_histogram_2023-08-10.png"
-    return send_file(image_path, mimetype="image/png")
+    return send_file(image_path, mimetype="image/png")  # Sending png to the frontend
 
 
 # +=============================================================================+
-# |                      Returns dynamic routes (slug)                          |
+# |             Returns dynamic images based on routes (slug)                   |
+# |                             *Deprecated*                                    |
 # +=============================================================================+
 @app.route("/piIMage/<string:Name>")
 def sendingImage(Name):
@@ -113,7 +124,8 @@ def sendingImage(Name):
 
 
 # +=============================================================================+
-# |    Returns dynamic routes with dynamic images based on the date (slug)      |
+# |             Returns dynamic images based on the date (slug)                 |
+# |                             *Deprecated*                                    |
 # +=============================================================================+
 @app.route("/piIMage/<string:date>/<string:name>")
 def sendingImage2(date, name):
@@ -122,21 +134,25 @@ def sendingImage2(date, name):
     in the function add a check to see if the file was already created and if not create the image to send.
     """
     print(date)
-
     image = f"pngs/{name}_user_report_{date}.png"
     return send_file(image, mimetype="image/png")
 
 
 # +=============================================================================+
-# |                                 *Test*  Main                                |
-# |      Returns dynamic routes with dynamic images based on the date (slug)    |
+# |                                 *Main*                                      |
+# |             Returns dynamic images based on the date (slug)                 |
+# |                                                                             |
+# | This route is split up by year/month/name This is to allow for paths that   |
+# |  make more sense. Doing it this way also help with regardless of what date  |
+# |     pick in the month you will also recieve the graph for that month        |
 # +=============================================================================+
 @app.route("/piIMage/<string:year>/<string:date>/<string:name>")
 def sendingImage3(year, date, name):
-    """add funcion here to create user report dynamically. Should it be stored after wards or discared.
+    """
     Probably store it for a little while and delete after some time
     in the function add a check to see if the file was already created and if not create the image to send.
     """
+    # Extracting the month from the given date. Based on the month it will be changed from number format to words
     month = date[0:2]
     if month == "01":
         month = "January"
@@ -163,17 +179,20 @@ def sendingImage3(year, date, name):
     if month == "12":
         month = "December"
 
+    # Group is hardcoded to be research. *Fix this to be dynamic in the future*
     group = "research"
 
-    print(f"date: {date}")
-    print(year)
-    print(month)
-    print(name)
+    # Debugging info
+    # print(f"date: {date}")
+    # print(year)
+    # print(month)
+    # print(name)
 
+    # Create an image based on the given route
     plots.bar.dynamic_getUserBarCharts(year, month, date, name, group)
-
+    # Store created image into variable
     image = f"pngs/{year}/{month}/{name}_user_report.png"
-
+    # Send the image to the frontend
     return send_file(image, mimetype="image/png")
 
 
@@ -181,7 +200,7 @@ def sendingImage3(year, date, name):
 # |           Runs csv to json converter. Returns json to the browser           |
 # +=============================================================================+
 @app.route("/users", methods=["GET", "POST"])
-def user():
+def sendCsvJson():
     file = converter.toJSON2()
     return jsonify(file)
 
@@ -192,24 +211,15 @@ def user():
 # +=============================================================================+
 @app.route("/user-info/<string:Name>", methods=["GET"])
 def sendUserInfo(Name):
-    with open("json/names_version2.json", "r") as json_file:
-        data = json.load(json_file)
+    with open("json/names_version2.json", "r") as json_file:  # Reading json file
+        data = json.load(json_file)  # Loading JSON data into variable
 
-    return jsonify([data[Name]])
-
-
-# from this route I recive the name of the dynamic route from the frontend. how to I return json data just for the dynamic name recieved?
-@app.route("/test", methods=["POST"])
-def recieveUsername():
-    status = "good"
-    content = request.json
-    print(f'ID: {content["ID"]}')
-    print(f'Name: {content["Name"]}')
-    return status
+    return jsonify([data[Name]])  # return JSON datadyamically based on name given
 
 
 # +=============================================================================+
 # |                              Running app                                    |
 # +=============================================================================+
 if __name__ == "__main__":
+    # When app goes to production get rid of debug and use proper calls
     app.run(debug=True)
