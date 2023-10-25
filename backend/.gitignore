@@ -1,3 +1,5 @@
 venv/
 text/
 csv/
+__pycache__/
+pngs/test/
