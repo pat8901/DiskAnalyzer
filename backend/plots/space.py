@@ -1,12 +1,18 @@
-import sys
-import tools
+# ---------------- ALERT --------------------------
+# * This is the command line program. This is not used *
+# * In the future may tie in the CLI for quick access. *
+# * However, it may be better to fork it as a standalone program *
 import writer
 import bar
 import histogram
 import readline
+import sys
+import tools
 
 
 def main():
+    print("Hello world!")
+
     # file_input = sys.argv[1]
     # print(f'You said "{file_input}"')
     # report_date = tools.getReportDate(file_input)
@@ -25,8 +31,6 @@ def main():
     # histogram.getGroupHistogram("research", "Users AFS", "2023-08-10")
     # histogram.getGroupHistogram("research", "Users Panas.", "2023-08-10")
     # histogram.getStackedGroupHistogram("research", "2023-08-10")
-    array = writer.nameExtractor()
-    print(array)
 
 
 if __name__ == "__main__":
