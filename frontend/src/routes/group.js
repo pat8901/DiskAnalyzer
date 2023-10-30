@@ -7,28 +7,19 @@ import { FaCircleInfo } from 'react-icons/fa6'
 import { FaSistrix } from 'react-icons/fa6'
 import { FaHouseChimney } from 'react-icons/fa6'
 
+// +=============================================================================+
+// |                            The "Group" page                                 |
+// |                    Holds histogram charts on groups                         |
+// +=============================================================================+
 function Group () {
-  // This code may be useful to remember
-  // const ID = 85
-  // const Name = 'Larry David'
-  // const storageAmount = 100
-  // const HandleSumbit = e => {
-  //   const message = { ID, Name, storageAmount }
-  //   fetch('http://localhost:5000/test', {
-  //     method: 'POST',
-  //     headers: { 'Content-Type': 'application/json' },
-  //     body: JSON.stringify(message)
-  //   }).then(() => {
-  //     console.log(message)
-  //   })
-  // }
-  // End
-
+  // Getting and holding the state of the window size.
+  // *Does it have to be done this way, or is there a better way. like through pure html*
   const [windowSize, setWindowSize] = useState([
     window.innerWidth,
     window.innerHeight
   ])
 
+  // Listens for changes in window size and changes when size change is detected
   useEffect(() => {
     const handleWindowResize = () => {
       setWindowSize([window.innerWidth, window.innerHeight])

@@ -9,9 +9,14 @@ import User from './user'
 import UserDynamic from './userDynamic'
 import PageNotFound from './pageNotFound'
 
+// +=============================================================================+
+// |                     App that is called from index.js                        |
+// |                        Holds the routes (pages)                             |
+// +=============================================================================+
 function App () {
   return (
     <div>
+      {/* The available routes users can navigate to */}
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='group' element={<Group />} />

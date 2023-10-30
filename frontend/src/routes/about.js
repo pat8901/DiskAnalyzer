@@ -7,12 +7,19 @@ import { FaCircleInfo } from 'react-icons/fa6'
 import { FaSistrix } from 'react-icons/fa6'
 import { FaHouseChimney } from 'react-icons/fa6'
 
+// +=============================================================================+
+// |                            The "About" page                                 |
+// |        Holds general information about the purpose of the front end         |
+// +=============================================================================+
 function About () {
+  // Getting and holding the state of the window size.
+  // *Does it have to be done this way, or is there a better way. like through pure html*
   const [windowSize, setWindowSize] = useState([
     window.innerWidth,
     window.innerHeight
   ])
 
+  // Listens for changes in window size and changes when size change is detected
   useEffect(() => {
     const handleWindowResize = () => {
       setWindowSize([window.innerWidth, window.innerHeight])
