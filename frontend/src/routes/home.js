@@ -2,25 +2,31 @@ import React, { useState, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import Logo2 from '../logos/logo512.png'
-
 import { FaCircleInfo } from 'react-icons/fa6'
 import { FaSistrix } from 'react-icons/fa6'
 import { FaHouseChimney } from 'react-icons/fa6'
 import { FaBoxesStacked } from 'react-icons/fa6'
 
+// +=============================================================================+
+// |                            The "Home" page                                  |
+// |                           Holds welcome page                                |
+// +=============================================================================+
 function Home () {
+  // Getting and holding the state of the window size.
+  // *Does it have to be done this way, or is there a better way. like through pure html*
   const [windowSize, setWindowSize] = useState([
     window.innerWidth,
     window.innerHeight
   ])
 
+  // Listens for changes in window size and changes when size change is detected
   useEffect(() => {
     const handleWindowResize = () => {
-      setWindowSize([window.innerWidth, window.innerHeight])
+      setWindowSize([window.innerWidth, window.innerHeight]) // Setting window size
     }
-    window.addEventListener('resize', handleWindowResize)
+    window.addEventListener('resize', handleWindowResize) // Adding window size listener
     return () => {
-      window.removeEventListener('resize', handleWindowResize)
+      window.removeEventListener('resize', handleWindowResize) // Removing listener?
     }
   }, [])
 

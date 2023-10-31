@@ -8,42 +8,52 @@ import { FaHouseChimney } from 'react-icons/fa6'
 import { FaBoxesStacked } from 'react-icons/fa6'
 import { UserName } from '../components/username'
 
+// +=============================================================================+
+// |                            The "UserDynamic" page                           |
+// |                    This is where a user report is diplayed                  |
+// |                      This page is part of the search path                   |
+// |                                                                             |
+// |     *This replaces the "User" page. The slug/url may need to be further     |
+// |                modified to be more efficient. What is useMemo?*             |
+// +=============================================================================+
 const UserDynamic = () => {
+  // Setting image state
   const [img, setImg] = useState()
+  // Setting route parameters. How do I get these? Where and how are they set?
   const { year } = useParams()
   const { month } = useParams()
-  const { date } = useParams()
   const { slug } = useParams()
-  console.log(`date: ${date}`)
-  console.log(`slug:${slug}`)
-  // const slugObject = useMemo(() => {
-  //   return { slug: slug }
-  // }, [slug])
+  // const { date } = useParams()
+  // console.log(`date: ${date}`)
+  // console.log(`slug:${slug}`)
 
+  // Fetches storage plot for searched user from backend
   useEffect(() => {
+    // fetchImage function to be called
     const fetchImage = async () => {
-      // const imageUrl = `http://localhost:5000/piIMage/${date}/${slug}`
-      const imageUrl = `http://localhost:5000/piIMage/${year}/${month}/${slug}`
-      const res = await fetch(imageUrl)
-      const imageBlob = await res.blob()
-      const imageObjectURL = URL.createObjectURL(imageBlob)
-      setImg(imageObjectURL)
+      const imageUrl = `http://localhost:5000/piIMage/${year}/${month}/${slug}` // Backend address for the image
+      const res = await fetch(imageUrl) // Fetching image and using await. *not completly sure how this works*
+      const imageBlob = await res.blob() // Making the fetch response a blob. *What does blob do*
+      const imageObjectURL = URL.createObjectURL(imageBlob) //Not sure what this does
+      setImg(imageObjectURL) // Setting the processed image to a state variable
     }
-    fetchImage()
+    fetchImage() // Calling fetchImage function
   }, [])
-
+  // Getting and holding the state of the window size.
+  // *Does it have to be done this way, or is there a better way. like through pure html*
   const [windowSize, setWindowSize] = useState([
     window.innerWidth,
     window.innerHeight
   ])
 
+  // Listens for changes in window size and changes when size change is detected
   useEffect(() => {
     const handleWindowResize = () => {
-      setWindowSize([window.innerWidth, window.innerHeight])
+      setWindowSize([window.innerWidth, window.innerHeight]) // Setting window size
     }
-    window.addEventListener('resize', handleWindowResize)
+    window.addEventListener('resize', handleWindowResize) // Adding window size listener
     return () => {
-      window.removeEventListener('resize', handleWindowResize)
+      window.removeEventListener('resize', handleWindowResize) // Removing listener?
     }
   }, [])
 

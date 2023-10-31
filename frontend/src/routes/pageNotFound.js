@@ -1,5 +1,8 @@
 import React from 'react'
 
+// +=============================================================================+
+// |            This page is displayed when a 404 error is thrown                |
+// +=============================================================================+
 function PageNotFound () {
   return (
     <>

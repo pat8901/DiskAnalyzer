@@ -23,7 +23,7 @@ function App () {
         <Route path='about' element={<About />} />
         <Route path='upload' element={<Upload />} />
         <Route path='search' element={<Search />} />
-        <Route path='search/:slug' element={<User />} />
+        {/* <Route path='search/:slug' element={<User />} />  !Deprecated! */}
         {/* <Route path='search/:date/:slug' element={<UserDynamic />} /> */}
         <Route path='search/:year/:month/:slug' element={<UserDynamic />} />
         <Route path='*' element={<PageNotFound />} />

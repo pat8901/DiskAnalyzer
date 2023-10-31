@@ -9,19 +9,27 @@ import { FaBoxesStacked } from 'react-icons/fa6'
 import { FaCloudArrowUp } from 'react-icons/fa6'
 import FileUpload from '../components/FileUpload'
 
+// +=============================================================================+
+// |                            The "Upload" page                                |
+// |            This is where a user can upload a report from their              |
+// |                   file system to the backend server                         |
+// +=============================================================================+
 function Upload () {
+  // Getting and holding the state of the window size.
+  // *Does it have to be done this way, or is there a better way. like through pure html*
   const [windowSize, setWindowSize] = useState([
     window.innerWidth,
     window.innerHeight
   ])
 
+  // Listens for changes in window size and changes when size change is detected
   useEffect(() => {
     const handleWindowResize = () => {
-      setWindowSize([window.innerWidth, window.innerHeight])
+      setWindowSize([window.innerWidth, window.innerHeight]) // Setting window size
     }
-    window.addEventListener('resize', handleWindowResize)
+    window.addEventListener('resize', handleWindowResize) // Adding window size listener
     return () => {
-      window.removeEventListener('resize', handleWindowResize)
+      window.removeEventListener('resize', handleWindowResize) // Removing listener?
     }
   }, [])
 
@@ -84,6 +92,7 @@ function Upload () {
           </div>
           <div className='data-container'>
             <div className='data-box'>
+              {/*Calling the fileUpload component that will do the upload functions*/}
               <FileUpload />
             </div>
             <div className='footer'></div>

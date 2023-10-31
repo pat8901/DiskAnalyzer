@@ -11,33 +11,47 @@ import { Calender } from '../components/Calender'
 import { SearchResultsList } from '../components/SearchResultsList'
 import '../components/styles/SearchBarTest.css'
 
+// +=============================================================================+
+// |                            The "Search" page                                |
+// | This page is where one searches for users. When a user is clicked on their  |
+// |                     corresponding plots are loaded                          |
+// +=============================================================================+
 function Search () {
+  // Getting the current date
   var today = new Date()
+  // Parsing the date into month, day, and year
   var mm = String(today.getMonth() + 1).padStart(2, '0') // January is 0
   var dd = String(today.getDate()).padStart(2, '0')
   var year = today.getFullYear()
-  // console.log(`date: ${date}`)
+
+  // *Debugging* printing to console
+  //console.log(`date: ${date}`)
   // console.log(`Real time Date: ${today}`)
   // console.log(`Real time month: ${mm}`)
   // console.log(`Real time day: ${dd}`)
   // console.log(`Real time year: ${year}`)
 
+  // State that will keep track of the current results found when the user searches
   const [results, setResults] = useState([])
+  // *Change the name to something meaningful* State that will keep track of the selected date
   const [query, setQuery] = useState(`${year}-${mm}-${dd}`)
-  console.log(`search mydate: ${query}`)
+  //console.log(`search mydate: ${query}`)
 
+  // Getting and holding the state of the window size.
+  // *Does it have to be done this way, or is there a better way. like through pure html*
   const [windowSize, setWindowSize] = useState([
     window.innerWidth,
     window.innerHeight
   ])
 
+  // Listens for changes in window size and changes when size change is detected
   useEffect(() => {
     const handleWindowResize = () => {
-      setWindowSize([window.innerWidth, window.innerHeight])
+      setWindowSize([window.innerWidth, window.innerHeight]) // Setting window size
     }
-    window.addEventListener('resize', handleWindowResize)
+    window.addEventListener('resize', handleWindowResize) // Adding window size listener
     return () => {
-      window.removeEventListener('resize', handleWindowResize)
+      window.removeEventListener('resize', handleWindowResize) // Removing listener?
     }
   }, [])
 
@@ -61,6 +75,8 @@ function Search () {
               </Link>
             </div>
             <div className='route'>
+              {/* In the Nav bar for the selected page the tab will be highlighted
+                  Maybe think about making the return value better  */}
               <NavLink
                 className='route'
                 to='/search'
@@ -90,12 +106,15 @@ function Search () {
         </div>
         <div className='box2'>
           <div className='search-bar'>
+            {/* ?Getting result data from child and setting results. how does this differ from searchresultslist? */}
             <SearchBar setResults={setResults} />
+            {/* Getting data from child and setting query */}
             <Calender onQuery={setQuery} />
           </div>
           <div className='data-container'>
             <div className='data-box'>
               <div className='list'>
+                {/* Passing data gathered from from two children nodes and passing it to another sibling of the two children*/}
                 <SearchResultsList results={results} date={query} />
               </div>
             </div>

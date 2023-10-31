@@ -42,14 +42,12 @@ def getGroupTotals(group, date):
     )
     # Giving the AFS Group bar a label
     ax.bar_label(afs_group_bar, label_type="edge", fontsize=16)
-
     # Creating bar for AFS User
     afs_user_bar = ax.bar(
         "AFS User", afs_user_total, label="AFS Group", width=1, edgecolor="white"
     )
     # Giving the AFS User bar a label
     ax.bar_label(afs_user_bar, label_type="edge", fontsize=16)
-
     # Creating bar for Panasas Group
     panasas_bar = ax.bar(
         "Panasas", panas_total, label="AFS Group", width=1, edgecolor="white"
