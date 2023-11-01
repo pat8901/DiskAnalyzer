@@ -15,7 +15,7 @@ export const SearchBar = ({ setResults }) => {
   const [input, setInput] = useState('') // Holds the state of input in the searchbar. *Is this even used?*
   const [users, setUsers] = useState('') // Holds the state of users that match searchbar input
   const { date } = useParams() // Not sure if this is used. *I think this is would be used to select different users based on date filter*
-  console.log(`(SearchBar.js) date: ${date}`) // Not sure if this is used
+  console.log(`(SearchBar.js) date: ${date}`) // Not sure if this is used. Its not!
 
   // Fetches array of users from backend to be search through
   // How can I make this cached?
