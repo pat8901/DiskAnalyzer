@@ -1,17 +1,25 @@
+// Give this component a better name
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import './styles/table.css'
 
+// +=============================================================================+
+// |                           "UserName" component                              |
+// |  Fetches extra information of the current user to be displayed in a table   |
+// |        *This component is deprecated. Does not currently work with          |
+// |                "userDynamic" because of routing/slug*                       |
+// +=============================================================================+
 export const UserName = () => {
-  const { slug } = useParams()
-  const [post, setPost] = useState([])
+  const { slug } = useParams() // how does this work?
+  const [post, setPost] = useState([]) // Function to store and set post data. post contains information on current selected user
 
+  // Fetches information on the selected user to be displayed
   useEffect(() => {
     fetch('http://localhost:5000/user-info/' + slug)
       .then(response => response.json())
       .then(data => {
+        setPost(data) // Sets "post" to the data that was recieved
         //console.log(data)
-        setPost(data)
       })
   }, [])
 

@@ -1,7 +1,14 @@
 import React from 'react'
-import './styles/SearchBarTest.css'
 import { SearchResult } from './SearchResult'
+import './styles/SearchBarTest.css'
 
+// +=============================================================================+
+// |                       "SearchResultsList" component                         |
+// |                  Gets list of results passsed down from                     |
+// |                "SearchBar"->"Search"->"SearchResultsList"                   |
+// |         Each result is mapped to a seperate entity creating a list of       |
+// |                   results where result is self contained.                   |
+// +=============================================================================+
 export const SearchResultsList = ({ results, date }) => {
   return (
     <div className='search-results'>

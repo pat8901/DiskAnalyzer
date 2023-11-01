@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 import { Link } from 'react-router-dom'
-import Logo2 from '../logos/logo512.png'
+import Logo2 from '../logos/crc_logo.png'
 import { FaCircleInfo } from 'react-icons/fa6'
 import { FaSistrix } from 'react-icons/fa6'
 import { FaHouseChimney } from 'react-icons/fa6'

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { NavLink } from 'react-router-dom'
-import Logo2 from '../logos/logo512.png'
 import { FaCircleInfo } from 'react-icons/fa6'
 import { FaBoxesStacked } from 'react-icons/fa6'
 import { FaSistrix } from 'react-icons/fa6'
@@ -10,6 +9,7 @@ import { SearchBar } from '../components/SearchBar'
 import { Calender } from '../components/Calender'
 import { SearchResultsList } from '../components/SearchResultsList'
 import '../components/styles/SearchBarTest.css'
+import Logo2 from '../logos/crc_logo.png'
 
 // +=============================================================================+
 // |                            The "Search" page                                |

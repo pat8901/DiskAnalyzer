@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { NavLink } from 'react-router-dom'
-import Logo2 from '../logos/logo512.png'
 import { FaBoxesStacked } from 'react-icons/fa6'
 import { FaCircleInfo } from 'react-icons/fa6'
 import { FaSistrix } from 'react-icons/fa6'
 import { FaHouseChimney } from 'react-icons/fa6'
+import Logo2 from '../logos/crc_logo.png'
 
 // +=============================================================================+
 // |                            The "Group" page                                 |

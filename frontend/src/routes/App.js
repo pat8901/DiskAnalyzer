@@ -5,7 +5,7 @@ import Group from './group'
 import About from './about'
 import Search from './search'
 import Upload from './upload'
-import User from './user'
+// import User from './user'
 import UserDynamic from './userDynamic'
 import PageNotFound from './pageNotFound'
 
