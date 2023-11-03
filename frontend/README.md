@@ -1,8 +1,28 @@
-# Getting Started with Create React App
+# Getting Started
+Installing node
+---------------------
+You will need to make sure you have a running install of node on your computer in order to run the frontend program \
+For more information please refer to https://nodejs.org/en/learn/getting-started/how-to-install-nodejs \
+When node is installed you will also need npm. For more information please refer to https://docs.npmjs.com/downloading-and-installing-node-js-and-npm 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Cloning the program
+----------------------
+First you must obtain the source code for the front end and store in a project directory. 
 
-## Available Scripts
+Installing dependencies
+---------------------------
+Once you downloaded the program you need to make sure all of the required dependencies are installed. To do so use the following command, $ npm install \
+This will automatically download all required installs that are found in the package.json file.
+
+# Running Frontend Server
+Once everything has been installed and setup use the following command to start the frontend server, $ npm start \ 
+This will run the server and pull up the page automatically in a web browser.
+
+Discalimer 
+---------------------------
+Please know that this program is still in beta testing and this server is not meant for production. This is a development server only. 
+
+# Extra information on how to use react
 
 In the project directory, you can run:
 
