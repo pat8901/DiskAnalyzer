@@ -9,8 +9,8 @@ from watchdog.events import FileSystemEventHandler
 import plots.writer
 import plots.bar
 import json
-import converter
-import thread  # This import will run if you just import it. *Is this how one should be doing this?*
+import backend.src.converter as converter
+import backend.src.thread as thread  # This import will run if you just import it. *Is this how one should be doing this?*
 
 # import datetime
 # import sys
