@@ -6,11 +6,11 @@ from flask_cors import CORS
 from watchdog.observers import Observer, api
 from watchdog.events import LoggingEventHandler
 from watchdog.events import FileSystemEventHandler
-import plots.writer
-import plots.bar
+import src.writer
+import src.bar
 import json
-import backend.src.converter as converter
-import backend.src.thread as thread  # This import will run if you just import it. *Is this how one should be doing this?*
+import src.converter as converter
+import src.thread as thread  # This import will run if you just import it. *Is this how one should be doing this?*
 
 # import datetime
 # import sys
@@ -19,7 +19,7 @@ import backend.src.thread as thread  # This import will run if you just import i
 # import threading
 
 # When a report is uploaded it will be saved into this directory
-UPLOAD_FOLDER = "./reports"
+UPLOAD_FOLDER = "./documents/reports"
 # The only allowed extentions that can be uploaded. *Probably just be .pdf*
 ALLOWED_EXTENSIONS = {"txt", "pdf", "csv"}
 # Initializing flask app
@@ -79,7 +79,7 @@ def getUpload():
 # +=============================================================================+
 @app.route("/people", methods=["GET"])
 def getUsers():
-    array = plots.writer.nameExtractor()  # List of names found in reports
+    array = src.writer.nameExtractor()  # List of names found in reports
     return jsonify(array)  # Return the list in JSON format to the frontend
 
 
@@ -89,7 +89,7 @@ def getUsers():
 # +=============================================================================+
 @app.route("/image", methods=["GET"])
 def sendResearchTotalGraph():
-    image = "images/research_totals_2023-08-10.png"
+    image = "images/groupStorageCharts/research_totals_2023-08-10.png"
     return send_file(image, mimetype="image/png")  # Sending png to the frontend
 
 
@@ -99,7 +99,9 @@ def sendResearchTotalGraph():
 # +=============================================================================+
 @app.route("/image/afsGroup", methods=["GET"])
 def sendResearchAfsGraph():
-    image_path = "images/research_AFS Groups_histogram_2023-08-10.png"
+    image_path = (
+        "images/groupStorageCharts/research_AFS Groups_histogram_2023-08-10.png"
+    )
     return send_file(image_path, mimetype="image/png")  # Sending png to the frontend
 
 
@@ -109,7 +111,7 @@ def sendResearchAfsGraph():
 # +=============================================================================+
 @app.route("/image/combined", methods=["GET"])
 def sendResearchCombinedGraph():
-    image_path = "images/research_combined_histogram_2023-08-10.png"
+    image_path = "images/groupStorageCharts/research_combined_histogram_2023-08-10.png"
     return send_file(image_path, mimetype="image/png")  # Sending png to the frontend
 
 
@@ -119,7 +121,7 @@ def sendResearchCombinedGraph():
 # +=============================================================================+
 @app.route("/piIMage/<string:Name>")
 def sendingImage(Name):
-    image = f"pngs/{Name}_user_report_2023-08-10.png"
+    image = f"images/userStorageCharts/{Name}_user_report_2023-08-10.png"
     return send_file(image, mimetype="image/png")
 
 
@@ -134,7 +136,7 @@ def sendingImage2(date, name):
     in the function add a check to see if the file was already created and if not create the image to send.
     """
     print(date)
-    image = f"pngs/{name}_user_report_{date}.png"
+    image = f"images/userStorageCharts/{name}_user_report_{date}.png"
     return send_file(image, mimetype="image/png")
 
 
@@ -189,9 +191,9 @@ def sendingImage3(year, date, name):
     # print(name)
 
     # Create an image based on the given route
-    plots.bar.dynamic_getUserBarCharts(year, month, date, name, group)
+    src.bar.dynamic_getUserBarCharts(year, month, date, name, group)
     # Store created image into variable
-    image = f"pngs/{year}/{month}/{name}_user_report.png"
+    image = f"images/userStorageCharts/{year}/{month}/{name}_user_report.png"
     # Send the image to the frontend
     return send_file(image, mimetype="image/png")
 
@@ -211,7 +213,9 @@ def sendCsvJson():
 # +=============================================================================+
 @app.route("/user-info/<string:Name>", methods=["GET"])
 def sendUserInfo(Name):
-    with open("json/names_version2.json", "r") as json_file:  # Reading json file
+    with open(
+        "documents/json/names_version2.json", "r"
+    ) as json_file:  # Reading json file
         data = json.load(json_file)  # Loading JSON data into variable
 
     return jsonify([data[Name]])  # return JSON datadyamically based on name given

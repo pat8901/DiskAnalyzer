@@ -4,7 +4,7 @@ import matplotlib
 import matplotlib.pyplot as plt
 import matplotlib.style as mplstyle
 import numpy as np
-import plots.tools
+from . import tools
 import time
 import os
 
@@ -14,16 +14,16 @@ import os
 # +======================================================================================+
 def getUserBarCharts(input, date):
     # Read csv file into pandas dataframe
-    df = pd.read_csv(f"csv/{input}_{date}.csv")
+    df = pd.read_csv(f"./documents/csv/{input}_{date}.csv")
     # Getting the amount of rows in dataframe
     row_count = len(df.index)
 
     # Generating a chart for each user found in "users" array
     for i in range(row_count):
         # Getting the divisor to divide row by
-        divisor = plots.tools.getDivisor(df.iloc[i]["Tot.Used Space"])
+        divisor = tools.getDivisor(df.iloc[i]["Tot.Used Space"])
         # Getting the unit the numbers are in
-        counter = plots.tools.getChartCounter(divisor)
+        counter = tools.getChartCounter(divisor)
         # Dividing the cells the current selected row by the divisor
         df["AFS Groups"].iloc[i] = df.iloc[i]["AFS Groups"] / divisor
         df["Users AFS"].iloc[i] = df.iloc[i]["Users AFS"] / divisor
@@ -96,7 +96,7 @@ def getUserBarCharts(input, date):
         lgd = ax.legend(bbox_to_anchor=(1.05, 1), loc="upper left")
         # Saving the figure
         plt.savefig(
-            f"graphs/research/user_reports/pngs/{df.iloc[i]['Full Name']}_user_report_{date}.png",
+            f"./images/batches/{df.iloc[i]['Full Name']}_user_report_{date}.png",
             dpi=300,
             format="png",
             bbox_extra_artists=(lgd,),
@@ -123,7 +123,7 @@ def dynamic_getUserBarCharts(year, month, date, name, group):
     # Finding the specified file and loading into dataframe
     # print(f"current workng directory {os.getcwd()}")
     # Setting parent path
-    parent_path = os.listdir(f"./csv/{year}/{month}")
+    parent_path = os.listdir(f"./documents/csv/{year}/{month}")
     my_files = []  # list to hold files paths
     # Checking each file in parent path if it matches search string
     for file in parent_path:
@@ -131,7 +131,7 @@ def dynamic_getUserBarCharts(year, month, date, name, group):
         if file.startswith(f"{group}_{year}-{date[0:2]}"):
             my_files.append(file)  # add file to list
     # Read csv file into pandas dataframe
-    df = pd.read_csv(f"./csv/{year}/{month}/{my_files[0]}")
+    df = pd.read_csv(f"./documents/csv/{year}/{month}/{my_files[0]}")
     # Debugging info
     # print(f'row number {df[df["Full Name"] == f"{name}"].index}')
     # print(df[df["Full Name"] == f"{name}"].index[0])
@@ -144,11 +144,11 @@ def dynamic_getUserBarCharts(year, month, date, name, group):
     # unitcoversion_start = time.time()
 
     # Getting the divisor to divide row by
-    divisor = plots.tools.getDivisor(df.iloc[i]["Tot.Used Space"])
+    divisor = tools.getDivisor(df.iloc[i]["Tot.Used Space"])
     # print(f'raw storage amount: {df.iloc[i]["Tot.Used Space"]}')
     # print(f"divisor: {divisor}")
     # Getting the unit the numbers are in
-    counter = plots.tools.getChartCounter(divisor)
+    counter = tools.getChartCounter(divisor)
     # unit = plots.tools.getUnit(counter)
 
     # Dividing the cells the current selected row by the divisor
@@ -244,7 +244,7 @@ def dynamic_getUserBarCharts(year, month, date, name, group):
 
     # Saving the figure
     fig.savefig(
-        f"./pngs/{year}/{month}/{df.iloc[i]['Full Name']}_user_report.png",
+        f"./images/userStorageCharts/{year}/{month}/{df.iloc[i]['Full Name']}_user_report.png",
         dpi=150,
         format="png",
         bbox_extra_artists=(lgd,),
@@ -265,12 +265,12 @@ def test_getUserBarCharts(input):
     date = input[9:]  # Parsing the date from input
     i = 0  # Selecting row index in dataframe
     # Read csv file into pandas dataframe
-    df = pd.read_csv(f"../csv/2023/2023_07_01/{input}.csv")
+    df = pd.read_csv(f"./documents/csv/2023/2023_07_01/{input}.csv")
 
     # Getting the divisor to divide row by
-    divisor = plots.tools.getDivisor(df.iloc[i]["Tot.Used Space"])
+    divisor = tools.getDivisor(df.iloc[i]["Tot.Used Space"])
     # Getting the unit the numbers are in
-    counter = plots.tools.getChartCounter(divisor)
+    counter = tools.getChartCounter(divisor)
     # Getting the abbreviated unit
     # unit = plots.tools.getUnit(counter)
 
@@ -341,7 +341,7 @@ def test_getUserBarCharts(input):
     lgd = ax.legend(bbox_to_anchor=(1.05, 1), loc="upper left")
     # Saving the figure
     plt.savefig(
-        f"../pngs/{df.iloc[i]['Full Name']}_user_report_{date}.png",
+        f"../images/userStorageCharts/{df.iloc[i]['Full Name']}_user_report_{date}.png",
         dpi=300,
         format="png",
         bbox_extra_artists=(lgd,),

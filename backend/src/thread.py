@@ -7,7 +7,7 @@ from watchdog.observers import Observer
 # from watchdog.events import LoggingEventHandler
 from watchdog.events import FileSystemEventHandler
 import threading
-import plots
+import src
 
 
 # +=============================================================================+
@@ -33,7 +33,7 @@ def prepareFile(event):
     print(event.src_path[22:-4])
 
     # Generate reports using wrapper function when given source path of watchdog event
-    plots.writer.generateReports(f"{event.src_path}", f"{event.src_path[22:-4]}")
+    src.writer.generateReports(f"{event.src_path}", f"{event.src_path[22:-4]}")
 
     print("Complete!")
     print(f"file size: {os.path.getsize(event.src_path)}")
@@ -61,7 +61,7 @@ def my_watchdog():
     )
 
     # Setting the file we want to monitor
-    path = "./reports"
+    path = "./documents/reports"
 
     # Determines what to do when a event occurs
     event_handler = FileSystemEventHandler()  # Creating event handler object

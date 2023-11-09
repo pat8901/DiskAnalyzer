@@ -21,7 +21,7 @@ def createFullOutput(input, date):
     reader = PdfReader(pdf)  # Create a pdf reader object and pass the pdf
     # print(os.getcwd())
     # Open a file to be written to
-    with open(f"./text/full_output/full_output_{date}.txt", "w") as f_output:
+    with open(f"./documents/text/full_output/full_output_{date}.txt", "w") as f_output:
         count = 0
         # Loop through each page
         for i in reader.pages:
@@ -44,9 +44,11 @@ def createResearchOutput(date):
     end = "=========================================|===============|===============|===============|=================|"
     beginFound = False  # Flag to know if the beginning was found
     # Reads full text file which contatins information on all groups
-    with open(f"text/full_output/full_output_{date}.txt", "r") as f_input:
+    with open(f"./documents/text/full_output/full_output_{date}.txt", "r") as f_input:
         # Open a file to be written to in the end will only contain information on researchers
-        with open(f"text/grouped_output/research/research_{date}.txt", "w") as f_output:
+        with open(
+            f"./documents/text/grouped_output/research/research_{date}.txt", "w"
+        ) as f_output:
             # Loop through each line in input file
             for line in f_input:
                 # If the "end" string is found then you must have reach the end so break
@@ -76,10 +78,10 @@ def createDepartmentOutput(date):
     headerFound = False  # Flasg to know if the header was found
     beginFound = False  # Flag to know if the beginning was found
     # Read the full text file
-    with open(f"./text/full_output/full_output_{date}.txt", "r") as f_input:
+    with open(f"./documents/text/full_output/full_output_{date}.txt", "r") as f_input:
         # Open a new file to write department information to
         with open(
-            f"./text/grouped_output/departments/departments_{date}.txt", "w"
+            f"./documents/text/grouped_output/departments/departments_{date}.txt", "w"
         ) as f_output:
             for line in f_input:  # Loop through each line in the file input
                 # If the header is in the current line set "headerFound" to True
@@ -113,10 +115,10 @@ def createCollegesOutput(date):
     headerFound = False  # Flag to know if header was found
     beginFound = False  # Flag to know if the beginning was found
     # Reading the full text file
-    with open(f"./text/full_output/full_output_{date}.txt", "r") as f_input:
+    with open(f"./documents/text/full_output/full_output_{date}.txt", "r") as f_input:
         # Opening a new file to write to
         with open(
-            f"./text/grouped_output/colleges/colleges_{date}.txt", "w"
+            f"./documents/text/grouped_output/colleges/colleges_{date}.txt", "w"
         ) as f_output:
             # Looping through each line in the input file
             for line in f_input:
@@ -176,7 +178,7 @@ def csvWriter(input, output, date):
         month = "December"
 
     # Checking to see if the "year" directory exist for the following path
-    year_save_path = f"./csv/{folder_year}"
+    year_save_path = f"./documents/csv/{folder_year}"
     year_is_exist = os.path.exists(year_save_path)
     # If the path does not exist then make it
     if not year_is_exist:
@@ -184,7 +186,7 @@ def csvWriter(input, output, date):
         print(f"Directory {year_save_path} was created!")
 
     # Checking to see if the "month" directory exist for the following path
-    save_path = f"./csv/{folder_year}/{month}"
+    save_path = f"./documents/csv/{folder_year}/{month}"
     is_exist = os.path.exists(save_path)
     # If the path does not exist then make it
     if not is_exist:
@@ -192,10 +194,12 @@ def csvWriter(input, output, date):
         print(f"Directory {save_path} was created!")
 
     # Reading the corresponding grouped text files based on group and date given
-    with open(f"./text/grouped_output/{input}/{input}_{date}.txt", "r") as f:
+    with open(f"./documents/text/grouped_output/{input}/{input}_{date}.txt", "r") as f:
         # Openning a new file to write csv data to
         with open(
-            f"./csv/{folder_year}/{month}/{output}_{date}.csv", "w", newline=""
+            f"./documents/csv/{folder_year}/{month}/{output}_{date}.csv",
+            "w",
+            newline="",
         ) as file:
             # Creating a csv writer object *is this actually an object?*
             writer = csv.writer(file)
@@ -257,8 +261,8 @@ def csvWriter2():
     input = "research"
     output = "research"
     date = "2023-08-10"
-    with open(f"text/grouped_output/{input}_{date}.txt", "r") as f:
-        with open(f"csv/{output}_{9999999}.csv", "w", newline="") as file:
+    with open(f"./documents/text/grouped_output/{input}_{date}.txt", "r") as f:
+        with open(f"./documents/csv/{output}_{9999999}.csv", "w", newline="") as file:
             writer = csv.writer(file)
             if output == "research":
                 headers = [
@@ -311,7 +315,9 @@ def nameExtractor():
     groups = ["research", "colleges", "departments"]
 
     # Read a group text file
-    with open("./text/grouped_output/research/research_2023-08-10.txt", "r") as file:
+    with open(
+        "./documents/text/grouped_output/research/research_2023-08-10.txt", "r"
+    ) as file:
         names = []  # Store names in this list
         # Loop through each line in the input file
         for line in file:
@@ -334,7 +340,7 @@ def nameGenerator(date):
     year = month[0:-6]
 
     # Checking to see if the "year" directory exist for the following path
-    year_save_path = f"./text/names/{year}"
+    year_save_path = f"./documents/text/names/{year}"
     year_is_exist = os.path.exists(year_save_path)
     # If the path does not exist then make it
     if not year_is_exist:
@@ -342,7 +348,7 @@ def nameGenerator(date):
         print(f"Directory {year_save_path} was created!")
 
     # Checking to see if the "month" directory exist for the following path
-    save_path = f"./text/names/{year}/{month}"
+    save_path = f"./documents/text/names/{year}/{month}"
     is_exist = os.path.exists(save_path)
     # If the path does not exist then make it
     if not is_exist:
@@ -351,9 +357,13 @@ def nameGenerator(date):
     # Loop through each group to make name files for each
     for group in groups:
         # Reading the group text file for the currently selected group
-        with open(f"./text/grouped_output/{group}/{group}_{date}.txt", "r") as file:
+        with open(
+            f"./documents/text/grouped_output/{group}/{group}_{date}.txt", "r"
+        ) as file:
             # Opena new file to write the names to
-            with open(f"./text/names/{year}/{month}/{group}_{date}.txt", "w") as output:
+            with open(
+                f"./documents/text/names/{year}/{month}/{group}_{date}.txt", "w"
+            ) as output:
                 # Loop through each line in the input file
                 for line in file:
                     # Split the line by "|"
