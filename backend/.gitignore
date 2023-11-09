@@ -1,5 +1,15 @@
 venv/
 text/
-csv/
 __pycache__/
-pngs/test/
+
+documents/csv/*
+documents/json/*
+documents/reports/*
+
+documents/text/full_output/*
+documents/text/group_output/*
+documents/text/grouped_output/*
+documents/text/names/*
+
+images/groupStorageCharts/*
+images/userStorageCharts/*

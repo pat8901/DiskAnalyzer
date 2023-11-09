@@ -9,7 +9,7 @@ import json
 def toJSON():
     data = {}
     # Open a csv reader called DictReader
-    with open("./csv/research_9999999.csv", encoding="utf-8") as csvf:
+    with open("./documents/csv/research_9999999.csv", encoding="utf-8") as csvf:
         csvReader = csv.DictReader(csvf)
         # Convert each row into a dictionary and add it to data
         for rows in csvReader:
@@ -17,7 +17,7 @@ def toJSON():
             key = rows["Full Name"]
             data[key] = rows
     # Open a json writer, and use the json.dumps() function to dump data
-    with open("./json/names_version2.json", "w", encoding="utf-8") as jsonf:
+    with open("./documents/json/names_version2.json", "w", encoding="utf-8") as jsonf:
         jsonf.write(json.dumps(data, indent=4))
 
 
@@ -29,7 +29,7 @@ def toJSON():
 def toJSON2():
     data = {}
     # Open a csv reader called DictReader
-    with open("./csv/research_9999999.csv", encoding="utf-8") as csvf:
+    with open("./documents/csv/research_9999999.csv", encoding="utf-8") as csvf:
         csvReader = csv.DictReader(csvf)
         # Convert each row into a dictionary and add it to data
         for rows in csvReader:
@@ -48,7 +48,7 @@ def csvWriter3():
     date = "2023-08-10"
     trimmedWords = []
     # Reads a text file containing researcher data
-    with open(f"text/research_2023-08-10.txt", "r") as f:
+    with open(f"documents/text/research_2023-08-10.txt", "r") as f:
         # Loop through each line in file
         for line in f:
             # Split each line by "|"

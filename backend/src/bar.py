@@ -228,14 +228,14 @@ def dynamic_getUserBarCharts(year, month, date, name, group):
     # Saving the graph
     # savegraph_start = time.time()
     # Checking to see if year directory exist
-    year_save_path = f"../pngs/{year}"
+    year_save_path = f"./images/userStorageCharts/{year}"
     year_is_exist = os.path.exists(year_save_path)
     # If the directory does not exist then make it
     if not year_is_exist:
         os.makedirs(year_save_path)
         # print(f"Directory {year_save_path} was created!")
     # Checking to see if month directory exist
-    month_save_path = f"./pngs/{year}/{month}"
+    month_save_path = f"./images/userStorageCharts/{year}/{month}"
     month_is_exist = os.path.exists(month_save_path)
     # If the directory does not exist then make it
     if not month_is_exist:
