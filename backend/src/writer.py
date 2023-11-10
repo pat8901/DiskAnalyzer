@@ -4,13 +4,6 @@ import os
 from pypdf import PdfReader
 import csv
 
-# import pandas as pd
-# import matplotlib
-# import matplotlib.pyplot as plt
-# import numpy as np
-# from . import tools
-# import sys
-
 
 # +======================================================================================+
 # |           Converts input pdf into a txt file to be used in further processing        |
