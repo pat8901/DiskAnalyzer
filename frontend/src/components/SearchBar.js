@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import { FaSistrix } from 'react-icons/fa6'
 import { useParams } from 'react-router-dom'
+import { Calender } from '../components/Calender'
 import './styles/SearchBar.css'
 
 // +=============================================================================+
@@ -11,7 +12,7 @@ import './styles/SearchBar.css'
 // |                                                                             |
 // |      The processed input data is then passed to it's parent "Search"        |
 // +=============================================================================+
-export const SearchBar = ({ setResults }) => {
+export const SearchBar = ({ setResults, onQuery }) => {
   const [input, setInput] = useState('') // Holds the state of input in the searchbar. *Is this even used?*
   const [users, setUsers] = useState('') // Holds the state of users that match searchbar input
   const { date } = useParams() // Not sure if this is used. *I think this is would be used to select different users based on date filter*
@@ -60,6 +61,7 @@ export const SearchBar = ({ setResults }) => {
         value={input}
         onChange={e => handleChange(e.target.value)}
       ></input>
+      <Calender className='calender' onQuery={onQuery} />
     </div>
   )
 }

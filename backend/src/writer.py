@@ -36,6 +36,15 @@ def createResearchOutput(date):
     # This is where the research information ends
     end = "=========================================|===============|===============|===============|=================|"
     beginFound = False  # Flag to know if the beginning was found
+
+    # Checking to see if the "year" directory exist for the following path
+    research_save_path = f"./documents/text/grouped_output/research"
+    research_is_exist = os.path.exists(research_save_path)
+    # If the path does not exist then make it
+    if not research_is_exist:
+        os.makedirs(research_save_path)  # Creating the directory
+        print(f"Directory {research_save_path} was created!")
+
     # Reads full text file which contatins information on all groups
     with open(f"./documents/text/full_output/full_output_{date}.txt", "r") as f_input:
         # Open a file to be written to in the end will only contain information on researchers
@@ -70,6 +79,15 @@ def createDepartmentOutput(date):
     end = "=========================================|===============|===============|===============|=================|"
     headerFound = False  # Flasg to know if the header was found
     beginFound = False  # Flag to know if the beginning was found
+
+    # Checking to see if the "year" directory exist for the following path
+    department_save_path = f"./documents/text/grouped_output/departments"
+    department_is_exist = os.path.exists(department_save_path)
+    # If the path does not exist then make it
+    if not department_is_exist:
+        os.makedirs(department_save_path)  # Creating the directory
+        print(f"Directory {department_save_path} was created!")
+
     # Read the full text file
     with open(f"./documents/text/full_output/full_output_{date}.txt", "r") as f_input:
         # Open a new file to write department information to
@@ -107,6 +125,15 @@ def createCollegesOutput(date):
     end = "=========================================|===============|===============|===============|=================|"
     headerFound = False  # Flag to know if header was found
     beginFound = False  # Flag to know if the beginning was found
+
+    # Checking to see if the "year" directory exist for the following path
+    college_save_path = f"./documents/text/grouped_output/colleges"
+    college_is_exist = os.path.exists(college_save_path)
+    # If the path does not exist then make it
+    if not college_is_exist:
+        os.makedirs(college_save_path)  # Creating the directory
+        print(f"Directory {college_save_path} was created!")
+
     # Reading the full text file
     with open(f"./documents/text/full_output/full_output_{date}.txt", "r") as f_input:
         # Opening a new file to write to
@@ -300,9 +327,7 @@ def csvWriter2():
 
 
 # +======================================================================================+
-# |                             *This is not used*                                       |
 # |       Gets the names found in a group text file and returns an array of names        |
-# |                             *This is not used*                                       |
 # +======================================================================================+
 def nameExtractor():
     groups = ["research", "colleges", "departments"]

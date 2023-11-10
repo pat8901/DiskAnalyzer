@@ -1,4 +1,5 @@
 import React from 'react'
+import './styles/calender.css'
 
 // +=============================================================================+
 // |                            "Calender" component                             |
@@ -20,12 +21,13 @@ export const Calender = ({ onQuery }) => {
   }
 
   return (
-    <>
+    <div>
       <input
+        className='calender'
         type='date'
         onChange={handleInput}
         defaultValue={`${year}-${mm}-${dd}`}
       />
-    </>
+    </div>
   )
 }

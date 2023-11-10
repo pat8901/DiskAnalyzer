@@ -78,12 +78,10 @@ function About () {
           </div>
         </div>
         <div className='box2'>
-          <div className='search-bar'>
-            <h1>About Page</h1>
-          </div>
+          <div className='search-bar'></div>
           <div className='data-container'>
             <div className='data-box'>
-              <p style={{ textAlign: 'center' }}>
+              <p className='paragraph'>
                 The HPC team within The University of Notre Dame's Center for
                 Research Computing provides computing resources with the
                 associated support for faculty members, researchers, and campus

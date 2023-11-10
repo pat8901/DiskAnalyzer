@@ -107,9 +107,10 @@ function Search () {
         <div className='box2'>
           <div className='search-bar'>
             {/* ?Getting result data from child and setting results. how does this differ from searchresultslist? */}
-            <SearchBar setResults={setResults} />
+            <SearchBar setResults={setResults} onQuery={setQuery} />
             {/* Getting data from child and setting query */}
-            <Calender onQuery={setQuery} />
+            {/* <SearchBar setResults={setResults} />
+            <Calender onQuery={setQuery} /> */}
           </div>
           <div className='data-container'>
             <div className='data-box'>

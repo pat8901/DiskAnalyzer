@@ -78,12 +78,10 @@ function Home () {
           </div>
         </div>
         <div className='box2'>
-          <div className='search-bar'>
-            <h1>Home Page</h1>
-          </div>
+          <div className='search-bar'></div>
           <div className='data-container'>
             <div className='data-box'>
-              <p style={{ textAlign: 'center' }}>
+              <p className='paragraph'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                 massa orci, posuere eget massa vitae, iaculis efficitur augue.
                 Morbi rhoncus dui non eleifend porttitor. Aenean at nulla sit

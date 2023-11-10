@@ -1,7 +1,7 @@
 # Note: Make better names for functions
 import os
 from werkzeug.utils import secure_filename
-from flask import Flask, send_file, jsonify, request, redirect, url_for, flash
+from flask import Flask, send_file, jsonify, request, redirect, url_for, flash, abort
 from flask_cors import CORS
 from watchdog.observers import Observer, api
 from watchdog.events import LoggingEventHandler
@@ -190,11 +190,14 @@ def sendingImage3(year, date, name):
     # print(month)
     # print(name)
 
-    # Create an image based on the given route
-    src.bar.dynamic_getUserBarCharts(year, month, date, name, group)
-    # Store created image into variable
-    image = f"images/userStorageCharts/{year}/{month}/{name}_user_report.png"
-    # Send the image to the frontend
+    try:
+        # Create an image based on the given route
+        src.bar.dynamic_getUserBarCharts(year, month, date, name, group)
+        # Store created image into variable
+        image = f"images/userStorageCharts/{year}/{month}/{name}_user_report.png"
+    except OSError as e:
+        image = f"src/errors/image_not_found.png"
+
     return send_file(image, mimetype="image/png")
 
 
@@ -213,12 +216,10 @@ def sendCsvJson():
 # +=============================================================================+
 @app.route("/user-info/<string:Name>", methods=["GET"])
 def sendUserInfo(Name):
-    with open(
-        "documents/json/names_version2.json", "r"
-    ) as json_file:  # Reading json file
-        data = json.load(json_file)  # Loading JSON data into variable
+    with open("documents/json/names.json", "r") as json_file:
+        data = json.load(json_file)
 
-    return jsonify([data[Name]])  # return JSON datadyamically based on name given
+    return jsonify([data[Name]])
 
 
 # +=============================================================================+
