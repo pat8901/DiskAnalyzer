@@ -11,12 +11,12 @@ First you must obtain the source code for the front end and store in a project d
 
 Installing dependencies
 ---------------------------
-Once you downloaded the program you need to make sure all of the required dependencies are installed. To do so use the following command, $ npm install \
-This will automatically download all required installs that are found in the package.json file.
+Once you downloaded the program you need to make sure all of the required dependencies are installed. To do so use the following command, `$ npm install` \
+This will automatically download all required dependencies found in the `package.json`.
 
 # Running Frontend Server
-Once everything has been installed and setup use the following command to start the frontend server, $ npm start \ 
-This will run the server and pull up the page automatically in a web browser.
+Once everything has been installed and setup use the following command to start the frontend server, `$ npm start` \
+This will run the server and pull up a the webpage automatically in a web browser.
 
 Discalimer 
 ---------------------------
