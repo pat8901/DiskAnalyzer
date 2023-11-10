@@ -7,7 +7,7 @@ documents/csv/*
 documents/json/*
 !documents/json/.gitkeep
 
-documents/reports/*
+
 
 documents/text/full_output/*
 !documents/text/full_output/README.txt
