@@ -190,7 +190,7 @@ def dynamic_getUserBarCharts(year, month, date, name, group):
             df.iloc[i]["Full Name"],
             df.iloc[i]["AFS Groups"],
             width=0.5,
-            color="lightblue",
+            color="tab:blue",
             label="AFS Group",
         )
         ax.bar_label(p1, label_type="center")
@@ -200,7 +200,7 @@ def dynamic_getUserBarCharts(year, month, date, name, group):
             df.iloc[i]["Full Name"],
             df.iloc[i]["Users AFS"],
             width=0.5,
-            color="lightgreen",
+            color="tab:green",
             bottom=df.iloc[i]["AFS Groups"],
             label="AFS User",
         )
@@ -211,7 +211,7 @@ def dynamic_getUserBarCharts(year, month, date, name, group):
             df.iloc[i]["Full Name"],
             df.iloc[i]["Users Panas."],
             width=0.5,
-            color="lightcoral",
+            color="tab:orange",
             bottom=df.iloc[i]["AFS Groups"] + df.iloc[i]["Users AFS"],
             label="Panasas User",
         )

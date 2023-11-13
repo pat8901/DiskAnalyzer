@@ -16,13 +16,14 @@
 import pandas as pd
 import matplotlib
 import matplotlib.pyplot as plt
+import os
 import tools
 
 
 # +======================================================================================+
 # |             Creates a histogram of total storage values for the 3 groups             |
 # +======================================================================================+
-def getGroupTotals(group, date):
+def getGroupTotals(group, year, month, date):
     # Read csv file into pandas dataframe
     df = pd.read_csv(f"csv/{group}_{date}.csv")
     terabyte = 1000000000  # Terabyte definition
@@ -51,41 +52,45 @@ def getGroupTotals(group, date):
     # Setting the plot to have gridlines for the y axis
     plt.grid(axis="y", color="0.95", zorder=0)
 
-    # Creating bar for AFS Group
+    # Creating bars for each group
     afs_group_bar = ax.bar(
         "AFS Group", afs_group_total, label="AFS Group", width=1, edgecolor="white"
     )
-    # Giving the AFS Group bar a label
     ax.bar_label(afs_group_bar, label_type="edge", fontsize=16)
-    # Creating bar for AFS User
     afs_user_bar = ax.bar(
         "AFS User", afs_user_total, label="AFS Group", width=1, edgecolor="white"
     )
-    # Giving the AFS User bar a label
     ax.bar_label(afs_user_bar, label_type="edge", fontsize=16)
-    # Creating bar for Panasas Group
     panasas_bar = ax.bar(
         "Panasas", panas_total, label="AFS Group", width=1, edgecolor="white"
     )
-    # Giving the Panasas bar a label
     ax.bar_label(panasas_bar, label_type="edge", fontsize=16)
-
-    # Creating a total bar. *Not using but keeping for information sake*
-    # total_bar = ax.bar("Total", total, label="AFS Group", width=1, edgecolor="white")
-    # ax.bar_label(total_bar, label_type="edge", fontsize=16)
 
     # Setting the size of the graph for when it will be saved to a file
     figure = plt.gcf()
     figure.set_size_inches(24, 8.5)
 
+    # Checking to see if year directory exist
+    year_save_path = f"./images/groupStorageCharts/{year}"
+    year_is_exist = os.path.exists(year_save_path)
+    if not year_is_exist:
+        os.makedirs(year_save_path)
+        # print(f"Directory {year_save_path} was created!")
+
+    # Checking to see if month directory exist
+    month_save_path = f"./images/groupStorageCharts/{year}/{month}"
+    month_is_exist = os.path.exists(month_save_path)
+    if not month_is_exist:
+        os.makedirs(month_save_path)
+        # print(f"Directory {month_save_path} was created!")
+
     # Saving the figure
     plt.savefig(
-        f"graphs/research/group_reports/{group}_totals_{date}.png",
+        f"./images/groupStorageCharts/{year}/{month}/{group}_totals_{date}.png",
         dpi=300,
         format="png",
         bbox_inches="tight",
     )
-    # plt.show()  # Showing the figure
 
 
 # +======================================================================================+
