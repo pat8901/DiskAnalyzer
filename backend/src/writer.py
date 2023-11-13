@@ -1,3 +1,18 @@
+# Copyright (C) 2023  Patrick O'Brien-Seitz
+
+# This file is part of backend.
+
+# backend is free software: you can redistribute it and/or modify it under the terms of the GNU General 
+# Public License as published by the Free Software Foundation, either version 3 of the License, or (at your 
+# option) any later version.
+
+# backend is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even 
+# the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the 
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License along with Foobar. 
+# If not, see <https://www.gnu.org/licenses/>. 
+
 # *Note* When a file is uploaded to the backend we do not know if the data is formated correcly.
 # If the funtions below do not work throw and exception and tell the user that the files are not formated correctly
 import os
