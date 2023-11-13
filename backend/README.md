@@ -5,7 +5,8 @@ This is the backend server designed to create matplotlib plots and serve them to
 
 Setup virtual enviroment
 ---------------------------
-It is recommended that you create a virtual enviroment. I recommend using a python virtual enviroment tool called `venv`.
+It is recommended that you create a virtual enviroment. I recommend using a python virtual enviroment tool called `venv`.\
+To create a virtual enviroment use the command `$ python -m venv venv`.\
 For additional information on how to use `venv` please vist the documentation page at <https://docs.python.org/3/library/venv.html>.
 
 Installing dependencies
