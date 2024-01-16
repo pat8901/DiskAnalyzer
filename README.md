@@ -1,4 +1,4 @@
-# PI Tracker
+# DiskAnalyzer
 This repository contains both the frontend and backend programs that will be used together to create the full application. \
 Before you can run this program you will need to configure both the frontend and backend servers. \
 Each server has it's own seperate README file explaining how to set them up. \
